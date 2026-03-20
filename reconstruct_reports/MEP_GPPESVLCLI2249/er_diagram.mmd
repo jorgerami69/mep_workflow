@@ -1,0 +1,478 @@
+erDiagram
+    T_DIM_FACTURACION_AGRUPACION_TIPO_PAGO {
+        int AGRU_PAGO_ID PK
+        varchar AGRU_PAGO_DESCRIPCION 
+    }
+    T_DIM_FACTURACION_CANAL {
+        int CAN_ID PK
+        varchar CAN_CANAL_DESCRIPCION 
+        varchar CAN_ESTADO 
+    }
+    T_DIM_FACTURACION_ESTADO {
+        int FACEST_ID PK
+        varchar FACEST_NOMBRE 
+        varchar FACEST_ESTADO 
+    }
+    T_DIM_FACTURACION_JERARQUIA_EMPRESA {
+        int JREM_ID PK
+        varchar JREM_DIRECCION_NOMBRE 
+        varchar JREM_GERENCIA_NOMBRE 
+        varchar JREM_ESTADO 
+        varchar JREM_FECHA_INICIO 
+        varchar JREM_FECHA_FIN 
+    }
+    T_DIM_FACTURACION_PLATAFORMA {
+        int PLATAF_KEY PK
+        int CAN_ID 
+        int PLATAF_ID 
+        varchar PLATAF_DESCRIPCION 
+        varchar PLATAF_AGRUPACION_FACTURACION 
+        varchar PLATAF_ESTADO 
+    }
+    T_DIM_FACTURACION_PROVEEDOR {
+        int PROV_ID PK
+        varchar PROV_NOMBRE 
+        varchar PROV_ESTADO 
+    }
+    T_DIM_FACTURACION_TIEMPO_MES {
+        int TIEM_ID PK
+        varchar TIEM_ANIO 
+        varchar TIEM_MES 
+        varchar TIEM_SEMESTRE 
+        varchar TIEM_CUATRIMESTRE 
+        varchar TIEM_TRIMESTRE 
+        int TIEM_MES_DIAS 
+        datetime TIEM_FECHA 
+        varchar TIEM_NOMBRE_MES_COMPLETO 
+        int TIEM_ANIO_FECHA 
+        string ___plus_3_more___
+    }
+    T_DIM_FACTURACION_TIPO_PAGO {
+        int TIPO_PAGO_ID PK
+        varchar TIPO_PAGO_DESCRIPCION 
+    }
+    T_DIM_GE_AGRUPACION_PLATAFORMA {
+        int AGRU_PLA_ID PK
+        varchar AGRU_PLA_DESCRIPCION 
+        varchar AGRU_ESTADO 
+        varchar SUB_CANAL 
+    }
+    T_DIM_GE_CANAL {
+        int CAN_ID PK
+        varchar CAN_CANAL_DESCRIPCION 
+        varchar CAN_ESTADO 
+    }
+    T_DIM_GE_COMENTARIOS {
+        int TIEM_ID 
+        varchar CANAL_VOZ 
+        varchar CANALES_ESCRITOS 
+        varchar CANAL_BACK_OFFICE 
+    }
+    T_DIM_GE_GESTION {
+        int GES_ID PK
+        varchar GES_DESCRIPCION 
+        varchar GES_ESTADO 
+    }
+    T_DIM_GE_PLATAFORMA {
+        int PLATAF_KEY PK
+        int CAN_ID 
+        int PLATAF_ID 
+        varchar PLATAF_DESCRIPCION 
+        varchar PLATAF_ESTADO 
+        varchar PLATAF_AGRUPACION 
+        varchar PLATAF_GESTION 
+        varchar PLATAF_SUB_CANAL 
+    }
+    T_DIM_GE_TIEMPO_MES {
+        int TIEM_ID PK
+        varchar TIEM_ANIO 
+        varchar TIEM_MES 
+        varchar TIEM_SEMESTRE 
+        varchar TIEM_CUATRIMESTRE 
+        varchar TIEM_TRIMESTRE 
+        int TIEM_MES_DIAS 
+        datetime TIEM_FECHA 
+        varchar TIEM_NOMBRE_MES_COMPLETO 
+        int TIEM_ANIO_FECHA 
+        string ___plus_3_more___
+    }
+    T_DIM_GE_TIPO_PAGO {
+        int TIPO_PAGO_ID PK
+        varchar TIPO_PAGO_DESCRIPCION 
+        varchar TIPO_PAGO_ESTADO 
+    }
+    T_FACT_GE_PPTO {
+        varchar PPTO_ANIO PK
+        varchar PPTO_MES PK
+        int PPTO_CAN_ID PK
+        int PPTO_GESTION_ID PK
+        int PPTO_TIPO_PAGO_ID PK
+        int PPTO_AGRU_PLA_ID PK
+        numeric PPTO_TOTAL_PPTO 
+        int PPTO_TRANSACCIONES 
+        numeric PPTO_HP 
+        int PPTO_VERSION PK
+        string ___plus_2_more___
+    }
+    T_FACT_GESTION_ECONOMICA_DIARIO {
+        int TIPO_PAGO_ID PK
+        int FACEST_ID PK
+        int TIEM_ID PK
+        int JREM_ID PK
+        int CAN_ID PK
+        int PROV_ID PK
+        int PLATAF_KEY PK
+        datetime FACTMES_FECHA_SISTEMA 
+        int FACTMES_PARAMETROS_NUM_DIAS 
+        numeric FACTMES_MONTO_PRELIMINAR 
+        string ___plus_43_more___
+    }
+    T_FACT_GESTION_ECONOMICA_MES {
+        int AGRU_PAGO_ID PK
+        int TIPO_PAGO_ID PK
+        int FACEST_ID PK
+        int TIEM_ID PK
+        int JREM_ID PK
+        int CAN_ID PK
+        int PROV_ID PK
+        int PLATAF_KEY PK
+        datetime FACTMES_FECHA_SISTEMA 
+        int FACTMES_PARAMETROS_NUM_DIAS 
+        string ___plus_162_more___
+    }
+    T_FACT_PPTO_V2 {
+        varchar PPTO_ANIO_MES PK
+        numeric PPTO_MONTO 
+        int PPTO_VERSION PK
+        datetime PPTO_FECHA_SISTEMA 
+        int AGRU_PAGO_ID PK
+    }
+    FACT_CCEE_METRICAS {
+        int ID_METRICA PK
+        int ID_TIEMPO 
+        int ID_PROVEEDOR 
+        int ID_PLATAFORMA 
+        int CLIENTES_UNICOS 
+        int INTERACCIONES 
+        float HORAS_LOGIN_MES 
+        float HORAS_LOGIN 
+        float HORAS_PRODUCTIVAS 
+        float HORAS_AVAIL 
+        string ___plus_28_more___
+    }
+    T_DIM_FUENTE {
+        int FUEN_ID PK
+        varchar FUEN_DESCRIPCION 
+    }
+    T_DIM_JERARQUIA_EMPRESA {
+        int JREM_ID PK
+        varchar JREM_DIRECCION_NOMBRE 
+        varchar JREM_GERENCIA_NOMBRE 
+    }
+    T_DIM_PLATAFORMA {
+        int PLATAF_ID PK
+        varchar PLATAF_DESCRIPCION 
+        varchar PLATAF_ESTADO 
+        varchar PLATAF_FACTURACION 
+        int JREM_ID 
+        int TIPO_PAGO 
+    }
+    T_DIM_PROVEEDOR {
+        int PROV_ID PK
+        varchar PROV_NOMBRE 
+        varchar PROV_ESTADO 
+    }
+    T_DIM_TIEMPO_INTERVALO {
+        int TIEM_ID PK
+        varchar TIEM_ANIO 
+        varchar TIEM_MES 
+        varchar TIEM_DIA 
+        varchar TIEM_HORA 
+        varchar TIEM_MEDIA_HORA 
+        datetime TIEM_FECHA 
+        datetime TIEM_FECHA_SIS 
+        varchar TIEM_FECHA_TEXTO 
+        varchar TIEM_DIA_SEMANA 
+        string ___plus_3_more___
+    }
+    T_DIM_COLA {
+        int COLA_ID PK
+        varchar COLA_COD 
+        varchar CDN_CUBO 
+        int PROG_ID 
+        varchar SKILL 
+        int SIT_GEN_ID 
+        varchar RUTA_INGRESO 
+        varchar DETALLE_ADIC1 
+        varchar DETALLE_ADIC2 
+        varchar ORIGEN_LLAMADA 
+        string ___plus_9_more___
+    }
+    T_DIM_COLA_ORIGEN {
+        int COLAOR_ID PK
+        varchar COLAOR_DESCRIPCION 
+    }
+    T_DIM_NEGOCIO {
+        int NEG_ID PK
+        varchar NEG_NOMBRE 
+        varchar NEG_ESTADO 
+    }
+    T_DIM_PROGRAMA {
+        int PROG_ID PK
+        varchar PROG_NOMBRE 
+        varchar PROG_ESTADO 
+        int SEG_ID 
+        varchar SEG_NOMBRE 
+        int TIGEST_ID 
+        varchar TIGEST_DESCRIPCION 
+        int PLATAF_ID 
+        varchar PLATAF_DESCRIPCION 
+        int NEG_ID 
+        string ___plus_1_more___
+    }
+    T_DIM_PROVEEDOR_LOCAL {
+        int PROVLOC_ID PK
+        varchar PROVLOC_DESCRIPCION 
+        int PROV_ID 
+        varchar PROV_NOMBRE 
+    }
+    T_DIM_SEGMENTO {
+        int SEG_ID PK
+        varchar SEG_NOMBRE 
+        varchar SEG_ESTADO 
+    }
+    T_DIM_SISTEMA_COMERCIAL {
+        int SISTCOM_ID PK
+        varchar SISTCOM_DESCRIPCION 
+    }
+    T_DIM_SITE_GENESYS {
+        int SITGEN_ID PK
+        varchar SITGEN_DESCRIPCION 
+    }
+    T_DIM_TARIFA_HP {
+        int THP_ID PK
+        int PROV_ID 
+        numeric THP_PROVEEDOR_PAGO_1 
+        numeric THP_PROVEEDOR_PAGO_2 
+        numeric THP_PROVEEDOR_PAGO_3 
+        varchar THP_FECHA_INICIO 
+        varchar THP_FECHA_FIN 
+    }
+    T_DIM_TIEMPO_DIA {
+        int TIEM_ID PK
+        varchar TIEM_ANIO 
+        varchar TIEM_MES 
+        varchar TIEM_DIA 
+        datetime TIEM_FECHA 
+        datetime TIEM_FECHA_SIS 
+        varchar TIEM_FECHA_TEXTO 
+        varchar TIEM_DIA_SEMANA 
+        varchar TIEM_NUM_SEMANA 
+    }
+    T_DIM_TIPO_DISTRIBUCION_CALL {
+        int TDISCALL_ID PK
+        varchar TDISCALL_DESCRIPCION 
+        varchar TDISCALL_ESTADO 
+        datetime TDISCALL_FECHA_SISTEMA 
+    }
+    T_DIM_TIPO_GESTION {
+        int TIGEST_ID PK
+        varchar TIGEST_DESCRIPCION 
+    }
+    T_DIM_TIPO_INTERACCION {
+        int TINTER_ID PK
+        varchar TINTER_DESCRIPCION 
+        varchar TINTER_ESTADO 
+    }
+    T_FACT_METRICAS_CC_DIA {
+        int NEG_ID PK
+        int SEG_ID PK
+        int PROV_ID PK
+        int PROG_ID PK
+        int TIEM_ID PK
+        int FUEN_ID PK
+        int TIGEST_ID PK
+        int PLATAF_ID PK
+        int TDISCALL_ID PK
+        int MET_COLA_LLAMADAS_ENTRANTES 
+        string ___plus_59_more___
+    }
+    T_FACT_METRICAS_CC_INTERVALO {
+        int NEG_ID PK
+        int SEG_ID PK
+        int PROV_ID PK
+        int PROG_ID PK
+        int TIEM_ID PK
+        int FUEN_ID PK
+        int TIGEST_ID PK
+        int PLATAF_ID PK
+        int TDISCALL_ID PK
+        int MET_COLA_LLAMADAS_ENTRANTES 
+        string ___plus_74_more___
+    }
+    T_FACT_TRAFICO_INTERVALO {
+        int NEG_ID PK
+        int SEG_ID PK
+        int PROV_ID PK
+        int PROG_ID PK
+        int TIEM_ID PK
+        int FUEN_ID PK
+        int SITGEN_ID PK
+        int PROVLOC_ID PK
+        int SISTCOM_ID PK
+        int COLA_ID PK
+        string ___plus_47_more___
+    }
+    ActiveSubscriptions {
+        uniqueidentifier ActiveID PK
+        uniqueidentifier SubscriptionID 
+        int TotalNotifications 
+        int TotalSuccesses 
+        int TotalFailures 
+    }
+    CachePolicy {
+        uniqueidentifier CachePolicyID PK
+        uniqueidentifier ReportID 
+        int ExpirationFlags 
+        int CacheExpiration 
+    }
+    Catalog {
+        uniqueidentifier ItemID PK
+        nvarchar Path 
+        nvarchar Name 
+        uniqueidentifier ParentID 
+        int Type 
+        image Content 
+        uniqueidentifier Intermediate 
+        uniqueidentifier SnapshotDataID 
+        uniqueidentifier LinkSourceID 
+        ntext Property 
+        string ___plus_15_more___
+    }
+    DataSets {
+        uniqueidentifier ID PK
+        uniqueidentifier ItemID 
+        uniqueidentifier LinkID 
+        nvarchar Name 
+    }
+    DataSource {
+        uniqueidentifier DSID PK
+        uniqueidentifier ItemID 
+        uniqueidentifier SubscriptionID 
+        nvarchar Name 
+        nvarchar Extension 
+        uniqueidentifier Link 
+        int CredentialRetrieval 
+        ntext Prompt 
+        image ConnectionString 
+        image OriginalConnectionString 
+        string ___plus_5_more___
+    }
+    ModelDrill {
+        uniqueidentifier ModelDrillID PK
+        uniqueidentifier ModelID 
+        uniqueidentifier ReportID 
+        nvarchar ModelItemID 
+        tinyint Type 
+    }
+    ModelItemPolicy {
+        uniqueidentifier ID PK
+        uniqueidentifier CatalogItemID 
+        nvarchar ModelItemID 
+        uniqueidentifier PolicyID 
+    }
+    ModelPerspective {
+        uniqueidentifier ID 
+        uniqueidentifier ModelID 
+        ntext PerspectiveID 
+        ntext PerspectiveName 
+        ntext PerspectiveDescription 
+    }
+    Notifications {
+        uniqueidentifier NotificationID PK
+        uniqueidentifier SubscriptionID 
+        uniqueidentifier ActivationID 
+        uniqueidentifier ReportID 
+        datetime SnapShotDate 
+        ntext ExtensionSettings 
+        nvarchar Locale 
+        ntext Parameters 
+        datetime ProcessStart 
+        datetime NotificationEntered 
+        string ___plus_10_more___
+    }
+    T_DIM_FACTURACION_PLATAFORMA }o--|| T_DIM_FACTURACION_CANAL : "CAN_ID"
+    T_DIM_GE_COMENTARIOS }o--|| T_DIM_GE_TIEMPO_MES : "TIEM_ID"
+    T_DIM_GE_PLATAFORMA }o--|| T_DIM_GE_CANAL : "CAN_ID"
+    T_FACT_GE_PPTO }o--|| T_DIM_GE_AGRUPACION_PLATAFORMA : "PPTO_AGRU_PLA_ID"
+    T_FACT_GE_PPTO }o--|| T_DIM_GE_CANAL : "PPTO_CAN_ID"
+    T_FACT_GE_PPTO }o--|| T_DIM_GE_GESTION : "PPTO_GESTION_ID"
+    T_FACT_GE_PPTO }o--|| T_DIM_GE_TIPO_PAGO : "PPTO_TIPO_PAGO_ID"
+    T_FACT_GESTION_ECONOMICA_DIARIO }o--|| T_DIM_FACTURACION_CANAL : "CAN_ID"
+    T_FACT_GESTION_ECONOMICA_DIARIO }o--|| T_DIM_FACTURACION_ESTADO : "FACEST_ID"
+    T_FACT_GESTION_ECONOMICA_DIARIO }o--|| T_DIM_FACTURACION_JERARQUIA_EMPRESA : "JREM_ID"
+    T_FACT_GESTION_ECONOMICA_DIARIO }o--|| T_DIM_FACTURACION_PLATAFORMA : "PLATAF_KEY"
+    T_FACT_GESTION_ECONOMICA_DIARIO }o--|| T_DIM_FACTURACION_PROVEEDOR : "PROV_ID"
+    T_FACT_GESTION_ECONOMICA_DIARIO }o--|| T_DIM_FACTURACION_TIEMPO_MES : "TIEM_ID"
+    T_FACT_GESTION_ECONOMICA_DIARIO }o--|| T_DIM_FACTURACION_TIPO_PAGO : "TIPO_PAGO_ID"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_AGRUPACION_TIPO_PAGO : "AGRU_PAGO_ID"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_CANAL : "CAN_ID"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_ESTADO : "FACEST_ID"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_JERARQUIA_EMPRESA : "JREM_ID"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_PLATAFORMA : "PLATAF_KEY"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_PROVEEDOR : "PROV_ID"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_TIEMPO_MES : "TIEM_ID"
+    T_FACT_GESTION_ECONOMICA_MES }o--|| T_DIM_FACTURACION_TIPO_PAGO : "TIPO_PAGO_ID"
+    T_FACT_PPTO_V2 }o--|| T_DIM_FACTURACION_AGRUPACION_TIPO_PAGO : "AGRU_PAGO_ID"
+    T_DIM_COLA }o--|| T_DIM_COLA_ORIGEN : "COLAOR_ID"
+    T_DIM_COLA }o--|| T_DIM_NEGOCIO : "NEG_ID"
+    T_DIM_COLA }o--|| T_DIM_PROGRAMA : "PROG_ID"
+    T_DIM_COLA }o--|| T_DIM_SISTEMA_COMERCIAL : "SISTCOM_ID"
+    T_DIM_COLA }o--|| T_DIM_SITE_GENESYS : "SIT_GEN_ID"
+    T_DIM_PLATAFORMA }o--|| T_DIM_JERARQUIA_EMPRESA : "JREM_ID"
+    T_DIM_PROGRAMA }o--|| T_DIM_NEGOCIO : "NEG_ID"
+    T_DIM_PROGRAMA }o--|| T_DIM_PLATAFORMA : "PLATAF_ID"
+    T_DIM_PROGRAMA }o--|| T_DIM_SEGMENTO : "SEG_ID"
+    T_DIM_PROGRAMA }o--|| T_DIM_TIPO_GESTION : "TIGEST_ID"
+    T_DIM_TARIFA_HP }o--|| T_DIM_PROVEEDOR : "PROV_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_FUENTE : "FUEN_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_NEGOCIO : "NEG_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_PLATAFORMA : "PLATAF_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_PROGRAMA : "PROG_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_PROVEEDOR : "PROV_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_SEGMENTO : "SEG_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_TIEMPO_DIA : "TIEM_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_TIPO_GESTION : "TIGEST_ID"
+    T_FACT_METRICAS_CC_DIA }o--|| T_DIM_TIPO_DISTRIBUCION_CALL : "TDISCALL_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_FUENTE : "FUEN_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_NEGOCIO : "NEG_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_PLATAFORMA : "PLATAF_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_PROGRAMA : "PROG_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_PROVEEDOR : "PROV_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_SEGMENTO : "SEG_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_TIEMPO_INTERVALO : "TIEM_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_TIPO_GESTION : "TIGEST_ID"
+    T_FACT_METRICAS_CC_INTERVALO }o--|| T_DIM_TIPO_DISTRIBUCION_CALL : "TDISCALL_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_COLA : "COLA_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_COLA_ORIGEN : "COLAOR_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_FUENTE : "FUEN_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_NEGOCIO : "NEG_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_PLATAFORMA : "PLATAF_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_PROGRAMA : "PROG_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_PROVEEDOR : "PROV_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_PROVEEDOR_LOCAL : "PROVLOC_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_SEGMENTO : "SEG_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_SISTEMA_COMERCIAL : "SISTCOM_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_SITE_GENESYS : "SITGEN_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_TIEMPO_INTERVALO : "TIEM_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_TIPO_GESTION : "TIGEST_ID"
+    T_FACT_TRAFICO_INTERVALO }o--|| T_DIM_TIPO_INTERACCION : "TINTER_ID"
+    CachePolicy }o--|| Catalog : "ReportID"
+    Catalog }o--|| Catalog : "LinkSourceID"
+    Catalog }o--|| Catalog : "ParentID"
+    DataSets }o--|| Catalog : "ItemID"
+    DataSets }o--|| Catalog : "LinkID"
+    DataSource }o--|| Catalog : "ItemID"
+    ModelDrill }o--|| Catalog : "ModelID"
+    ModelDrill }o--|| Catalog : "ReportID"
+    ModelPerspective }o--|| Catalog : "ModelID"

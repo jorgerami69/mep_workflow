@@ -1,0 +1,277 @@
+{
+  "mep": {
+    "name": "MEP_WINDBDVNB0001",
+    "server": "WINDBDVNB0001",
+    "instance": "DESTDPPLANCO",
+    "ip": "172.30.249.165",
+    "engine": "mssql",
+    "engine_version": "12.0.6024.0",
+    "edition": "Enterprise Edition (64-bit)",
+    "service_pack": "SP3",
+    "os": "Windows Server 2016 (Build 14393)",
+    "gerencia": "Gerencia de Atencion (D3 Customer Care)",
+    "focal": "B.Quispe / R.Smith",
+    "tracker": 11,
+    "sme": "SME_1",
+    "total_files": 479,
+    "total_size_mb": 46,
+    "subcarpetas_present": 8,
+    "subcarpetas_missing": []
+  },
+  "score": {
+    "A": 75,
+    "B": 90,
+    "C": 92,
+    "D": 70,
+    "E": 80,
+    "F": 80,
+    "G": 30,
+    "H": 80,
+    "subtotal": 80,
+    "penalties": -5,
+    "overall": 75,
+    "grade": "B",
+    "verdict": "APROBADO CON OBSERVACIONES"
+  },
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "FAIL",
+      "category": "Documentacion",
+      "subcarpeta": "G",
+      "title": "Subcarpeta G sin documentacion de lineage",
+      "detail": "La subcarpeta G_Lineage_Documentacion contiene unicamente un archivo vacio 'no aplica.txt'. No se proporciona diagrama de lineage ni documentacion tecnica de flujos de datos. El servidor tiene 16 bases de datos con multiples flujos ETL via SSIS que requieren documentacion de lineage.",
+      "impact": "Imposibilita la trazabilidad de datos y dificulta el assessment de dependencias.",
+      "recommendation": "Integratel debe generar documentacion de lineage que cubra los flujos SSIS entre las bases TP_CALIDAD, CALIDAD_CRUCES, CALIDAD y las fuentes externas (Teradata, linked servers)."
+    },
+    {
+      "id": "F-002",
+      "severity": "FAIL",
+      "category": "ETL",
+      "subcarpeta": "C",
+      "title": "Paquetes SSIS con ejecuciones fallidas recurrentes",
+      "detail": "ETL_Base_04_Averias.dtsx falla consistentemente en todas las ejecuciones registradas (100% failure). Tambien fallan COBRO_RECONEXION.dtsx, DESCUENTOS.dtsx y RETENCION_FIJA.dtsx del proyecto Reclamos_SAR_TC. La tasa general de exito es 89.5% (179/200 ejecuciones exitosas).",
+      "impact": "Procesos ETL criticos no operativos afectan la calidad y completitud de datos.",
+      "recommendation": "Stefanini debe revisar y documentar el estado actual de los paquetes SSIS fallidos, verificando si corresponden a procesos activos o deprecados."
+    },
+    {
+      "id": "F-003",
+      "severity": "FAIL",
+      "category": "Estructura",
+      "subcarpeta": "C",
+      "title": "Archivos esperados del motor MSSQL ausentes a nivel instancia",
+      "detail": "Faltan los archivos de metadata esperados: 00_server_info.csv, 01_databases.csv, 02_logins.csv, 04_linked_servers.csv, 05_server_config.csv. Sin embargo, la informacion equivalente si esta presente en la subcarpeta _instance del directorio de scripts (00_version.txt, 01_server_config.csv, 02_linked_servers.csv, 03_agent_jobs.csv, 04_logins.csv, 05_databases.csv) lo cual indica que la estructura de nombrado difiere del estandar esperado.",
+      "impact": "Menor - la informacion existe pero con estructura de carpetas diferente al patron esperado por el scanner.",
+      "recommendation": "Integratel debe verificar que el script de recoleccion genera los archivos en la ubicacion estandar para futuros MEPs."
+    },
+    {
+      "id": "F-004",
+      "severity": "WARN",
+      "category": "Jobs",
+      "subcarpeta": "D",
+      "title": "12 SQL Agent Jobs deshabilitados sin documentacion",
+      "detail": "Existen 12 jobs deshabilitados de 43 totales (28%). Incluyen jobs de B2B (Averias_B2B, Funcionamiento_Fijo_B2B, Funcionamiento_Movil_B2B, Averias_B2B), gestion de usuarios JCG y procesos Aura. No hay documentacion que indique si son deprecados, temporales o requieren reactivacion.",
+      "impact": "Riesgo de perder funcionalidad durante la migracion si no se documenta el estado intencional de los jobs deshabilitados.",
+      "recommendation": "Integratel debe documentar la razon de deshabilitacion de cada job y confirmar cuales son relevantes para el assessment."
+    },
+    {
+      "id": "F-005",
+      "severity": "WARN",
+      "category": "Infraestructura",
+      "subcarpeta": "B",
+      "title": "SQL Server 2014 SP3 en End of Life",
+      "detail": "El servidor ejecuta Microsoft SQL Server 2014 SP3 (12.0.6024.0) Enterprise Edition. SQL Server 2014 alcanzo End of Extended Support el 9 de julio de 2024.",
+      "impact": "Sin soporte de seguridad ni actualizaciones. Riesgo informativo para el assessment.",
+      "recommendation": "Documentar como parte del inventario del assessment. No se recomienda upgrade como parte de este MEP."
+    },
+    {
+      "id": "F-006",
+      "severity": "WARN",
+      "category": "Seguridad",
+      "subcarpeta": "H",
+      "title": "SQL Logins con nombres de IP activos",
+      "detail": "Existen 5 SQL logins con nombres basados en direcciones IP (10.4.40.227, 172.30.249.165, 172.30.249.166, 172.30.249.167, 172.30.251.85) activos con permisos de lectura/escritura en multiples bases de datos. Este patron sugiere cuentas de servicio entre servidores.",
+      "impact": "Dificulta la auditoria y trazabilidad de accesos. Los logins IP-based no siguen las mejores practicas de nombrado.",
+      "recommendation": "Stefanini debe documentar el proposito de cada login IP-based y mapearlos a los servidores/aplicaciones que los utilizan."
+    },
+    {
+      "id": "F-007",
+      "severity": "WARN",
+      "category": "Base de Datos",
+      "subcarpeta": "C",
+      "title": "Gran volumen de bases de backup historico",
+      "detail": "El servidor almacena 2.7 TB de datos en 16 bases de datos, de las cuales 9 son backups historicos (BD_BACKUP_*) que representan aproximadamente 1.9 TB. Todas las bases usan recovery model FULL.",
+      "impact": "Alto consumo de almacenamiento. Las bases de backup historico pueden no ser necesarias para el assessment si no estan activas.",
+      "recommendation": "Integratel debe confirmar cuales bases BD_BACKUP_* son activas y relevantes para el assessment."
+    },
+    {
+      "id": "F-008",
+      "severity": "WARN",
+      "category": "Conectividad",
+      "subcarpeta": "B",
+      "title": "4 Linked Servers configurados",
+      "detail": "El servidor tiene 4 linked servers hacia 10.226.3.96, 10.4.40.229, 172.30.249.166 y 172.30.251.85. El linked server 172.30.251.85 tiene remote login habilitado. Estos representan dependencias externas que deben documentarse para el assessment.",
+      "impact": "Dependencias externas no documentadas pueden causar fallas post-migracion.",
+      "recommendation": "Integratel debe documentar el proposito y uso de cada linked server en el documento de interfaces."
+    },
+    {
+      "id": "F-009",
+      "severity": "INFO",
+      "category": "ETL",
+      "subcarpeta": "C",
+      "title": "46 paquetes SSIS desplegados en 8 proyectos SSISDB",
+      "detail": "SSISDB contiene 8 carpetas/proyectos: CONSOLIDACION_BASES_EXTERNAS, Delivery_Movil, Proceso_BotMaker, Proceso_Prueba, Procesos_Calidad (3 proyectos), Recargas y Refarming HU. Totalizan 46 paquetes SSIS. Los proyectos mas activos son Proyecto_Consolidacion_Encuestas_A365 (21 pkgs) y Universo_Envio_Encuestas_A365 (7 pkgs).",
+      "impact": "Informativo - volumen significativo de ETLs que requieren analisis detallado para el assessment.",
+      "recommendation": "Verificado y documentado."
+    },
+    {
+      "id": "F-010",
+      "severity": "INFO",
+      "category": "Estructura",
+      "subcarpeta": "A",
+      "title": "Ficha funcional presente y correcta",
+      "detail": "El archivo A01_Ficha_Funcional_WINDBDVNB0001.docx esta presente en la subcarpeta A. Cumple con el formato esperado.",
+      "impact": "Positivo - cumple con el requisito.",
+      "recommendation": "Verificado."
+    },
+    {
+      "id": "F-011",
+      "severity": "INFO",
+      "category": "Seguridad",
+      "subcarpeta": "H",
+      "title": "Matriz de accesos documentada",
+      "detail": "El archivo H01_Accesos_WINDBDVNB0001.xlsx esta presente en la subcarpeta H. Se identifican 41 logins a nivel instancia (16 SQL, 25 Windows), con 5 logins deshabilitados.",
+      "impact": "Positivo - cumple con el requisito.",
+      "recommendation": "Verificado."
+    },
+    {
+      "id": "F-012",
+      "severity": "INFO",
+      "category": "Objetos",
+      "subcarpeta": "C",
+      "title": "Inventario de objetos completo para 16 bases",
+      "detail": "Se documentan tablas, stored procedures, funciones, vistas y constraints para todas las bases: TP_CALIDAD (1033 tablas, 83 SPs, 11 views), CALIDAD_CRUCES (644 tablas), CALIDAD (166 tablas, 10 SPs), BD_REGULADOS (221 tablas, 3 SPs), entre otras.",
+      "impact": "Positivo - documentacion de objetos completa.",
+      "recommendation": "Verificado."
+    },
+    {
+      "id": "F-013",
+      "severity": "INFO",
+      "category": "Interfaces",
+      "subcarpeta": "E",
+      "title": "Documento de interfaces presente",
+      "detail": "El archivo E01_E02_Interfaces_WINDBDVNB0001.xlsx esta presente documentando las interfaces de entrada/salida del servidor.",
+      "impact": "Positivo - cumple con el requisito.",
+      "recommendation": "Verificado."
+    },
+    {
+      "id": "F-014",
+      "severity": "INFO",
+      "category": "BI",
+      "subcarpeta": "F",
+      "title": "Inventario de reportes BI documentado",
+      "detail": "El archivo F01_Reportes_BI_WINDBDVNB0001.xlsx esta presente en la subcarpeta F documentando los artefactos BI asociados al servidor.",
+      "impact": "Positivo - cumple con el requisito.",
+      "recommendation": "Verificado."
+    }
+  ],
+  "security_investigation": {
+    "total_scanner_findings": 7,
+    "real_positives": 1,
+    "false_positives": 6,
+    "details": [
+      {
+        "finding": "export_etl.ps1 line 439: SQLCMDPASSWORD = $script:_credPass",
+        "verdict": "FALSE POSITIVE",
+        "reason": "Es un script de recoleccion MEP (parte del toolkit Integratel). Usa variable de entorno SQLCMDPASSWORD con valor de variable runtime ($script:_credPass). No contiene credenciales hardcoded. El script limpia la variable al finalizar (linea 1053: $env:SQLCMDPASSWORD = $null)."
+      },
+      {
+        "finding": "export_etl.ps1 line 603: Password=$($script:_credPass)",
+        "verdict": "FALSE POSITIVE",
+        "reason": "Construccion de connection string SQL usando variable parametrizada. No hay contraseña hardcoded; el valor viene de parametro de ejecucion."
+      },
+      {
+        "finding": "export_etl.ps1 line 643: Password=$($script:_credPass)",
+        "verdict": "FALSE POSITIVE",
+        "reason": "Misma logica que linea 603 - connection string parametrizado para SSISDB. Sin credenciales expuestas."
+      },
+      {
+        "finding": "export_etl.ps1 line 1053: PASSWORD = $null",
+        "verdict": "FALSE POSITIVE",
+        "reason": "Limpieza de credenciales al finalizar el script. Asigna $null para eliminar la variable de entorno. Es una buena practica de seguridad."
+      },
+      {
+        "finding": "gather_sqlserver.ps1 line 319: SQLCMDPASSWORD = $script:_credPass",
+        "verdict": "FALSE POSITIVE",
+        "reason": "Mismo patron que export_etl.ps1 - script de recoleccion usando variable parametrizada. Sin credenciales hardcoded."
+      },
+      {
+        "finding": "gather_sqlserver.ps1 line 1016: PASSWORD = $null",
+        "verdict": "FALSE POSITIVE",
+        "reason": "Limpieza de credenciales al finalizar el script. Mismo patron seguro que export_etl.ps1."
+      },
+      {
+        "finding": "New Package_connections.txt line 10: ConnectionString: D:\\OneDrive",
+        "verdict": "REAL - INFO",
+        "reason": "Es un connection string de tipo FlatFile que apunta a una ruta OneDrive corporativa (D:\\OneDrive - Integratel Peru\\07_Documentos_Gestion_TDP\\03_Calidad\\). No contiene credenciales pero revela una ruta local del equipo de trabajo con nombre de empresa y estructura de carpetas. Riesgo bajo - informativo."
+      }
+    ]
+  },
+  "checklist_auto": {
+    "1.1": "OK",
+    "1.2": "OK",
+    "1.3": "OK",
+    "1.4": "OK",
+    "1.5": "OK",
+    "2.1": "OK",
+    "2.2": "OK",
+    "2.3": "OK",
+    "2.4": "WARN",
+    "3.1": "OK",
+    "3.2": "WARN",
+    "3.3": "FAIL",
+    "3.4": "OK",
+    "4.1": "OK",
+    "4.2": "OK",
+    "4.3": "WARN",
+    "5.1": "OK",
+    "5.2": "WARN",
+    "5.3": "OK",
+    "5.4": "OK",
+    "6.1": "OK",
+    "6.2": "FAIL",
+    "6.3": "OK"
+  },
+  "checklist_observations": {
+    "1.1": "Ficha funcional A01 presente y completa.",
+    "1.2": "8 de 8 subcarpetas presentes (A-H).",
+    "1.3": "479 archivos, 46 MB. Estructura consistente con MSSQL.",
+    "1.4": "Hostname WINDBDVNB0001, IP 172.30.249.165, instancia DESTDPPLANCO verificados en datos recolectados.",
+    "1.5": "Gerencia de Atencion (D3 Customer Care). Focal B.Quispe/R.Smith confirmados en logins.",
+    "2.1": "SQL Server 2014 SP3 Enterprise Edition (12.0.6024.0). Windows Server 2016 Build 14393.",
+    "2.2": "16 bases de datos documentadas, todas ONLINE. Recovery model FULL en todas.",
+    "2.3": "Inventario completo: 2791 tablas, 115 SPs, 54 views, 9 funciones totales.",
+    "2.4": "12 de 43 jobs deshabilitados (28%). Falta documentacion de razon de deshabilitacion.",
+    "3.1": "43 SQL Agent jobs documentados (31 habilitados, 12 deshabilitados). Schedules presentes.",
+    "3.2": "46 paquetes SSIS en 8 proyectos. ETL_Base_04_Averias.dtsx con fallas recurrentes (100% failure). Tasa exito general 89.5%.",
+    "3.3": "Subcarpeta G vacia (solo 'no aplica.txt'). No hay documentacion de lineage para 16 BDs y multiples flujos SSIS.",
+    "3.4": "2 scheduled tasks de aplicacion (BotMaker, Guardicore). Resto son tareas del sistema.",
+    "4.1": "E01_E02_Interfaces_WINDBDVNB0001.xlsx presente. 4 linked servers documentados.",
+    "4.2": "F01_Reportes_BI_WINDBDVNB0001.xlsx presente.",
+    "4.3": "4 linked servers configurados. Linked server 172.30.251.85 con remote login habilitado.",
+    "5.1": "H01_Accesos_WINDBDVNB0001.xlsx presente. 41 logins documentados.",
+    "5.2": "5 SQL logins con nombres IP-based activos. No siguen convencion de nombrado estandar.",
+    "5.3": "0 de 7 hallazgos de seguridad del scanner son credenciales reales. 6 falsos positivos en scripts de recoleccion, 1 ruta OneDrive informativa.",
+    "5.4": "Permisos documentados por BD. Roles db_datareader/db_datawriter asignados apropiadamente.",
+    "6.1": "Scripts de recoleccion (gather_sqlserver.ps1, export_etl.ps1) presentes y funcionales.",
+    "6.2": "Subcarpeta G sin lineage. No se documenta flujo de datos entre 16 BDs, SSIS, linked servers.",
+    "6.3": "479 archivos entregados. Consistencia entre datos de B (servicios/netstat), C (BDs/objetos), D (jobs), E (interfaces) y H (accesos) verificada."
+  },
+  "qa_metadata": {
+    "qa_analyst": "QA Automatizado (Claude + Scanner)",
+    "qa_date": "2026-03-20",
+    "extraction_date": "2026-03-09",
+    "scanner_version": "1.0.0",
+    "scan_date": "2026-03-20"
+  }
+}

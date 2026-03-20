@@ -1,0 +1,283 @@
+{
+  "mep": {
+    "name": "MEP_GPPESVLCLI2249",
+    "server": "GPPESVLCLI2249",
+    "ip": "10.4.40.227",
+    "engine": "MSSQL",
+    "version": "Microsoft SQL Server 2008 R2 SP2 (10.50.4000.0) Standard Edition (64-bit)",
+    "os": "Windows Server 2012 Standard",
+    "domain_sid": "D3 - Customer Care",
+    "gerencia": "Gerencia de Postventa",
+    "direccion": "Direccion B2C",
+    "focal": "B.Quispe / R.Smith",
+    "sme": "SME_1",
+    "tracker": 14,
+    "vm_type": "VM",
+    "ram_gb": 16,
+    "storage_tb": 1,
+    "vcpu": null,
+    "collation": "SQL_Latin1_General_CP1_CI_AS",
+    "priority": 2
+  },
+  "qa_metadata": {
+    "extraction_date": "2026-03-16",
+    "qa_date": "2026-03-20",
+    "qa_tool": "Claude Opus 4.6 + MEP Scanner v1.0.0",
+    "scanner_version": "1.0.0"
+  },
+  "score": {
+    "subcarpetas": {
+      "A": { "peso": 10, "score": 85, "estado": "PASS" },
+      "B": { "peso": 10, "score": 90, "estado": "PASS" },
+      "C": { "peso": 25, "score": 72, "estado": "PASS-WARN" },
+      "D": { "peso": 15, "score": 65, "estado": "WARN" },
+      "E": { "peso": 10, "score": 55, "estado": "WARN" },
+      "F": { "peso": 5, "score": 80, "estado": "PASS" },
+      "G": { "peso": 5, "score": 30, "estado": "FAIL" },
+      "H": { "peso": 20, "score": 50, "estado": "WARN" }
+    },
+    "score_ponderado": 66.5,
+    "penalties": [
+      { "reason": "Contrasena SSIS expuesta en texto plano (/DECRYPT 123)", "points": -5 },
+      { "reason": "H01 Accesos sin datos (solo 'No aplica')", "points": -3 }
+    ],
+    "penalty_total": -8,
+    "overall": 58.5,
+    "grade": "C",
+    "verdict": "CONDICIONAL"
+  },
+  "findings": [
+    {
+      "id": "FAIL-001",
+      "severity": "FAIL",
+      "title": "Subcarpeta G (Lineage) vacia - sin documentacion de linaje",
+      "evidence": "G_Lineage_Documentacion contiene solo 'no aplica.txt' (0 bytes) y README_Instrucciones.md",
+      "impact": "No se puede trazar el flujo de datos entre sistemas ni validar dependencias para la migracion",
+      "remediation": "Focal debe documentar el linaje de datos entre las 20 BDs del servidor, linked servers y sistemas externos (KIPU, Genesys IVR)"
+    },
+    {
+      "id": "FAIL-002",
+      "severity": "FAIL",
+      "title": "Contrasena SSIS expuesta en texto plano",
+      "evidence": "8 pasos SSIS en ssis_job_steps.csv usan /DECRYPT 123 como contrasena de paquete",
+      "impact": "Credencial trivial expuesta en metadatos exportados; riesgo de acceso no autorizado a paquetes SSIS",
+      "remediation": "Rotar contrasena de paquetes SSIS antes de ingesta; redactar en entregables MEP"
+    },
+    {
+      "id": "FAIL-003",
+      "severity": "FAIL",
+      "title": "H01 Accesos sin datos relevantes",
+      "evidence": "H01_Accesos_GPPESVLCLI2249.xlsx contiene unicamente la fila 'No aplica' sin detallar usuarios, roles ni permisos aplicativos",
+      "impact": "No se puede evaluar la postura de seguridad ni planificar migracion de accesos; existen 47 logins (28 SQL + 18 Windows + 1 grupo) en la instancia",
+      "remediation": "Focal debe completar H01 con mapeo de usuarios aplicativos, roles y permisos por BD"
+    },
+    {
+      "id": "WARN-001",
+      "severity": "WARN",
+      "title": "E01 Interfaces incompletas - solo 3 conexiones genericas",
+      "evidence": "E01_E02_Interfaces_GPPESVLCLI2249.xlsx lista 3 IPs (172.30.249.165/166/167) sin identificar sistemas, schemas origen ni protocolos especificos. Existen 6 linked servers configurados incluyendo conexion MySQL (MYSQL_DRH_LS)",
+      "impact": "Interfaces insuficientemente documentadas para planificar corte/reconexion en migracion",
+      "remediation": "Completar E01 con los 6 linked servers, protocolo, schemas y frecuencia detallada"
+    },
+    {
+      "id": "WARN-002",
+      "severity": "WARN",
+      "title": "Alta proporcion de tablas sin Primary Key",
+      "evidence": "1,764 tablas sin PK de 1,965 totales (89.8%). Solo 413 PKs y 92 FKs definidos en toda la instancia",
+      "impact": "Riesgo de duplicacion de datos en migracion; dificulta CDC y replicacion incremental",
+      "remediation": "Identificar tablas criticas sin PK y documentar estrategia de deduplicacion para ingesta"
+    },
+    {
+      "id": "WARN-003",
+      "severity": "WARN",
+      "title": "54 de 100 Agent Jobs deshabilitados - posible deuda tecnica",
+      "evidence": "100 Agent Jobs en la instancia: 46 habilitados, 54 deshabilitados. Algunos nombres son fragmentos de codigo SQL, sugiriendo jobs mal configurados",
+      "impact": "Jobs deshabilitados pueden contener logica de negocio necesaria; nombres con fragmentos SQL sugieren problemas de exportacion o jobs corruptos",
+      "remediation": "Focal debe validar cuales jobs deshabilitados son necesarios para la operacion y cuales son obsoletos"
+    },
+    {
+      "id": "WARN-004",
+      "severity": "WARN",
+      "title": "Volumen de datos muy alto - 195 GB en 20 BDs de usuario",
+      "evidence": "BD_PORTAL_WEB_V2: 68.3 GB, BD_METRICAS_CONTACT_CENTER: 35.3 GB, BD_REPORTE_REGULADOS: 28.1 GB, BD_REPORTE_AGENTES: 24.4 GB. Total ~195 GB data + ~3.1 GB logs",
+      "impact": "Migracion requiere planificacion especifica de ventana, particionado y validacion de integridad post-carga",
+      "remediation": "Definir estrategia de migracion por fases; considerar particionado de tablas con >50M filas"
+    },
+    {
+      "id": "WARN-005",
+      "severity": "WARN",
+      "title": "D40 Scheduled Tasks solo contiene tareas Windows, no cubre Agent Jobs como D10/D20",
+      "evidence": "D_Jobs_ETL_ELT contiene unicamente D40_scheduled_tasks.csv (249 tareas Windows: 94 Ready, 153 Disabled, 2 Running). No hay D10 (Agent Jobs summary), D20 (SSIS detail) ni D30 (scripts ETL) dedicados",
+      "impact": "La informacion de Agent Jobs esta disponible en C pero no consolidada en D; dificulta trazabilidad entre subcarpetas",
+      "remediation": "Generar archivos D10/D20 con resumen de Agent Jobs y SSIS desde la extraccion de C"
+    },
+    {
+      "id": "WARN-006",
+      "severity": "WARN",
+      "title": "Linked Server a MySQL (MYSQL_DRH_LS via MSDASQL) no documentado en interfaces",
+      "evidence": "02_linked_servers.csv muestra linked server MYSQL_DRH_LS con provider MSDASQL apuntando a DSN MYSQL_DRH_64. No aparece en E01 Interfaces",
+      "impact": "Dependencia cross-engine no documentada; puede requerir migracion separada o reconexion especial",
+      "remediation": "Documentar en E01 la conexion MySQL, su uso funcional y plan de reconexion post-migracion"
+    },
+    {
+      "id": "INFO-001",
+      "severity": "INFO",
+      "title": "SQL Server 2008 R2 SP2 - fuera de soporte extendido desde julio 2019",
+      "evidence": "Version 10.50.4000.0, Standard Edition (64-bit) sobre Windows Server 2012 Standard"
+    },
+    {
+      "id": "INFO-002",
+      "severity": "INFO",
+      "title": "Reporting Services (SSRS) activo con ReportServer y ReportServerTempDB",
+      "evidence": "Bases ReportServer (53.4 MB) y ReportServerTempDB (1.6 MB) presentes. SSRS 2008 R2 SP2 instalado"
+    },
+    {
+      "id": "INFO-003",
+      "severity": "INFO",
+      "title": "11 paquetes SSIS en MSDB (legacy), SSISDB no existe",
+      "evidence": "19 paquetes registrados en msdb, 11 exportados como DTSX. No hay catalogo SSISDB. 8 jobs usan SSIS referenciando archivos en K:\\MSSQL\\ISS_JOB\\"
+    },
+    {
+      "id": "INFO-004",
+      "severity": "INFO",
+      "title": "Base de datos critica identificada: BD_PORTAL_WEB_V2",
+      "evidence": "Segun Ficha Funcional la BD mas critica es Portal_web_v2. Contiene 476 tablas, 187 SPs, 84 views, 323M filas, 60.3 GB. Alimenta KIPU con datos de Call Center, socios, experiencia, tiendas, calidad"
+    },
+    {
+      "id": "INFO-005",
+      "severity": "INFO",
+      "title": "1,061 millones de filas totales en 1,965 tablas",
+      "evidence": "Distribuidas en 20 BDs de usuario + 2 de sistema (ReportServer). Schemas: principalmente dbo, con schema DIM en BD_METRICAS_CANALES_ESCRITOS"
+    },
+    {
+      "id": "INFO-006",
+      "severity": "INFO",
+      "title": "F01 BI Artefactos indica 'No aplica'",
+      "evidence": "F01_Reportes_BI_GPPESVLCLI2249.xlsx contiene solo la fila 'No aplica'. Consistente con que SSRS se usa como plataforma de reportes, no Power BI u otro"
+    }
+  ],
+  "checklist_auto": {
+    "1.1": "PASS",
+    "1.2": "PASS",
+    "1.3": "PASS",
+    "1.4": "PASS",
+    "1.5": "PASS",
+    "2.1": "PASS",
+    "2.2": "PASS",
+    "2.3": "PASS",
+    "2.4": "N/A",
+    "3.1": "PASS",
+    "3.2": "PASS",
+    "3.3": "WARN",
+    "3.4": "WARN",
+    "4.1": "WARN",
+    "4.2": "WARN",
+    "4.3": "PASS",
+    "5.1": "WARN",
+    "5.2": "FAIL",
+    "5.3": "PASS",
+    "5.4": "PASS",
+    "6.1": "FAIL",
+    "6.2": "FAIL",
+    "6.3": "PASS"
+  },
+  "checklist_observations": {
+    "1.1": "8 subcarpetas A-H presentes, 454 archivos, 8.04 MB total",
+    "1.2": "A01_Ficha_Funcional_GPPESVLCLI2249.docx presente con 4 tablas completadas",
+    "1.3": "B10-B13 presentes: sc_query, services_ps, process_cmdline, tasklist_svc, installed_programs, netstat",
+    "1.4": "C_Diccionario_BD con mep_sqlserver (22 BDs, 435 CSVs) y mep_etl (AgentJobs, MSDB SSIS)",
+    "1.5": "IP 10.4.40.227 consistente en Ficha Funcional, scanner y estructura MEP",
+    "2.1": "20 BDs usuario extraidas con S01-S14 por schema; volumetria disponible en S11",
+    "2.2": "906 SPs, 162 views, 24 funciones con codigo extraido en S07/S08/S10",
+    "2.3": "413 PKs, 92 FKs, 0 check constraints relevantes. 89.8% tablas sin PK",
+    "2.4": "No hay CDC ni Change Tracking configurado",
+    "3.1": "100 Agent Jobs documentados en 03_agent_jobs.csv con steps, schedules y comandos",
+    "3.2": "8 SSIS job steps documentados en ssis_job_steps.csv + 11 paquetes DTSX en MSDB",
+    "3.3": "D40 solo cubre Scheduled Tasks de Windows (249); falta D10/D20/D30 consolidado",
+    "3.4": "54 jobs deshabilitados; algunos con nombres que son fragmentos SQL (posible corrupcion de exportacion)",
+    "4.1": "Solo 3 interfaces genericas en E01; 6 linked servers en instancia no completamente mapeados",
+    "4.2": "Linked server MySQL (MYSQL_DRH_LS) no documentado en E01",
+    "4.3": "Netstat (B13) disponible para validacion cruzada de conexiones",
+    "5.1": "H01 Accesos con 'No aplica' - no documenta 47 logins ni roles por BD",
+    "5.2": "Contrasena SSIS '/DECRYPT 123' expuesta en ssis_job_steps.csv (8 ocurrencias)",
+    "5.3": "01-03_principals/role_members/permissions CSVs presentes por BD (22 BDs)",
+    "5.4": "04_logins.csv con 47 logins (28 SQL, 18 Windows, 1 grupo) documentados",
+    "6.1": "G vacio (no aplica.txt 0 bytes); no hay diagrama de linaje entre BDs ni sistemas externos",
+    "6.2": "Sin documentacion de dependencias entre 20 BDs, linked servers y KIPU/Genesys",
+    "6.3": "Ficha Funcional Q7 confirma dependencias con linked servers; S13_dependencies por BD disponibles"
+  },
+  "cross_references": {
+    "A_vs_C": { "status": "PASS", "detail": "Ficha indica BD critica Portal_web_v2; C tiene datos completos para BD_PORTAL_WEB_V2 (476 tablas, 187 SPs)" },
+    "D_vs_C": { "status": "WARN", "detail": "Agent Jobs en C (100 jobs) no reflejados en D dedicado; D40 solo tiene Scheduled Tasks Windows" },
+    "E_vs_C": { "status": "FAIL", "detail": "6 linked servers en C/_instance/02_linked_servers.csv; solo 3 IPs en E01 sin detalle de protocolo/schema" },
+    "tracker": { "status": "PASS", "detail": "Tracker #14 asignado" },
+    "version": { "status": "PASS", "detail": "Version en 00_version.txt (10.50.4000.0 SP2) coincide con Ficha Funcional (SQL Server 2008 R2 SP2)" }
+  },
+  "server_stats": {
+    "databases": [
+      { "nombre": "BD_PORTAL_WEB_V2", "tamano_mb": 69952.8, "tablas": 476, "rows": 323081316 },
+      { "nombre": "BD_METRICAS_CONTACT_CENTER", "tamano_mb": 36119.4, "tablas": 103, "rows": 101728043 },
+      { "nombre": "BD_REPORTE_REGULADOS", "tamano_mb": 28811.5, "tablas": 59, "rows": 75136202 },
+      { "nombre": "BD_REPORTE_AGENTES", "tamano_mb": 25000.0, "tablas": 108, "rows": 112748271 },
+      { "nombre": "BD_IVR_ADAPTATIVO", "tamano_mb": 19992.1, "tablas": 526, "rows": 307080001 },
+      { "nombre": "BD_PROCESOS_CRUCES_V2", "tamano_mb": 16200.0, "tablas": 15, "rows": 3868025 },
+      { "nombre": "BD_DETALLE_RELLAMADAS_TRANSFERENCIAS", "tamano_mb": 11000.0, "tablas": 67, "rows": 8441242 },
+      { "nombre": "BD_METRICAS_CANALES_ESCRITOS", "tamano_mb": 9993.2, "tablas": 40, "rows": 24000283 },
+      { "nombre": "BD_REPORTE_REGULADOS_V2", "tamano_mb": 9000.0, "tablas": 15, "rows": 28657003 },
+      { "nombre": "BD_PLANIFICACION", "tamano_mb": 8000.0, "tablas": 120, "rows": 19286160 },
+      { "nombre": "BD_DETALLE_NOT_READY", "tamano_mb": 3000.0, "tablas": 8, "rows": 23695859 },
+      { "nombre": "BD_CONTROL", "tamano_mb": 2296.1, "tablas": 8, "rows": 10731803 },
+      { "nombre": "BD_FACTURACION", "tamano_mb": 2004.2, "tablas": 222, "rows": 2792276 },
+      { "nombre": "BD_REPORTES_TABLAS", "tamano_mb": 1702.0, "tablas": 75, "rows": 15103626 },
+      { "nombre": "BD_DETALLE_LLAMADAS", "tamano_mb": 1609.0, "tablas": 17, "rows": 517475 },
+      { "nombre": "BD_REPORTES_NATIVOS_INFOMART", "tamano_mb": 1200.0, "tablas": 22, "rows": 3914288 },
+      { "nombre": "BD_FACTURACION_HISPAM", "tamano_mb": 400.0, "tablas": 23, "rows": 20425 },
+      { "nombre": "BD_DICCIONARIO_PROCESOS", "tamano_mb": 271.4, "tablas": 3, "rows": 318064 },
+      { "nombre": "BD_LENGUAJE_NATURAL", "tamano_mb": 3.0, "tablas": 1, "rows": 0 },
+      { "nombre": "db_admsql", "tamano_mb": 2.0, "tablas": 10, "rows": 3739 },
+      { "nombre": "ReportServer", "tamano_mb": 53.4, "tablas": 34, "rows": 79 },
+      { "nombre": "ReportServerTempDB", "tamano_mb": 1.6, "tablas": 13, "rows": 27 }
+    ],
+    "objects": {
+      "USER_TABLE": 1965,
+      "SQL_STORED_PROCEDURE": 906,
+      "VIEW": 162,
+      "SQL_SCALAR_FUNCTION": 24,
+      "PRIMARY_KEY_CONSTRAINT": 413,
+      "FOREIGN_KEY": 92,
+      "TABLES_WITHOUT_PK": 1764,
+      "TRIGGER": 0,
+      "CHECK_CONSTRAINT": 0
+    },
+    "etl_jobs": {
+      "agent_jobs_total": 100,
+      "agent_jobs_enabled": 46,
+      "agent_jobs_disabled": 54,
+      "ssis_steps": 8,
+      "ssis_packages_msdb": 11,
+      "ssis_packages_filesystem": 0,
+      "ssisdb_catalog": false,
+      "scheduled_tasks_total": 249,
+      "scheduled_tasks_ready": 94,
+      "scheduled_tasks_disabled": 153,
+      "scheduled_tasks_running": 2
+    },
+    "security": {
+      "sql_logins": 28,
+      "windows_logins": 18,
+      "windows_groups": 1,
+      "total_logins": 47,
+      "linked_servers": 6,
+      "credentials_exposed": 1
+    },
+    "infrastructure": {
+      "ram_gb": 16,
+      "storage_tb": 1,
+      "cpu_cores": 2,
+      "total_data_mb": 246555.2,
+      "total_log_mb": 3097.1,
+      "recovery_model": "FULL (todas las BDs)",
+      "collation": "SQL_Latin1_General_CP1_CI_AS"
+    }
+  }
+}

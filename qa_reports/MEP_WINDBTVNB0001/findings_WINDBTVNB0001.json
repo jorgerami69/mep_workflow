@@ -1,0 +1,289 @@
+{
+  "mep": {
+    "name": "MEP_WINDBTVNB0001",
+    "server": "WINDBTVNB0001",
+    "instance": "TESTTDPPLANICO",
+    "ip": "172.30.249.166",
+    "engine": "mssql",
+    "version": "Microsoft SQL Server 2014 SP3 (12.0.6024.0)",
+    "edition": "Enterprise Edition (64-bit)",
+    "os": "Windows Server 2016 (Build 14393)",
+    "gerencia": "Gerencia de Atencion (D3 Customer Care)",
+    "focal": "B.Quispe / R.Smith",
+    "tracker": 12,
+    "sme": "SME_1",
+    "total_files": 872,
+    "total_size_mb": 52.49,
+    "subcarpetas_present": 8,
+    "subcarpetas_missing": []
+  },
+  "score": {
+    "A": 70,
+    "B": 90,
+    "C": 85,
+    "D": 55,
+    "E": 65,
+    "F": 60,
+    "G": 30,
+    "H": 60,
+    "penalties": -15,
+    "penalty_reasons": [
+      "Contrasenas SSIS /DECRYPT en texto plano en job steps (-10)",
+      "Connection strings con credenciales en archivos extraidos SSIS (-5)"
+    ],
+    "overall": 62,
+    "grade": "C",
+    "verdict": "APROBADO CON OBSERVACIONES"
+  },
+  "findings": [
+    {
+      "id": "F001",
+      "severity": "FAIL",
+      "category": "Seguridad",
+      "title": "Contrasenas SSIS /DECRYPT expuestas en texto plano",
+      "description": "Se encontraron 7 ocurrencias de /DECRYPT 123 en job steps de SQL Agent. La contrasena '123' se utiliza para descifrar paquetes SSIS ejecutados desde el sistema de archivos (K:\\Inteligencia_de_Clientes\\Proyectos_SSIS). Esta contrasena trivial esta expuesta en 03_agent_jobs.csv y all_job_steps.csv.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/mep_sqlserver_.../03_agent_jobs.csv",
+        "C_Diccionario_BD/mep_scripts/mep_etl_.../AgentJobs/all_job_steps.csv"
+      ],
+      "recommendation": "Documentar las contrasenas SSIS que se deben migrar. Coordinar con Stefanini la rotacion de credenciales post-migracion. No se requiere accion inmediata sobre el MEP ya que las contrasenas son parte del inventario necesario."
+    },
+    {
+      "id": "F002",
+      "severity": "FAIL",
+      "category": "Seguridad",
+      "title": "Connection strings con credenciales SQL en paquetes SSIS",
+      "description": "El archivo CARGA_TOT_connections.txt contiene 9 connection strings que exponen User IDs (rsmith, mcutimbop) y servidores destino (10.226.3.96, 172.30.249.166). Si bien no se incluyen contrasenas en texto plano, la combinacion de usuario + servidor es informacion sensible que debe ser protegida.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/mep_etl_.../SSISDB/Proceso_Transferencia1212_166/CARGA_TOT/_extracted/CARGA_TOT_connections.txt"
+      ],
+      "recommendation": "Asegurar que los connection strings sean manejados con Persist Security Info=False tras la migracion. Verificar que las credenciales SQL (rsmith, mcutimbop) siguen vigentes."
+    },
+    {
+      "id": "F003",
+      "severity": "FAIL",
+      "category": "Documentacion",
+      "title": "Subcarpeta G_Lineage_Documentacion sin contenido util",
+      "description": "La subcarpeta G contiene unicamente un archivo 'no aplica.txt' vacio y un README de instrucciones. No se ha documentado linaje de datos ni diagramas de flujo para un servidor con 25 bases de datos, 854 tablas, 291 stored procedures y 42 proyectos SSISDB.",
+      "affected_files": [
+        "G_Lineage_Documentacion/no aplica.txt"
+      ],
+      "recommendation": "Solicitar al equipo focal que documente como minimo el flujo de datos principal entre los servidores 165, 166, 167 y 227 que se evidencian en los linked servers y job steps."
+    },
+    {
+      "id": "F004",
+      "severity": "WARN",
+      "category": "Completitud",
+      "title": "Ficha Funcional (A01) sin validar contenido detallado",
+      "description": "El archivo A01_Ficha_Funcional_WINDBTVNB0001.docx existe (17 KB) pero por ser formato binario no se puede validar automaticamente si contiene toda la informacion requerida (descripcion funcional, criticidad, SLAs, etc.).",
+      "affected_files": [
+        "A_Ficha_Funcional/A01_Ficha_Funcional_WINDBTVNB0001.docx"
+      ],
+      "recommendation": "Verificar manualmente que la ficha funcional contiene: descripcion del negocio, criticidad, ventana de mantenimiento, SLAs y contactos de escalamiento."
+    },
+    {
+      "id": "F005",
+      "severity": "WARN",
+      "category": "Completitud",
+      "title": "Scheduled Tasks (D40) sin analizar por codificacion UTF-16",
+      "description": "El archivo D40_scheduled_tasks.csv tiene codificacion UTF-16 y un tamano significativo (~244 KB) pero no se pudo analizar completamente en el scanner. No se incluye un archivo D_Jobs complementario con la documentacion narrativa de jobs.",
+      "affected_files": [
+        "D_Jobs_ETL_ELT/D40_scheduled_tasks.csv"
+      ],
+      "recommendation": "Validar manualmente las scheduled tasks y documentar cuales estan activas. Complementar con descripcion de los 43 SQL Agent Jobs (28 habilitados, 15 deshabilitados)."
+    },
+    {
+      "id": "F006",
+      "severity": "WARN",
+      "category": "Completitud",
+      "title": "Interfaces (E01/E02) en formato xlsx sin validacion automatica",
+      "description": "El archivo E01_E02_Interfaces_WINDBTVNB0001.xlsx (8.8 KB) existe pero no se puede validar automaticamente si esta completo. El servidor tiene 6 linked servers activos que deben estar reflejados en las interfaces.",
+      "affected_files": [
+        "E_Interfaces_IO/E01_E02_Interfaces_WINDBTVNB0001.xlsx"
+      ],
+      "recommendation": "Verificar que las interfaces documenten los 6 linked servers (10.226.3.96, 10.4.40.227, 10.4.40.229, 172.30.249.165, 172.30.249.167, GPPESVLCLI2248) y las conexiones FTP (10.4.3.226, 10.4.40.49)."
+    },
+    {
+      "id": "F007",
+      "severity": "WARN",
+      "category": "Completitud",
+      "title": "Reportes BI (F01) en formato xlsx sin validacion automatica",
+      "description": "El archivo F01_Reportes_BI_WINDBTVNB0001.xlsx (8.7 KB) existe pero no se puede validar si contiene el inventario completo de reportes Power BI que se alimentan desde este servidor.",
+      "affected_files": [
+        "F_BI_Artefactos/F01_Reportes_BI_WINDBTVNB0001.xlsx"
+      ],
+      "recommendation": "Verificar que el inventario de BI documente los reportes Power BI referenciados en jobs como Proceso_PowerBI, PBI_Accesadas_Aura, PBI_Reit_Aura."
+    },
+    {
+      "id": "F008",
+      "severity": "WARN",
+      "category": "Completitud",
+      "title": "Accesos (H01) en formato xlsx sin validacion automatica",
+      "description": "El archivo H01_Accesos_WINDBTVNB0001.xlsx (8.7 KB) existe pero el servidor tiene 95 logins (SQL + Windows) y se requiere verificar que los accesos esten documentados completamente.",
+      "affected_files": [
+        "H_Seguridad_Accesos/H01_Accesos_WINDBTVNB0001.xlsx"
+      ],
+      "recommendation": "Verificar que H01 documente los 95 logins registrados, especificando cuales tienen acceso de lectura, escritura o administracion."
+    },
+    {
+      "id": "F009",
+      "severity": "WARN",
+      "category": "Infraestructura",
+      "title": "SQL Server 2014 SP3 en fin de soporte extendido",
+      "description": "SQL Server 2014 SP3 finalizo su soporte extendido el 9 de julio de 2024. El servidor esta en estado End-of-Life sin parches de seguridad disponibles.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/mep_sqlserver_.../_instance/00_version.txt"
+      ],
+      "recommendation": "Registrar como informacion para el Assessment. La version EOL no bloquea la entrega del MEP pero debe ser considerada en la planificacion de la migracion."
+    },
+    {
+      "id": "F010",
+      "severity": "WARN",
+      "category": "Seguridad",
+      "title": "Scripts de recopilacion (gather/export) contienen referencias a contrasenas",
+      "description": "Los scripts export_etl.ps1 y gather_sqlserver.ps1 contienen 6 referencias a variables de contrasena ($script:_credPass). Estos son los scripts MEP Gatherer utilizados para la extraccion y no contienen contrasenas hardcodeadas, pero referencian un mecanismo de credenciales que debe documentarse.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/export_etl.ps1",
+        "C_Diccionario_BD/mep_scripts/gather_sqlserver.ps1"
+      ],
+      "recommendation": "Estos hallazgos son falsos positivos del scanner: los scripts usan variables parametrizadas ($script:_credPass) que se limpian al final (PASSWORD = $null). No requiere accion."
+    },
+    {
+      "id": "F011",
+      "severity": "INFO",
+      "category": "Infraestructura",
+      "title": "Servidor con alto volumen de datos (1.6 TB)",
+      "description": "El servidor aloja 25 bases de datos con un total de 1,601 GB de datos y 12 GB de logs. Las bases mas grandes son: Repo_Layout (586 GB), BD_BACKUP_2021 (273 GB), BD_BACKUP_LOGSIEM (205 GB), Repo_Contact_Center (80 GB).",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/mep_sqlserver_.../_instance/05_databases.csv"
+      ],
+      "recommendation": "Considerar en la planificacion de migracion el volumen de datos. Las bases BD_BACKUP_* podrian no requerir migracion completa."
+    },
+    {
+      "id": "F012",
+      "severity": "INFO",
+      "category": "Infraestructura",
+      "title": "Conectividad con multiples servidores via Linked Servers y transferencias",
+      "description": "El servidor tiene 6 linked servers configurados y los jobs referencian transferencias de datos entre servidores 165, 166, 167 y 227. Se identificaron conexiones FTP a 10.4.3.226 y 10.4.40.49.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/mep_sqlserver_.../_instance/02_linked_servers.csv"
+      ],
+      "recommendation": "Mapear las dependencias entre servidores para planificar el orden de migracion. El servidor 166 depende de datos del 165 y 167."
+    },
+    {
+      "id": "F013",
+      "severity": "INFO",
+      "category": "ETL",
+      "title": "42 proyectos SSISDB con 109 paquetes DTSX",
+      "description": "El catalogo SSISDB contiene 42 proyectos desplegados con 109 paquetes SSIS. Ademas existen paquetes legacy en el File System (ruta K:\\Inteligencia_de_Clientes\\Proyectos_SSIS) referenciados por 7 jobs.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/mep_etl_.../SSISDB/"
+      ],
+      "recommendation": "Documentar cuales proyectos SSISDB estan activos vs legacy. Verificar si los paquetes del File System seran migrados."
+    },
+    {
+      "id": "F014",
+      "severity": "INFO",
+      "category": "Completitud",
+      "title": "MEP Gatherer scripts incluidos en el paquete",
+      "description": "Se incluyen los scripts de recopilacion (export_etl.ps1, gather_sqlserver.ps1) y el archivo scripts.zip con MEP_Gatherer.bat. La ejecucion fue el 2026-03-09.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/export_etl.ps1",
+        "C_Diccionario_BD/mep_scripts/gather_sqlserver.ps1",
+        "C_Diccionario_BD/scripts.zip"
+      ],
+      "recommendation": "Informativo. Los scripts de recopilacion fueron ejecutados correctamente."
+    },
+    {
+      "id": "F015",
+      "severity": "INFO",
+      "category": "Seguridad",
+      "title": "Logins con acceso activo incluyen cuentas de servicio y nominales",
+      "description": "De los 95 logins, se identifican: 6 logins por IP (cuentas de linked server), 37 logins Windows del dominio GP, 4 cuentas de servicio NT, y multiples cuentas SQL nominales. 27 cuentas SQL estan deshabilitadas.",
+      "affected_files": [
+        "C_Diccionario_BD/mep_scripts/mep_sqlserver_.../_instance/04_logins.csv"
+      ],
+      "recommendation": "Informativo para el Assessment. La gestion de cuentas deshabilitadas indica mantenimiento activo de seguridad."
+    }
+  ],
+  "checklist_auto": {
+    "1.1": "OK",
+    "1.2": "OK",
+    "1.3": "OK",
+    "1.4": "PARCIAL",
+    "1.5": "OK",
+    "2.1": "OK",
+    "2.2": "OK",
+    "2.3": "PARCIAL",
+    "2.4": "PARCIAL",
+    "3.1": "OK",
+    "3.2": "OK",
+    "3.3": "OK",
+    "3.4": "OK",
+    "4.1": "PARCIAL",
+    "4.2": "NO APLICA",
+    "4.3": "OK",
+    "5.1": "OK",
+    "5.2": "FALTA",
+    "5.3": "PARCIAL",
+    "5.4": "PARCIAL",
+    "6.1": "FAIL",
+    "6.2": "PARCIAL",
+    "6.3": "PARCIAL"
+  },
+  "checklist_observations": {
+    "1.1": "Ficha funcional A01 presente (17 KB .docx). Verificar contenido manualmente.",
+    "1.2": "8 de 8 subcarpetas presentes (A-H). Estructura MEP completa.",
+    "1.3": "872 archivos, 52.49 MB. Volumen consistente con servidor MSSQL de 25 BDs.",
+    "1.4": "B_Software contiene B10-B13 completos. Falta validar contenido xlsx de E01, F01, H01 manualmente.",
+    "1.5": "Motor MSSQL detectado con alta confianza. SQL Server 2014 SP3 Enterprise Edition.",
+    "2.1": "25 bases de datos documentadas con diccionario completo (S01-S14 por esquema).",
+    "2.2": "854 tablas, 250 vistas, 291 SPs, 39 funciones documentados via 04_object_summary.csv.",
+    "2.3": "Se detectaron tablas sin primary key en multiples BDs (~681 tablas). Documentado en S03_tables_no_pk.csv.",
+    "2.4": "S12_extended_properties presente pero sin verificar cobertura de comentarios/descripciones.",
+    "3.1": "43 SQL Agent Jobs documentados (28 habilitados, 15 deshabilitados) en 03_agent_jobs.csv.",
+    "3.2": "42 proyectos SSISDB con 109 paquetes DTSX exportados y analizados.",
+    "3.3": "Scheduled Tasks exportadas en D40_scheduled_tasks.csv.",
+    "3.4": "Job steps con subsistemas SSIS, TSQL documentados. Comandos incluidos en CSV.",
+    "4.1": "6 linked servers documentados en 02_linked_servers.csv. Conexiones FTP en paquetes SSIS. xlsx E01/E02 presente pero no validable automaticamente.",
+    "4.2": "No se identifican APIs REST/SOAP. No aplica.",
+    "4.3": "Connection strings de SSIS extraidos. Data sources identificados: 10.226.3.96, 172.30.249.166, FTP 10.4.3.226/10.4.40.49.",
+    "5.1": "F01_Reportes_BI presente en xlsx. No validable automaticamente.",
+    "5.2": "G_Lineage vacio ('no aplica.txt'). Falta documentacion de linaje para 25 BDs.",
+    "5.3": "Dependencias parcialmente documentadas via S13_dependencies.csv por BD. Falta diagrama global.",
+    "5.4": "Flujos de datos entre servidores 165/166/167/227 evidenciados en jobs pero no diagramados.",
+    "6.1": "15 hallazgos de seguridad: 7 contrasenas /DECRYPT 123 en SSIS jobs + 9 connection strings. Contrasenas triviales expuestas.",
+    "6.2": "95 logins documentados en 04_logins.csv. H01_Accesos presente pero no validado. 27 cuentas deshabilitadas.",
+    "6.3": "Permisos por BD documentados en 03_permissions.csv y 02_role_members.csv. Cobertura parcial de revision."
+  },
+  "qa_metadata": {
+    "qa_date": "2026-03-20",
+    "extraction_date": "2026-03-09",
+    "qa_analyst": "QA Automatizado (Claude + Scanner)",
+    "scanner_version": "1.0.0",
+    "engine": "mssql"
+  },
+  "server_stats": {
+    "databases": 25,
+    "total_data_gb": 1601.2,
+    "total_log_gb": 11.9,
+    "tables": 854,
+    "views": 250,
+    "stored_procedures": 291,
+    "functions": 39,
+    "triggers": 0,
+    "constraints": 121,
+    "agent_jobs_total": 43,
+    "agent_jobs_enabled": 28,
+    "agent_jobs_disabled": 15,
+    "ssisdb_projects": 42,
+    "ssis_packages": 109,
+    "linked_servers": 6,
+    "logins_total": 95,
+    "logins_sql": 58,
+    "logins_windows": 37,
+    "logins_disabled": 27,
+    "memory_mb": 32767,
+    "cpu_count": 8
+  }
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+Gatherers/
+Output_MEPs_Integratel/
+.DS_Store
+FPE-001-LAT Project Governance Integratel_Oficial 12032026.pdf
+MEP_00_Master_Tracker 1.xlsx
+MEP_QA_Checklist.xlsx

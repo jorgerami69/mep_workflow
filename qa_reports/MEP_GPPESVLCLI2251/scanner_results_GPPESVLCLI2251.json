@@ -1,0 +1,875 @@
+{
+  "scan_metadata": {
+    "scanner_version": "1.0.0",
+    "scan_date": "2026-03-20T10:46:58.648482",
+    "mep_path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)",
+    "mep_name": "MEP_GPPESVLCLI2251 (completo 2251)",
+    "temp_extraction_dir": null
+  },
+  "engine_detection": {
+    "detected_engine": "mssql",
+    "confidence": "high"
+  },
+  "structure": {
+    "mep_path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)",
+    "mep_name": "MEP_GPPESVLCLI2251 (completo 2251)",
+    "subcarpetas_found": {
+      "A": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/A_Ficha_Funcional",
+        "name": "A_Ficha_Funcional",
+        "file_count": 1,
+        "total_size_mb": 0.02,
+        "files": [
+          {
+            "name": "A01_Ficha_Funcional_GPPESVLCLI2251.docx",
+            "size": 17568,
+            "extension": ".docx"
+          }
+        ]
+      },
+      "B": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/B_Software_Servicios",
+        "name": "B_Software_Servicios",
+        "file_count": 8,
+        "total_size_mb": 0.21,
+        "files": [
+          {
+            "name": "B10_sc_query.txt",
+            "size": 114198,
+            "extension": ".txt"
+          },
+          {
+            "name": "B10_services_ps.txt",
+            "size": 33266,
+            "extension": ".txt"
+          },
+          {
+            "name": "B11_process_cmdline.csv",
+            "size": 9946,
+            "extension": ".csv"
+          },
+          {
+            "name": "B11_tasklist_svc.txt",
+            "size": 14910,
+            "extension": ".txt"
+          },
+          {
+            "name": "B12_installed_programs.csv",
+            "size": 4729,
+            "extension": ".csv"
+          },
+          {
+            "name": "B12b_installed_programs.csv",
+            "size": 3379,
+            "extension": ".csv"
+          },
+          {
+            "name": "B13_netstat.txt",
+            "size": 37638,
+            "extension": ".txt"
+          },
+          {
+            "name": "README_Instrucciones.md",
+            "size": 1589,
+            "extension": ".md"
+          }
+        ]
+      },
+      "C": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/C_Diccionario_BD",
+        "name": "C_Diccionario_BD",
+        "file_count": 29,
+        "total_size_mb": 4.41,
+        "files": [
+          {
+            "name": "all_job_steps.csv",
+            "size": 5423,
+            "extension": ".csv"
+          },
+          {
+            "name": "cmdexec_powershell_steps.csv",
+            "size": 339,
+            "extension": ".csv"
+          },
+          {
+            "name": "ssis_job_steps.csv",
+            "size": 581,
+            "extension": ".csv"
+          },
+          {
+            "name": "tsql_job_steps.sql",
+            "size": 2940,
+            "extension": ".sql"
+          },
+          {
+            "name": "Capl_1030_167.dtsx",
+            "size": 152435,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Carga_Altas_Fija.dtsx",
+            "size": 439483,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Carga_Altas_Movil.dtsx",
+            "size": 341223,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Carga_CAEQ.dtsx",
+            "size": 342846,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Carga_Fibra.dtsx",
+            "size": 437124,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Carga_Migraciones_Fija.dtsx",
+            "size": 436921,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Correr_Todo.dtsx",
+            "size": 53264,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_PerfCountersCollect.dtsx",
+            "size": 56411,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_PerfCountersUpload.dtsx",
+            "size": 111990,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_QueryActivityCollect.dtsx",
+            "size": 120317,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_QueryActivityUpload.dtsx",
+            "size": 674010,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_SqlTraceCollect.dtsx",
+            "size": 58949,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_SqlTraceUpload.dtsx",
+            "size": 370413,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_TSQLQueryCollect.dtsx",
+            "size": 41531,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data Collector_TSQLQueryUpload.dtsx",
+            "size": 33333,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data_Ventas_al_167_Capl_1030_167.dtsx",
+            "size": 152374,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Data_Ventas_al_167_Carga_Altas_Fija.dtsx",
+            "size": 438433,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "Correr_Todo_connections.txt",
+            "size": 232,
+            "extension": ".txt"
+          },
+          {
+            "name": "Correr_Todo_sql_tasks.sql",
+            "size": 126,
+            "extension": ".sql"
+          },
+          {
+            "name": "base_Canasta.dtsx",
+            "size": 37603,
+            "extension": ".dtsx"
+          },
+          {
+            "name": "inventory.csv",
+            "size": 7293,
+            "extension": ".csv"
+          },
+          {
+            "name": "export_etl.log",
+            "size": 16968,
+            "extension": ".log"
+          },
+          {
+            "name": "00_version.txt",
+            "size": 245,
+            "extension": ".txt"
+          },
+          {
+            "name": "gather_sqlserver.log",
+            "size": 264276,
+            "extension": ".log"
+          },
+          {
+            "name": "scripts.zip",
+            "size": 29498,
+            "extension": ".zip"
+          }
+        ]
+      },
+      "D": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/D_Jobs_ETL_ELT",
+        "name": "D_Jobs_ETL_ELT",
+        "file_count": 2,
+        "total_size_mb": 0.16,
+        "files": [
+          {
+            "name": "D40_scheduled_tasks.csv",
+            "size": 166392,
+            "extension": ".csv"
+          },
+          {
+            "name": "README_Instrucciones.md",
+            "size": 1385,
+            "extension": ".md"
+          }
+        ]
+      },
+      "E": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/E_Interfaces_IO",
+        "name": "E_Interfaces_IO",
+        "file_count": 2,
+        "total_size_mb": 0.01,
+        "files": [
+          {
+            "name": "E01_E02_Interfaces_GPPESVLCLI2251.xlsx",
+            "size": 8925,
+            "extension": ".xlsx"
+          },
+          {
+            "name": "README_Instrucciones.md",
+            "size": 458,
+            "extension": ".md"
+          }
+        ]
+      },
+      "F": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/F_BI_Artefactos",
+        "name": "F_BI_Artefactos",
+        "file_count": 2,
+        "total_size_mb": 0.01,
+        "files": [
+          {
+            "name": "F01_Reportes_BI_GPPESVLCLI2251.xlsx",
+            "size": 8696,
+            "extension": ".xlsx"
+          },
+          {
+            "name": "README_Instrucciones.md",
+            "size": 439,
+            "extension": ".md"
+          }
+        ]
+      },
+      "G": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/G_Lineage_Documentacion",
+        "name": "G_Lineage_Documentacion",
+        "file_count": 2,
+        "total_size_mb": 0.0,
+        "files": [
+          {
+            "name": "README_Instrucciones.md",
+            "size": 439,
+            "extension": ".md"
+          },
+          {
+            "name": "no aplica.txt",
+            "size": 0,
+            "extension": ".txt"
+          }
+        ]
+      },
+      "H": {
+        "path": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)/H_Seguridad_Accesos",
+        "name": "H_Seguridad_Accesos",
+        "file_count": 2,
+        "total_size_mb": 0.01,
+        "files": [
+          {
+            "name": "H01_Accesos_GPPESVLCLI2251.xlsx",
+            "size": 8681,
+            "extension": ".xlsx"
+          },
+          {
+            "name": "README_Instrucciones.md",
+            "size": 424,
+            "extension": ".md"
+          }
+        ]
+      }
+    },
+    "subcarpetas_missing": [],
+    "total_files": 48,
+    "total_size_mb": 4.83,
+    "file_types": {
+      ".xlsx": 3,
+      ".md": 6,
+      ".txt": 7,
+      ".csv": 8,
+      ".zip": 1,
+      ".docx": 1,
+      ".log": 2,
+      ".dtsx": 18,
+      ".sql": 2
+    }
+  },
+  "csv_analysis": {
+    "total_csvs": 8,
+    "files": [
+      {
+        "file": "B_Software_Servicios/B11_process_cmdline.csv",
+        "encoding": "Windows-1252",
+        "delimiter": "','",
+        "headers": [
+          "Name",
+          "ProcessId",
+          "CommandLine"
+        ],
+        "row_count": 82,
+        "sample_rows": [
+          [
+            "System Idle Process",
+            "0",
+            ""
+          ],
+          [
+            "System",
+            "4",
+            ""
+          ],
+          [
+            "smss.exe",
+            "452",
+            "\\SystemRoot\\System32\\smss.exe"
+          ],
+          [
+            "csrss.exe",
+            "756",
+            "%SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16"
+          ],
+          [
+            "csrss.exe",
+            "872",
+            "%SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16"
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.01
+      },
+      {
+        "file": "B_Software_Servicios/B12_installed_programs.csv",
+        "encoding": "Windows-1252",
+        "delimiter": "','",
+        "headers": [
+          "DisplayName",
+          "DisplayVersion",
+          "Publisher"
+        ],
+        "row_count": 61,
+        "sample_rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Service Pack 2 for SQL Server 2008 R2 (KB2630458) (64-bit)",
+            "10.52.4000.0",
+            "Microsoft Corporation"
+          ],
+          [
+            "Microsoft SQL Server 2008 R2 (64-bit)",
+            "",
+            "Microsoft Corporation"
+          ],
+          [
+            "Microsoft SQL Server 2008 R2 (64-bit)",
+            "",
+            "Microsoft Corporation"
+          ],
+          [
+            "Notepad++ (64-bit x64)",
+            "8.8.5",
+            "Notepad++ Team"
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.0
+      },
+      {
+        "file": "B_Software_Servicios/B12b_installed_programs.csv",
+        "encoding": "Windows-1252",
+        "delimiter": "','",
+        "headers": [
+          "DisplayName",
+          "DisplayVersion",
+          "Publisher"
+        ],
+        "row_count": 116,
+        "sample_rows": [
+          [
+            "Pandora FMS Windows Agent v5.0SP1",
+            "131115",
+            "Artica ST http://www.artica.es"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Microsoft Report Viewer Redistributable 2008 SP1",
+            "",
+            "Microsoft Corporation"
+          ],
+          [
+            "Cytomic Endpoint Agent",
+            "1.23.01.0000",
+            "Cytomic (Panda Security)"
+          ],
+          [
+            "Advanced EPDR",
+            "8.0.24",
+            "Panda Security S.L.U."
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.0
+      },
+      {
+        "file": "C_Diccionario_BD/mep_etl_GPPESVLCLI2251_20260316_094501/AgentJobs/all_job_steps.csv",
+        "encoding": "latin-1",
+        "delimiter": "','",
+        "headers": [
+          "job_name",
+          "job_enabled",
+          "job_description",
+          "category",
+          "step_id",
+          "step_name",
+          "subsystem",
+          "step_command",
+          "database_name",
+          "output_file_name",
+          "schedule_name",
+          "schedule_enabled",
+          "frequency",
+          "active_start_time"
+        ],
+        "row_count": 62,
+        "sample_rows": [
+          [
+            "--------",
+            "-----------",
+            "---------------",
+            "--------",
+            "-------",
+            "---------",
+            "---------",
+            "------------",
+            "-------------",
+            "----------------"
+          ],
+          [
+            "20250220___GMC_DESCARGA_NOTIFICATION_BOTMAKER",
+            "0",
+            "Extrae Informacion de NOTIFICATION del FTP de BotMaker al FTP de VOZ",
+            "[Uncategorized (Local)]",
+            "1",
+            "PROCESO",
+            "SSIS",
+            "/FILE \"M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Proceso_BotMaker_DESCARGA\\JOB\\Notification.dtsx\" /CHECKPOINTING OFF /REPORTING E",
+            "master",
+            "NULL"
+          ],
+          [
+            "GMC_DESCARGA_BOTMAKER",
+            "0",
+            "Extrae Informacion del FTP de BotMaker al FTP de VOZ",
+            "[Uncategorized (Local)]",
+            "1",
+            "Proceso",
+            "SSIS",
+            "/FILE \"M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Proceso_BotMaker_DESCARGA\\JOB\\Package.dtsx\" /CHECKPOINTING OFF /REPORTING E",
+            "master",
+            "NULL"
+          ],
+          [
+            "JCG_CAPTURA_SESIONES",
+            "1",
+            "Macroproceso: ADM-SERVIDOR-MANT-BBDD / "
+          ],
+          [
+            "Responsable: Juan Guzman / "
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.01
+      },
+      {
+        "file": "C_Diccionario_BD/mep_etl_GPPESVLCLI2251_20260316_094501/AgentJobs/cmdexec_powershell_steps.csv",
+        "encoding": "Windows-1252",
+        "delimiter": "','",
+        "headers": [
+          "job_name",
+          "step_name",
+          "subsystem",
+          "script_command"
+        ],
+        "row_count": 3,
+        "sample_rows": [
+          [
+            "--------",
+            "---------",
+            "---------",
+            "--------------"
+          ],
+          [
+            "JCG_syspolicy_purge_history",
+            "Erase Phantom System Health Records.",
+            "PowerShell",
+            "if ('$(ESCAPE_SQUOTE(INST))' -eq 'MSSQLSERVER') {$a = '\\DEFAULT'} ELSE {$a = ''};"
+          ],
+          [
+            "(Get-Item SQLSERVER:\\SQLPolicy\\$(ESCAPE_NONE(SRVR))$a).EraseSystemHealthPhantomRecords()"
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.0
+      },
+      {
+        "file": "C_Diccionario_BD/mep_etl_GPPESVLCLI2251_20260316_094501/AgentJobs/ssis_job_steps.csv",
+        "encoding": "Windows-1252",
+        "delimiter": "','",
+        "headers": [
+          "job_name",
+          "step_name",
+          "subsystem",
+          "ssis_command"
+        ],
+        "row_count": 4,
+        "sample_rows": [
+          [
+            "--------",
+            "---------",
+            "---------",
+            "------------"
+          ],
+          [
+            "20250220___GMC_DESCARGA_NOTIFICATION_BOTMAKER",
+            "PROCESO",
+            "SSIS",
+            "/FILE \"M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Proceso_BotMaker_DESCARGA\\JOB\\Notification.dtsx\" /CHECKPOINTING OFF /REPORTING E"
+          ],
+          [
+            "GMC_DESCARGA_BOTMAKER",
+            "Proceso",
+            "SSIS",
+            "/FILE \"M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Proceso_BotMaker_DESCARGA\\JOB\\Package.dtsx\" /CHECKPOINTING OFF /REPORTING E"
+          ],
+          [
+            "RSA_Proceso_Visitas",
+            "Carga_Visitas",
+            "SSIS",
+            "/SQL \"\\\"\\Proceso_Visitas\\Carga_Visitas_2019\\\"\" /SERVER gppesvlcli2251 /CHECKPOINTING OFF /REPORTING E"
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.0
+      },
+      {
+        "file": "C_Diccionario_BD/mep_etl_GPPESVLCLI2251_20260316_094501/MSDB/inventory.csv",
+        "encoding": "Windows-1252",
+        "delimiter": "','",
+        "headers": [
+          "package_name",
+          "folder",
+          "description",
+          "createdate",
+          "vermajor",
+          "verminor",
+          "size_kb"
+        ],
+        "row_count": 109,
+        "sample_rows": [
+          [
+            "------------",
+            "------",
+            "-----------",
+            "----------",
+            "--------",
+            "--------",
+            "-------"
+          ],
+          [
+            "ALDM_casos",
+            "",
+            "",
+            "2018-03-27 13:52:26.000",
+            "1",
+            "0",
+            "149"
+          ],
+          [
+            "ALDM_EXTRAE_CORREO",
+            "",
+            "NULL",
+            "2018-02-02 10:51:05.000",
+            "1",
+            "0",
+            "109"
+          ],
+          [
+            "ALDM_MAILS",
+            "",
+            "",
+            "2018-02-02 10:51:05.000",
+            "1",
+            "0",
+            "57"
+          ],
+          [
+            "ALDM_ORDEN",
+            "",
+            "",
+            "2018-03-27 10:24:28.000",
+            "1",
+            "0",
+            "129"
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.01
+      },
+      {
+        "file": "D_Jobs_ETL_ELT/D40_scheduled_tasks.csv",
+        "encoding": "utf-16-le",
+        "delimiter": "','",
+        "headers": [
+          "﻿\"HostName\"",
+          "TaskName",
+          "Next Run Time",
+          "Status",
+          "Logon Mode",
+          "Last Run Time",
+          "Last Result",
+          "Author",
+          "Task To Run",
+          "Start In",
+          "Comment",
+          "Scheduled Task State",
+          "Idle Time",
+          "Power Management",
+          "Run As User",
+          "Delete Task If Not Rescheduled",
+          "Stop Task If Runs X Hours and X Mins",
+          "Schedule",
+          "Schedule Type",
+          "Start Time",
+          "Start Date",
+          "End Date",
+          "Days",
+          "Months",
+          "Repeat: Every",
+          "Repeat: Until: Time",
+          "Repeat: Until: Duration",
+          "Repeat: Stop If Still Running"
+        ],
+        "row_count": 171,
+        "sample_rows": [
+          [
+            "GPPESVLCLI2251",
+            "\\165_Copia_BotMaker",
+            "N/A",
+            "Disabled",
+            "Interactive only",
+            "08/06/2021 04:58:49 a.m.",
+            "0",
+            "GPPESVLCLI2251\\user2251",
+            "Multiple actions",
+            "Multiple actions"
+          ],
+          [
+            "GPPESVLCLI2251",
+            "\\167_Copiar_Averias_Liquidadas",
+            "N/A",
+            "Disabled",
+            "Interactive only",
+            "03/10/2022 11:00:00 a.m.",
+            "-2147024895",
+            "GPPESVLCLI2251\\user2251",
+            "M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Trasfer_Batchs_167\\Averias_Liquidadas\\Total_Principal.bat ",
+            "N/A"
+          ],
+          [
+            "GPPESVLCLI2251",
+            "\\167_Copiar_Inestabilidad_ADSL",
+            "N/A",
+            "Disabled",
+            "Interactive only",
+            "24/03/2021 10:40:00 a.m.",
+            "0",
+            "GPPESVLCLI2251\\user2251",
+            "M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Trasfer_Batchs_167\\Inestabilidad_ADSL\\Total_Principal_Inestabilidad_ADSL.bat ",
+            "N/A"
+          ],
+          [
+            "GPPESVLCLI2251",
+            "\\167_Copiar_Planta_Fija_COC",
+            "N/A",
+            "Disabled",
+            "Interactive only",
+            "03/10/2022 06:00:00 p.m.",
+            "-2147024895",
+            "GPPESVLCLI2251\\user2251",
+            "M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Trasfer_Batchs_167\\Planta_Red_Fija\\Total_Principal_Planta_Red.bat ",
+            "N/A"
+          ],
+          [
+            "GPPESVLCLI2251",
+            "\\167_Copiar_Provision_Ejecutada",
+            "N/A",
+            "Disabled",
+            "Interactive only",
+            "03/10/2022 10:50:00 a.m.",
+            "-2147024895",
+            "GPPESVLCLI2251\\user2251",
+            "M:\\Inteligencia_de_Clientes\\Proyectos_SSIS\\Trasfer_Batchs_167\\Provision_Ejecutada\\Total_Principal.bat ",
+            "N/A"
+          ]
+        ],
+        "empty_columns": [],
+        "errors": [],
+        "size_mb": 0.16
+      }
+    ]
+  },
+  "zip_inventory": {
+    "total_zips": 1,
+    "files": [
+      {
+        "zip_file": "C_Diccionario_BD/scripts.zip",
+        "zip_size_mb": 0.03,
+        "is_valid": true,
+        "file_count": 5,
+        "total_uncompressed_mb": 0.11,
+        "entries": [
+          {
+            "name": "MEP_Gatherer.bat",
+            "size": 18316,
+            "is_dir": false,
+            "compressed_size": 4179
+          },
+          {
+            "name": "README_Instrucciones.md",
+            "size": 1112,
+            "is_dir": false,
+            "compressed_size": 604
+          },
+          {
+            "name": "scripts/",
+            "size": 0,
+            "is_dir": true,
+            "compressed_size": 0
+          },
+          {
+            "name": "scripts/export_etl.ps1",
+            "size": 49970,
+            "is_dir": false,
+            "compressed_size": 12839
+          },
+          {
+            "name": "scripts/gather_sqlserver.ps1",
+            "size": 47223,
+            "is_dir": false,
+            "compressed_size": 10936
+          }
+        ],
+        "has_mep_structure": true,
+        "top_level_dirs": [
+          "scripts"
+        ],
+        "errors": []
+      }
+    ]
+  },
+  "empty_files": [
+    {
+      "file": "G_Lineage_Documentacion/no aplica.txt",
+      "issue": "empty_file"
+    }
+  ],
+  "engine_specific": {
+    "engine": "mssql",
+    "expected_files_found": [],
+    "expected_files_missing": [
+      "00_server_info.csv",
+      "01_databases.csv",
+      "02_logins.csv",
+      "03_agent_jobs.csv",
+      "04_linked_servers.csv",
+      "05_server_config.csv",
+      "S01_tables_columns*.csv",
+      "S02_views*.csv",
+      "S03_stored_procedures*.csv",
+      "S04_triggers*.csv",
+      "S05_functions*.csv",
+      "S06_indexes*.csv",
+      "S07_table_stats*.csv",
+      "S08_schemas*.csv",
+      "S09_db_settings*.csv",
+      "S10_roles*.csv",
+      "S11_users*.csv",
+      "S12_permissions*.csv",
+      "S13_fulltext*.csv",
+      "S14_user_types*.csv"
+    ],
+    "extra_observations": []
+  },
+  "security": {
+    "directory": "/private/tmp/mep_postventa_final/MEP_GPPESVLCLI2251 (completo 2251)",
+    "files_scanned": 25,
+    "credential_findings": [],
+    "total_findings": 0
+  },
+  "summary": {
+    "subcarpetas_present": 8,
+    "subcarpetas_missing": [],
+    "total_files": 48,
+    "total_size_mb": 4.83,
+    "total_csvs": 8,
+    "total_csv_rows": 608,
+    "total_zips": 1,
+    "empty_files_count": 1,
+    "security_findings": 0,
+    "engine": "mssql"
+  }
+}
