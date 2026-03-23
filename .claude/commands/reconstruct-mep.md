@@ -201,3 +201,4 @@ Generar `reconstruct_reports/<MEP_NAME>/business_logic_inventory.md`:
 4. **Contextualiza al dominio SID.** Un servidor D7 (Billing) tiene patrones diferentes a D3 (Customer Care).
 5. **El DDL es para referencia, no para ejecución directa.** Puede tener gaps por datos no extraídos.
 6. **Para múltiples MEPs:** Procesa secuencialmente, genera artefactos individuales. Al final genera un mapa consolidado cross-server.
+Se envia prueba Jorge Ramirez C
