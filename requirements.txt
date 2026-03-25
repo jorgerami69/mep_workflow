@@ -1,0 +1,5 @@
+pandas
+openpyxl
+chardet
+markdown
+playwright
