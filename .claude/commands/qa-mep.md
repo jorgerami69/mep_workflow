@@ -41,7 +41,7 @@ Eres el analista QA senior del Assessment 360° de Integratel Perú. Tu trabajo 
    Gerencia: Postventa (D3 Customer Care)
    Focal: B. Quispe / R. Smith
    Servidor: WINDBDVNB0001 (172.30.249.165)
-   ```
+   
 
 ---
 
