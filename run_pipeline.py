@@ -22,6 +22,13 @@ subprocess.run([
 
 # 🔥 2. ENRICH (IA)
 enrich_metadata(RAW, ENRICHED)
+from reports.report_generator import generate_excel, generate_pdf
+
+EXCEL = "C:/data/output/qa_report.xlsx"
+PDF = "C:/data/output/qa_report.pdf"
+
+generate_excel(ENRICHED, EXCEL)
+generate_pdf(ENRICHED, PDF)
 
 # 🔥 3. REPORTES
 generate_excel(ENRICHED, EXCEL)
