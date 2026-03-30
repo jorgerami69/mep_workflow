@@ -6,3 +6,4 @@ playwright
 openai
 fpdf
 python-dotenv
+requests
