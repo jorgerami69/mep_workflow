@@ -1,11 +1,5 @@
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-MODEL = "gpt-4o-mini"
-
-# 🔒 SOLO DEBUG SEGURO
-print("DEBUG KEY:", "OK" if OPENAI_API_KEY else "MISSING")
-print("DEBUG MODEL:", MODEL)
+OM_CONFIG = {
+    "apiEndpoint": "http://localhost:8585/api",
+    "authProvider": "openmetadata",
+    "jwtToken": "eyJraWQiOiJHYjM4OWEtOWY3Ni1nZGpzLWE5MmotMDI0MmJrOTQzNTYiLCJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcGVuLW1ldGFkYXRhLm9yZyIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiQWRtaW4iXSwiZW1haWwiOiJhZG1pbkBvcGVuLW1ldGFkYXRhLm9yZyIsImlzQm90IjpmYWxzZSwidG9rZW5UeXBlIjoiUEVSU09OQUxfQUNDRVNTIiwiaWF0IjoxNzc0NTU5Njc0LCJleHAiOjE3NzQ1NjMyNzR9.PZZaBcZtM0NjWRLiyATHumsvrl9fGvbaIYvwjUCosuDM3nDes9Zeo2mE0t1cd1t1FH_hTQylFkEgT-3i8DRObjTYcC1YS6ktUYFXSz_-_CX2Xu3UjF5kN0xa5y_YEKvfwoAWJRNMZgmPcV1ha4cXNiG9Xv5Z6JWgDLCXfw0fzHYl5qO6wD25Bv63HqHjdLKig2dH5Zefg_N0weChoonUOoCaxlVyYUa0SW8LM5iFyW2uP_nRATVFNsNa32SvAL7aEqOtmdZGvefN-UzHTvrrQypTXSAG_U0bZmSc5R3NSmB09mv-bxKzPng5_Rt1mjBNryFmsZGl04GFbMdBzhjJjg"
+}

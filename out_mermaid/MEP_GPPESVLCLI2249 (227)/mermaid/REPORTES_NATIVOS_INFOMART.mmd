@@ -1,0 +1,170 @@
+erDiagram
+  T_LISTADO_DNIS_GENESYS {
+    DNGEN_FECHA VARCHAR
+    DNGEN_EMPLOYEE_ID INT
+    DNGEN_SERVICIO VARCHAR
+    DNGEN_ALIADO VARCHAR
+    DNGEN_ALIADO_LOCAL VARCHAR
+  }
+  T_LISTA_DNI_CORRECCION_TEMPORAL {
+    DNI VARCHAR
+    PROVEEDOR VARCHAR
+  }
+  T_NATIVO_ABANDON_DELAY {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }
+  T_NATIVO_ABANDON_DELAY_30MIN {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }
+  T_NATIVO_QUEUE_OUTLINE {
+    Tenant VARCHAR
+    Hour VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Entered VARCHAR
+  }
+  T_NATIVO_QUEUE_OUTLINE_30MIN {
+    Tenant VARCHAR
+    30 VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Entered VARCHAR
+  }
+  T_NATIVO_QUEUE_SUMMARY {
+    Tenant VARCHAR
+    Hour VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Offered VARCHAR
+  }
+  T_NATIVO_QUEUE_SUMMARY_30MIN {
+    Tenant VARCHAR
+    30 VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Offered VARCHAR
+  }
+  T_NATIVO_SPEED_OF_ACCEPT {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }
+  T_NATIVO_SPEED_OF_ACCEPT_30MIN {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }
+  T_STAGE_TRAFICO_DATOS {
+    OBJECT_ID INT
+    N_ENTERED VARCHAR
+    N_ANSWERED VARCHAR
+    N_ABANDONED VARCHAR
+    DATE_YYYYMMDD DATETIME
+    TOT_CALLS_ANSW_10S VARCHAR
+  }
+  T_STAGE_TRAFICO_DATOS_30MIN {
+    OBJECT_ID INT
+    PRESENTATION_NAME VARCHAR
+    Interaction_Type VARCHAR
+    DATE_YYYYMMDD DATETIME
+    Intervalo VARCHAR
+    MediaHora VARCHAR
+  }
+  T_TEMPORAL_ABANDON_DELAY_30MIN {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }
+  T_TEMPORAL_DNIS_GENESYS {
+    EMPLOYEE_ID INT
+    SERVICIO VARCHAR
+    ALIADO VARCHAR
+    ALIADO_LOCAL VARCHAR
+  }
+  T_TEMPORAL_NATIVO_ABANDON_DELAY {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }
+  T_TEMPORAL_NATIVO_DETALLE_LLAMADAS_V7 {
+    Aliado VARCHAR
+    Programa VARCHAR
+    DNIS VARCHAR
+    Producto VARCHAR
+    Site VARCHAR
+    Anexo VARCHAR
+  }
+  T_TEMPORAL_NATIVO_QUEUE_OUTLINE {
+    Tenant VARCHAR
+    Hour VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Entered VARCHAR
+  }
+  T_TEMPORAL_NATIVO_QUEUE_SUMMARY {
+    Tenant VARCHAR
+    Hour VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Offered VARCHAR
+  }
+  T_TEMPORAL_NATIVO_SPEED_OF_ACCEPT {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }
+  T_TEMPORAL_QUEUE_OUTLINE_30MIN {
+    Tenant VARCHAR
+    30 VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Entered VARCHAR
+  }
+  T_TEMPORAL_QUEUE_SUMMARY_30MIN {
+    Tenant VARCHAR
+    30 VARCHAR
+    Queue VARCHAR
+    Media VARCHAR
+    Interaction VARCHAR
+    Offered VARCHAR
+  }
+  T_TEMPORAL_SPEED_OF_ACCEPT_30MIN {
+    Tenant VARCHAR
+    TimeRangeKey VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+    Bound VARCHAR
+  }

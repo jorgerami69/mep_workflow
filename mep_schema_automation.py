@@ -5,13 +5,12 @@ from pathlib import Path
 import pandas as pd
 
 # ================================
-# CONFIG (TU PROYECTO)
+# CONFIG
 # ================================
 
 BASE_DIR = Path(r"C:\data\workspace\mep_workflow")
 INPUT_DIR = BASE_DIR / "Output_MEPs_Integratel"
-RECONSTRUCT_DIR = BASE_DIR / "reconstruct_reports"
-OUTPUT_DIR = BASE_DIR / "out"
+OUTPUT_DIR = BASE_DIR / "out2"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -25,7 +24,6 @@ def find_files(base_path, extensions):
         files.extend(base_path.rglob(f"*{ext}"))
     return files
 
-
 def infer_type(col_name):
     col = col_name.lower()
     if "id" in col:
@@ -35,12 +33,39 @@ def infer_type(col_name):
     elif "amount" in col or "value" in col:
         return "DECIMAL(18,2)"
     else:
-        return "VARCHAR(255)"
+        return "VARCHAR"
 
+def normalize_dtype(dtype):
+    # Para OpenMetadata (simplificado)
+    d = dtype.upper()
+    if "INT" in d:
+        return "INT"
+    if "DATE" in d or "TIME" in d:
+        return "DATETIME"
+    if "DECIMAL" in d or "NUMERIC" in d:
+        return "DECIMAL"
+    return "STRING"
+
+def infer_db_from_filename(path: Path):
+    # BD_CONTROL.sql -> CONTROL
+    name = path.stem.upper()
+    if name.startswith("BD_"):
+        return name.replace("BD_", "")
+    return "DEFAULT_DB"
 
 # ================================
-# 🔥 NUEVO: PARSEAR SQL (CLAVE)
+# PARSER SQL
 # ================================
+
+CREATE_RE = re.compile(
+    r'CREATE\s+TABLE\s+([\[\]\w\.]+)\s*\((.*?)\)\s*;',
+    re.IGNORECASE | re.DOTALL
+)
+
+COL_RE = re.compile(
+    r'^\s*\[?(\w+)\]?\s+([A-Za-z0-9\(\),]+)',
+    re.IGNORECASE
+)
 
 def parse_sql_file(sql_file):
     tables = []
@@ -48,28 +73,33 @@ def parse_sql_file(sql_file):
     with open(sql_file, encoding="utf-8", errors="ignore") as f:
         content = f.read()
 
-    pattern = r'CREATE TABLE\s+([\[\]\w\.]+)\s*\((.*?)\);'
-    matches = re.findall(pattern, content, re.DOTALL | re.IGNORECASE)
+    matches = CREATE_RE.findall(content)
 
     for table_name, cols_block in matches:
+        clean_table = (
+            table_name.replace("[", "")
+                      .replace("]", "")
+                      .replace("dbo.", "")
+        )
+
         columns = []
-
-        cols = cols_block.split(",")
-
-        for col in cols:
-            col = col.strip()
-
-            if col.startswith("["):
-                col_name = col.split("]")[0].replace("[", "")
-                columns.append(col_name)
+        for line in cols_block.split(","):
+            line = line.strip()
+            m = COL_RE.match(line)
+            if m:
+                col_name = m.group(1)
+                col_type = m.group(2)
+                columns.append({
+                    "name": col_name,
+                    "type": col_type
+                })
 
         tables.append({
-            "name": table_name.replace("dbo.", "").replace("[", "").replace("]", ""),
+            "name": clean_table,
             "columns": columns
         })
 
     return tables
-
 
 # ================================
 # CORE
@@ -85,132 +115,104 @@ def process_server(server_path):
     server_out.mkdir(exist_ok=True)
     mermaid_dir.mkdir(exist_ok=True)
 
-    all_tables = []
-    sql_output = ""
+    db_map = {}  # {db_name: [tables]}
 
     # ================================
-    # 1. RECONSTRUCT (SI EXISTE)
-    # ================================
-
-    reconstruct_path = RECONSTRUCT_DIR / server_name
-
-    if reconstruct_path.exists():
-        json_files = find_files(reconstruct_path, [".json"])
-
-        for jf in json_files:
-            try:
-                data = json.load(open(jf, encoding="utf-8"))
-
-                if "tables" in data:
-                    for table in data["tables"]:
-                        table_name = table.get("name", "unknown_table")
-                        columns = table.get("columns", [])
-
-                        sql_output += f"\nCREATE TABLE {table_name} (\n"
-
-                        for col in columns:
-                            col_name = col.get("name", "col")
-                            col_type = col.get("type", infer_type(col_name))
-                            sql_output += f"  {col_name} {col_type},\n"
-
-                        sql_output = sql_output.rstrip(",\n") + "\n);\n"
-
-                        all_tables.append({
-                            "table": table_name,
-                            "columns": len(columns)
-                        })
-
-            except Exception as e:
-                print(f"⚠️ Error JSON {jf}: {e}")
-
-    # ================================
-    # 2. 🔥 PARSEAR SQL (ESTA ES LA CLAVE)
+    # 1. LEER SQL
     # ================================
 
     sql_files = find_files(server_path, [".sql"])
 
     for sf in sql_files:
-        try:
-            parsed_tables = parse_sql_file(sf)
+        db_name = infer_db_from_filename(sf)
 
-            for table in parsed_tables:
-                table_name = table["name"]
-                columns = table["columns"]
+        parsed_tables = parse_sql_file(sf)
 
-                sql_output += f"\nCREATE TABLE {table_name} (\n"
+        if db_name not in db_map:
+            db_map[db_name] = []
 
-                for col in columns:
-                    sql_output += f"  {col} {infer_type(col)},\n"
-
-                sql_output = sql_output.rstrip(",\n") + "\n);\n"
-
-                all_tables.append({
-                    "table": table_name,
-                    "columns": len(columns)
-                })
-
-        except Exception as e:
-            print(f"⚠️ Error SQL {sf}: {e}")
+        db_map[db_name].extend(parsed_tables)
 
     # ================================
-    # 3. CSV (SI EXISTEN)
+    # 2. GENERAR OUTPUTS
     # ================================
 
-    csv_files = find_files(server_path, [".csv"])
+    all_rows = []
+    ddl_output = ""
 
-    for cf in csv_files:
-        try:
-            df = pd.read_csv(cf)
+    openmetadata_payload = {
+        "service": f"{server_name}_service",
+        "databases": []
+    }
 
-            table_name = cf.stem
+    for db_name, tables in db_map.items():
 
-            sql_output += f"\nCREATE TABLE {table_name} (\n"
-
-            for col in df.columns:
-                sql_output += f"  {col} {infer_type(col)},\n"
-
-            sql_output = sql_output.rstrip(",\n") + "\n);\n"
-
-            all_tables.append({
-                "table": table_name,
-                "columns": len(df.columns)
+        # ---------- INVENTARIO ----------
+        for t in tables:
+            all_rows.append({
+                "database": db_name,
+                "table": t["name"],
+                "columns": len(t["columns"])
             })
 
-        except:
-            continue
+        # ---------- DDL ----------
+        for t in tables:
+            ddl_output += f"\nCREATE TABLE {db_name}.{t['name']} (\n"
+            for col in t["columns"]:
+                ddl_output += f"  {col['name']} {col['type']},\n"
+            ddl_output = ddl_output.rstrip(",\n") + "\n);\n"
 
-    # ================================
-    # 💾 OUTPUTS
-    # ================================
+        # ---------- MERMAID POR DB ----------
+        mermaid = "erDiagram\n"
+        for t in tables:
+            mermaid += f"  {t['name']} {{\n"
+            for col in t["columns"][:6]:  # limitamos columnas
+                mermaid += f"    {col['name']} {infer_type(col['name'])}\n"
+            mermaid += "  }\n"
 
+        with open(mermaid_dir / f"{db_name}.mmd", "w", encoding="utf-8") as f:
+            f.write(mermaid)
+
+        # ---------- OPENMETADATA ----------
+        db_entry = {
+            "name": db_name,
+            "schemas": [
+                {
+                    "name": "dbo",
+                    "tables": []
+                }
+            ]
+        }
+
+        for t in tables:
+            db_entry["schemas"][0]["tables"].append({
+                "name": t["name"],
+                "columns": [
+                    {
+                        "name": c["name"],
+                        "dataType": normalize_dtype(c["type"])
+                    }
+                    for c in t["columns"]
+                ]
+            })
+
+        openmetadata_payload["databases"].append(db_entry)
+
+    # ---------- GUARDAR ARCHIVOS ----------
+
+    # CSV
+    df = pd.DataFrame(all_rows)
+    df.to_csv(server_out / f"inventory_{server_name}.csv", index=False)
+
+    # SQL
     with open(server_out / "schema.sql", "w", encoding="utf-8") as f:
-        f.write(sql_output)
+        f.write(ddl_output)
 
-    with open(server_out / "server_inventory.json", "w", encoding="utf-8") as f:
-        json.dump(all_tables, f, indent=2)
+    # JSON OpenMetadata
+    with open(server_out / f"openmetadata_{server_name}.json", "w", encoding="utf-8") as f:
+        json.dump(openmetadata_payload, f, indent=2)
 
-    df_summary = pd.DataFrame(all_tables)
-    df_summary.to_csv(server_out / "inventory.csv", index=False)
-
-    # ================================
-    # MERMAID REAL
-    # ================================
-
-    mermaid = "erDiagram\n"
-
-    if len(all_tables) == 0:
-        mermaid += "  EMPTY_TABLE {\n    INT id\n  }\n"
-    else:
-        for t in all_tables:
-            mermaid += f"  {t['table']} {{\n"
-            mermaid += f"    INT id\n"
-            mermaid += f"    VARCHAR sample\n"
-            mermaid += f"  }}\n"
-
-    with open(mermaid_dir / "er_diagram.mmd", "w", encoding="utf-8") as f:
-        f.write(mermaid)
-
-    print(f"✅ {server_name} listo ({len(all_tables)} tablas)")
+    print(f"✅ {server_name} listo ({len(all_rows)} tablas)")
 
 
 # ================================

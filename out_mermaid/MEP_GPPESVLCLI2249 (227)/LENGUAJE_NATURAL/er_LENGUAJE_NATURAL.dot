@@ -1,0 +1,6 @@
+digraph ER {
+  graph [rankdir=LR, fontname="Helvetica"];
+  node [shape=plaintext, fontname="Helvetica"];
+  edge [fontname="Helvetica"];
+  "sysdiagrams" [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD BGCOLOR="#2F4F4F"><FONT COLOR="white"><B>sysdiagrams</B></FONT></TD></TR><TR><TD ALIGN="LEFT">name : STRING</TD></TR><TR><TD ALIGN="LEFT">principal_id : INT</TD></TR><TR><TD ALIGN="LEFT">diagram_id : INT</TD></TR><TR><TD ALIGN="LEFT">version : INT</TD></TR><TR><TD ALIGN="LEFT">definition : STRING</TD></TR></TABLE>>];
+}

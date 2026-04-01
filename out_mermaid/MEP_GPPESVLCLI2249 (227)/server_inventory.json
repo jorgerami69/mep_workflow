@@ -1,0 +1,7762 @@
+[
+  {
+    "table": "T_ADMIN_BASE_DATOS",
+    "columns": 14
+  },
+  {
+    "table": "T_ADMIN_BASE_DATOS_ANTERIOR",
+    "columns": 14
+  },
+  {
+    "table": "T_ADMIN_DISCO_DURO",
+    "columns": 7
+  },
+  {
+    "table": "T_ADMIN_DISCO_DURO_ANTERIOR",
+    "columns": 7
+  },
+  {
+    "table": "T_ADMIN_TAMANIO_TABLAS",
+    "columns": 12
+  },
+  {
+    "table": "T_ADMIN_TAMANIO_TABLAS_ANTERIOR",
+    "columns": 12
+  },
+  {
+    "table": "T_LOG_PROCESOS",
+    "columns": 4
+  },
+  {
+    "table": "T_WHO2_CAPTURA",
+    "columns": 14
+  },
+  {
+    "table": "T_ANIS_UNICOS",
+    "columns": 6
+  },
+  {
+    "table": "T_DETALLE_ABANDONO",
+    "columns": 17
+  },
+  {
+    "table": "T_DETALLE_INFOMART_202503",
+    "columns": 72
+  },
+  {
+    "table": "T_HISPAM_RESUMEN",
+    "columns": 5
+  },
+  {
+    "table": "T_LISTADO_DNIS_GENESYS_V2",
+    "columns": 5
+  },
+  {
+    "table": "T_LISTADO_RP_ATENCION_RAPIDA",
+    "columns": 6
+  },
+  {
+    "table": "T_LISTA_BLANCA",
+    "columns": 1
+  },
+  {
+    "table": "T_LISTA_CABINAS",
+    "columns": 9
+  },
+  {
+    "table": "T_LISTA_CABINAS_OLD",
+    "columns": 9
+  },
+  {
+    "table": "T_LISTA_DNI_TEMPO",
+    "columns": 1
+  },
+  {
+    "table": "T_LISTA_NEGRA",
+    "columns": 8
+  },
+  {
+    "table": "T_TEMPORAL_DETALLE_LLAMADAS_V7",
+    "columns": 34
+  },
+  {
+    "table": "T_TEMP_DETALLE_INFOMART",
+    "columns": 70
+  },
+  {
+    "table": "T_TEMP_DETALLE_INFORMART_V5",
+    "columns": 72
+  },
+  {
+    "table": "T_TMP_LISTA_CABINAS",
+    "columns": 9
+  },
+  {
+    "table": "base_multicentro",
+    "columns": 1
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "T_AGENT_NOT_READY_REASON_CODE_REPORT",
+    "columns": 9
+  },
+  {
+    "table": "T_AGENT_NOT_READY_REASON_CODE_REPORT_202311",
+    "columns": 9
+  },
+  {
+    "table": "T_AGENT_NOT_READY_REASON_CODE_REPORT_202312",
+    "columns": 9
+  },
+  {
+    "table": "T_AGENT_NOT_READY_REASON_CODE_REPORT_202401",
+    "columns": 9
+  },
+  {
+    "table": "T_AGENT_NOT_READY_REASON_CODE_REPORT_202402",
+    "columns": 9
+  },
+  {
+    "table": "T_AGENT_NOT_READY_REASON_CODE_REPORT_202403",
+    "columns": 9
+  },
+  {
+    "table": "T_AGENT_NOT_READY_REASON_CODE_REPORT_202404",
+    "columns": 9
+  },
+  {
+    "table": "T_TEMP_Agent_Not_Ready_Reason_Code_Report_Today_PASO_1",
+    "columns": 13
+  },
+  {
+    "table": "20240917___LLAMADAS_ATENDIDAS_FACTURACION",
+    "columns": 58
+  },
+  {
+    "table": "20240917_____T_TMP_DETALLE",
+    "columns": 21
+  },
+  {
+    "table": "JCO_LISTADO_CTI_DIARIO",
+    "columns": 24
+  },
+  {
+    "table": "LD_CLIENTES_REIT",
+    "columns": 5
+  },
+  {
+    "table": "LD_TMP_TABLA_BATCHERO_ELIMINA_ARCHIVOS_IHV5_POR_HORAS",
+    "columns": 1
+  },
+  {
+    "table": "LLAMADAS_ATENDIDAS",
+    "columns": 58
+  },
+  {
+    "table": "LLAMADAS_ATENDIDAS_FACTURACION",
+    "columns": 58
+  },
+  {
+    "table": "PROCESO_LOG_PROCESO_REIT_Y_TRANSF",
+    "columns": 4
+  },
+  {
+    "table": "TMP_CTI",
+    "columns": 23
+  },
+  {
+    "table": "TMP_RESUMEN_AGENTE_REITERADAS",
+    "columns": 9
+  },
+  {
+    "table": "TMP_RESUMEN_AGENTE_REITERADAS_CUARTIL",
+    "columns": 8
+  },
+  {
+    "table": "TMP_RESUMEN_CTI",
+    "columns": 27
+  },
+  {
+    "table": "TMP_RESUMEN_Q_RELL",
+    "columns": 5
+  },
+  {
+    "table": "TMP_RESUMEN_Q_TRX",
+    "columns": 5
+  },
+  {
+    "table": "TMP_T_RESUMEN_AGENTE_TRANSF_CUARTIL",
+    "columns": 8
+  },
+  {
+    "table": "TMP_T_RESUMEN_AGENTE_TRX",
+    "columns": 8
+  },
+  {
+    "table": "T_DETALLE_RELLAMADORES_ENTRANTES",
+    "columns": 8
+  },
+  {
+    "table": "T_DETALLE_RELLAMADORES_ENTRANTES_X_PLATAF",
+    "columns": 9
+  },
+  {
+    "table": "T_DETALLE_RELLAMADORES_EN_20D",
+    "columns": 7
+  },
+  {
+    "table": "T_DETALLE_TRANSFERENCIAS_MISMO_RP",
+    "columns": 11
+  },
+  {
+    "table": "T_DETALLE_TRANSFERENCIAS_MISMO_RP_2",
+    "columns": 12
+  },
+  {
+    "table": "T_LISTA_AGENTE_REIT_DIA",
+    "columns": 8
+  },
+  {
+    "table": "T_LISTA_AGENTE_TRANSF_DIA",
+    "columns": 8
+  },
+  {
+    "table": "T_LISTA_BLANCA_RELLAMADORES_AURA",
+    "columns": 9
+  },
+  {
+    "table": "T_LISTA_CTI_ATENDIDAS_TMO",
+    "columns": 28
+  },
+  {
+    "table": "T_LISTA_RETIRAR_RPS_CLIENTES_NO_MIGRADOS",
+    "columns": 1
+  },
+  {
+    "table": "T_LISTA_RETIRAR_RPS_CLIENTES_NO_MIGRADOS_20241022",
+    "columns": 1
+  },
+  {
+    "table": "T_LOG_BASE_NPS_AVISO_CORTE",
+    "columns": 4
+  },
+  {
+    "table": "T_METRICAS_REIT_TRANSF_AMELIA",
+    "columns": 9
+  },
+  {
+    "table": "T_METRICAS_TRANSFERENCIAS_DIA_CURSO",
+    "columns": 7
+  },
+  {
+    "table": "T_REPORTE_CTI_DIARIO",
+    "columns": 24
+  },
+  {
+    "table": "T_REPORTE_CTI_MENSUAL",
+    "columns": 36
+  },
+  {
+    "table": "T_RESUMEN_COPC_72HR_ATENDIDAS",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_COPC_72HR_ATENDIDAS_BU",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_COPC_72_HR_GENERA",
+    "columns": 14
+  },
+  {
+    "table": "T_RESUMEN_COPC_72_HR_GENERA_BU",
+    "columns": 14
+  },
+  {
+    "table": "T_RESUMEN_COPC_ORI_DES_72HR",
+    "columns": 14
+  },
+  {
+    "table": "T_RESUMEN_CTI_72HR",
+    "columns": 36
+  },
+  {
+    "table": "T_RESUMEN_CTI_72HR_FACTURACION",
+    "columns": 36
+  },
+  {
+    "table": "T_RESUMEN_CTI_DIARIO",
+    "columns": 17
+  },
+  {
+    "table": "T_RESUMEN_CUARTILES",
+    "columns": 20
+  },
+  {
+    "table": "T_RESUMEN_CUARTILES_FINAL",
+    "columns": 20
+  },
+  {
+    "table": "T_RESUMEN_METRICAS_PLATAFORMA",
+    "columns": 15
+  },
+  {
+    "table": "T_RESUMEN_METRICAS_REITERADAS_TRX_ODS",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_ORIGEN_DESTINO_PRUEBA",
+    "columns": 14
+  },
+  {
+    "table": "T_RESUMEN_QUARTIL_RELL",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_QUARTIL_RELL_30MIN",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_QUARTIL_TRANS",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_RANGO_RELLAMADORES_EN_IVR",
+    "columns": 4
+  },
+  {
+    "table": "T_RESUMEN_REITERADAS_TRXS",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_REITERADAS_TRXS_BU",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_TRANSFERENCIAS_MISMP_RP",
+    "columns": 10
+  },
+  {
+    "table": "T_RES_ANALISIS_CLIENTES_TEC_FIJA",
+    "columns": 8
+  },
+  {
+    "table": "T_RES_INDICADOR_REIT_DIARIO",
+    "columns": 8
+  },
+  {
+    "table": "T_Resumen_Reiteracion_IVR",
+    "columns": 4
+  },
+  {
+    "table": "T_TABLA_RESUMEN_REPETICIONES",
+    "columns": 7
+  },
+  {
+    "table": "T_TMP_DETALLE",
+    "columns": 21
+  },
+  {
+    "table": "T_TMP_DETALLE_DIARIO",
+    "columns": 19
+  },
+  {
+    "table": "T_TMP_DETALLE_DIA_CURSO",
+    "columns": 20
+  },
+  {
+    "table": "T_TMP_DETALLE_TRAFICO",
+    "columns": 22
+  },
+  {
+    "table": "T_TMP_DETALLE_TRAFICO_TRANSFERENCIAS",
+    "columns": 26
+  },
+  {
+    "table": "T_TMP_DETALLE_TRAFICO_VENTAS",
+    "columns": 21
+  },
+  {
+    "table": "T_TMP_DETALLE_TRANSFERENCIAS",
+    "columns": 45
+  },
+  {
+    "table": "T_TMP_LD_CLIENTES_REITERADORES",
+    "columns": 4
+  },
+  {
+    "table": "T_TMP_TMO_REAL",
+    "columns": 3
+  },
+  {
+    "table": "T_TMP_TRAFICO",
+    "columns": 14
+  },
+  {
+    "table": "T_TMP_TRAZABILIDAD_CDR__TRANSF_MOVIL_A_FIJA",
+    "columns": 16
+  },
+  {
+    "table": "TEMP_FACT_HORAS_SIN_DATOS",
+    "columns": 9
+  },
+  {
+    "table": "T_LISTA_METRICAS",
+    "columns": 8
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "CARO_OPERATIVO_BO_AGOSTO",
+    "columns": 10
+  },
+  {
+    "table": "DETALLE_BO_CARO_202501_202506",
+    "columns": 19
+  },
+  {
+    "table": "DETALLE_BO_YOHA_202507",
+    "columns": 10
+  },
+  {
+    "table": "DETALLE_CASOS",
+    "columns": 5
+  },
+  {
+    "table": "DETALLE_CROSS",
+    "columns": 6
+  },
+  {
+    "table": "PLANILLA_RETENCIONES_COMISIONES_FUENTE_TAHEMY",
+    "columns": 7
+  },
+  {
+    "table": "PPTO_RETENCIONES",
+    "columns": 7
+  },
+  {
+    "table": "REAL_RETENCIONES",
+    "columns": 8
+  },
+  {
+    "table": "REAL_RETENCIONES_JUNIO",
+    "columns": 15
+  },
+  {
+    "table": "RETENCIONES_FUENTE_AARON",
+    "columns": 41
+  },
+  {
+    "table": "TEMP_FACT_CCEE",
+    "columns": 18
+  },
+  {
+    "table": "TEMP_HORAS_EXTRA",
+    "columns": 7
+  },
+  {
+    "table": "TEMP_NV_FACT_PPTO",
+    "columns": 11
+  },
+  {
+    "table": "T_CCEE_AGENTES_RECONTACTO",
+    "columns": 6
+  },
+  {
+    "table": "T_CCEE_ASESORES_KIPU_RETENCIONES",
+    "columns": 2
+  },
+  {
+    "table": "T_CCEE_MODELO_OBJETIVOS",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_MODELO_OBJETIVOS_20260206",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_OBJETIVOS_CROSS",
+    "columns": 4
+  },
+  {
+    "table": "T_CCEE_OBJ_PESO",
+    "columns": 4
+  },
+  {
+    "table": "T_CCEE_RELACION_PLATAFORMAS_REPORTE",
+    "columns": 2
+  },
+  {
+    "table": "T_CCEE_RELACION_SERVICIO_SOCIO",
+    "columns": 6
+  },
+  {
+    "table": "T_CCEE_UMBRAL_HORAS_DIARIO",
+    "columns": 3
+  },
+  {
+    "table": "T_CCEE_base_blending_tratamiento_nds",
+    "columns": 11
+  },
+  {
+    "table": "T_CCEE_base_horas_coach",
+    "columns": 22
+  },
+  {
+    "table": "T_CCEE_base_reclamos",
+    "columns": 2
+  },
+  {
+    "table": "T_CCEE_blending",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_dia_recontacto_global",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_dni_rol_master_top",
+    "columns": 4
+  },
+  {
+    "table": "T_CCEE_dni_rol_master_top_20260210",
+    "columns": 4
+  },
+  {
+    "table": "T_CCEE_fact_h",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_NPS",
+    "columns": 8
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_SOLUCION",
+    "columns": 8
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_cross",
+    "columns": 8
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_cuota",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_cuota_FIJA_CAPTA",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_cuota_capor",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_cuota_fija",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_ece",
+    "columns": 8
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_intervenciones",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_fdd_objetivos_nds",
+    "columns": 8
+  },
+  {
+    "table": "T_CCEE_horas_coach",
+    "columns": 5
+  },
+  {
+    "table": "T_CCEE_horas_extra",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_log_cuartil_1ralinea",
+    "columns": 16
+  },
+  {
+    "table": "T_CCEE_log_cuartil_2_tecnica",
+    "columns": 16
+  },
+  {
+    "table": "T_CCEE_log_cuartil_rrss",
+    "columns": 16
+  },
+  {
+    "table": "T_CCEE_log_cuartil_tecnica",
+    "columns": 16
+  },
+  {
+    "table": "T_CCEE_log_cuartil_tecnica_critico",
+    "columns": 16
+  },
+  {
+    "table": "T_CCEE_metricas_agentes_diario",
+    "columns": 9
+  },
+  {
+    "table": "T_CCEE_metricas_agentes_diario_BACK_EXTRUCTURA",
+    "columns": 98
+  },
+  {
+    "table": "T_CCEE_metricas_agentes_mensual",
+    "columns": 102
+  },
+  {
+    "table": "T_CCEE_metricas_agentes_mensual_NUEVO",
+    "columns": 18
+  },
+  {
+    "table": "T_CCEE_metricas_agentes_mensual_NUEVO_BACK_EXTRUCTURA",
+    "columns": 103
+  },
+  {
+    "table": "T_CCEE_nivel_facturacion",
+    "columns": 17
+  },
+  {
+    "table": "T_CCEE_nivel_facturacion_NUEVO",
+    "columns": 17
+  },
+  {
+    "table": "T_CCEE_resumen_diario",
+    "columns": 11
+  },
+  {
+    "table": "T_CCEE_resumen_productividad_proveedor",
+    "columns": 14
+  },
+  {
+    "table": "T_CCEE_seguimiento_cross_ccee_resumen",
+    "columns": 31
+  },
+  {
+    "table": "T_CCEE_t_dim_categoria_plataforma",
+    "columns": 4
+  },
+  {
+    "table": "T_CCEE_t_dim_plataforma",
+    "columns": 6
+  },
+  {
+    "table": "T_CCEE_t_dim_proveedor",
+    "columns": 3
+  },
+  {
+    "table": "T_CCEE_t_dim_tiempo_intervalo",
+    "columns": 13
+  },
+  {
+    "table": "T_CCEE_t_fact_metricas_intervalo",
+    "columns": 13
+  },
+  {
+    "table": "T_CCEE_tmp_dia1ralinea",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_tmp_dia_2_tecnica",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_tmp_dia_rrss",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_tmp_dia_tecnica",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_tmp_dia_tecnica_critico",
+    "columns": 7
+  },
+  {
+    "table": "T_CCEE_tmp_fact",
+    "columns": 18
+  },
+  {
+    "table": "T_CCEE_tmp_horas_coach",
+    "columns": 8
+  },
+  {
+    "table": "T_CCEE_tmp_mes1ralinea",
+    "columns": 12
+  },
+  {
+    "table": "T_CCEE_tmp_mes_2_tecnica",
+    "columns": 12
+  },
+  {
+    "table": "T_CCEE_tmp_mes_rrss",
+    "columns": 12
+  },
+  {
+    "table": "T_CCEE_tmp_mes_tecnica",
+    "columns": 12
+  },
+  {
+    "table": "T_CCEE_tmp_mes_tecnica_critico",
+    "columns": 12
+  },
+  {
+    "table": "T_CCEE_vista_facturacion",
+    "columns": 60
+  },
+  {
+    "table": "T_CONTINGENCIA_ASESORES_NDS",
+    "columns": 2
+  },
+  {
+    "table": "T_CONTINGENCIA_FACTURACION_INTERVALO",
+    "columns": 10
+  },
+  {
+    "table": "T_CONTINGENCIA_INPUT_COP",
+    "columns": 11
+  },
+  {
+    "table": "T_CONTINGENCIA_INPUT_COR",
+    "columns": 11
+  },
+  {
+    "table": "T_CONTINGENCIA_INPUT_SATISFACCION",
+    "columns": 12
+  },
+  {
+    "table": "T_DICCIONARIO_CUBO_FACTURACION_MES",
+    "columns": 5
+  },
+  {
+    "table": "T_DIM_FACTURACION_AGRUPACION_TIPO_PAGO",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_FACTURACION_CANAL",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_FACTURACION_ESTADO",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_FACTURACION_JERARQUIA_EMPRESA",
+    "columns": 6
+  },
+  {
+    "table": "T_DIM_FACTURACION_PLATAFORMA",
+    "columns": 6
+  },
+  {
+    "table": "T_DIM_FACTURACION_PLATAFORMA_20251028",
+    "columns": 6
+  },
+  {
+    "table": "T_DIM_FACTURACION_PROVEEDOR",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_FACTURACION_TIEMPO_MES",
+    "columns": 13
+  },
+  {
+    "table": "T_DIM_FACTURACION_TIPO_PAGO",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_GE_AGRUPACION_PLATAFORMA",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_GE_AGRUPACION_PLATAFORMA_20251028",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_GE_CANAL",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_GE_CATEGORIA",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_GE_COMENTARIOS",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_GE_GESTION",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_GE_PLATAFORMA",
+    "columns": 8
+  },
+  {
+    "table": "T_DIM_GE_PLATAFORMA_20251104",
+    "columns": 8
+  },
+  {
+    "table": "T_DIM_GE_PROVEEDOR",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_GE_TIEMPO_MES",
+    "columns": 13
+  },
+  {
+    "table": "T_DIM_GE_TIPO_PAGO",
+    "columns": 3
+  },
+  {
+    "table": "T_EVOLUTIVO_PAGO_DIARIO_FINAL",
+    "columns": 29
+  },
+  {
+    "table": "T_EVOLUTIVO_PAGO_DIARIO_FINAL_V2",
+    "columns": 26
+  },
+  {
+    "table": "T_EVOLUTIVO_PAGO_DIARIO_PASO_1",
+    "columns": 22
+  },
+  {
+    "table": "T_EVOLUTIVO_PAGO_DIARIO_PASO_2",
+    "columns": 8
+  },
+  {
+    "table": "T_FACT_FACTURACION_DIA",
+    "columns": 77
+  },
+  {
+    "table": "T_FACT_FACTURACION_INTERVALO",
+    "columns": 71
+  },
+  {
+    "table": "T_FACT_FACTURACION_INTERVALO_RETENCIONES",
+    "columns": 67
+  },
+  {
+    "table": "T_FACT_FACTURACION_MES",
+    "columns": 132
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_DIARIO",
+    "columns": 53
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251011",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251016",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251020",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251021",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251023",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251107",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251117",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251121",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251126",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251127",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251201",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251211",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251217",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20251230",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20260102",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20260105",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20260109",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20260212",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GESTION_ECONOMICA_MES_20260226",
+    "columns": 172
+  },
+  {
+    "table": "T_FACT_GE_PPTO",
+    "columns": 12
+  },
+  {
+    "table": "T_FACT_GE_PPTO_20251007",
+    "columns": 12
+  },
+  {
+    "table": "T_FACT_LISTA_METRICAS_CU",
+    "columns": 2
+  },
+  {
+    "table": "T_FACT_LISTA_METRICAS_IMPACTOS",
+    "columns": 2
+  },
+  {
+    "table": "T_FACT_PPTO_V2",
+    "columns": 5
+  },
+  {
+    "table": "T_GE_DEMANDA",
+    "columns": 5
+  },
+  {
+    "table": "T_INPUT_ADICIONAL_FACTURACION",
+    "columns": 9
+  },
+  {
+    "table": "T_INPUT_CALIDAD",
+    "columns": 11
+  },
+  {
+    "table": "T_INPUT_CUMPLE_CUOTA",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_EFECTIVIDAD_VENTAS",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_ERROR_ENVIO_CAMPO",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_ERROR_TRANSFERENCIA_RECLAMOS",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_FACTOR_DESEMPENIO",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_FDS",
+    "columns": 16
+  },
+  {
+    "table": "T_INPUT_FDS_ALBATROS",
+    "columns": 17
+  },
+  {
+    "table": "T_INPUT_HORARIO",
+    "columns": 24
+  },
+  {
+    "table": "T_INPUT_LINEA_FINAL_FACTURACION_BO_OTROS_KIPU",
+    "columns": 15
+  },
+  {
+    "table": "T_INPUT_LINEA_FINAL_FACTURACION_CCEE_KIPU",
+    "columns": 60
+  },
+  {
+    "table": "T_INPUT_LINEA_FINAL_FACTURACION_VOZ_KIPU_ALBATROS",
+    "columns": 98
+  },
+  {
+    "table": "T_INPUT_PARAMETROS",
+    "columns": 46
+  },
+  {
+    "table": "T_INPUT_PARAMETROS_VOZ_CIRCULAR",
+    "columns": 6
+  },
+  {
+    "table": "T_INPUT_PARAMETROS_VOZ_FDD",
+    "columns": 12
+  },
+  {
+    "table": "T_INPUT_RANGO_DESVIACION",
+    "columns": 3
+  },
+  {
+    "table": "T_INPUT_RESUMEN_ENCUESTAS",
+    "columns": 7
+  },
+  {
+    "table": "T_INPUT_SATISFACCION",
+    "columns": 12
+  },
+  {
+    "table": "T_INPUT_SATISFACCION_NPS_SOL_2022",
+    "columns": 14
+  },
+  {
+    "table": "T_INPUT_TARIFAS",
+    "columns": 7
+  },
+  {
+    "table": "T_INPUT_TIPO_CAMBIO_HISPAM",
+    "columns": 6
+  },
+  {
+    "table": "T_INPUT_TOPE_NPS_1_2",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_TRANSFERENCIAS_MISMO_POOL",
+    "columns": 6
+  },
+  {
+    "table": "T_INPUT_TRX_CROSS",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_TRX_RELL",
+    "columns": 11
+  },
+  {
+    "table": "T_INPUT_USO_GENIO",
+    "columns": 8
+  },
+  {
+    "table": "T_INPUT_USUARIOS_COR",
+    "columns": 14
+  },
+  {
+    "table": "T_LOG_PROCESO_FACTURACION",
+    "columns": 4
+  },
+  {
+    "table": "T_PAGO_PREGUNTA_RESPUESTA_MES",
+    "columns": 8
+  },
+  {
+    "table": "T_PESOS_TIPO_ENCUESTA_MES",
+    "columns": 6
+  },
+  {
+    "table": "T_REPORTE_RESUMEN_KIPU_DIA",
+    "columns": 5
+  },
+  {
+    "table": "T_REPORTE_RESUMEN_METRICAS_CALIDAD",
+    "columns": 14
+  },
+  {
+    "table": "T_RESUMEN_CUBO_ESTRATEGIA_MES_ESTRATEGIA_VOZ",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_CUBO_ESTRATEGIA_MES_REAL_VOZ",
+    "columns": 16
+  },
+  {
+    "table": "T_RESUMEN_DIARIO_FACTURACION_PRELIMINAR_CCEE",
+    "columns": 22
+  },
+  {
+    "table": "T_RESUMEN_KPIS_CALIDAD",
+    "columns": 6
+  },
+  {
+    "table": "T_RESUMEN_MAXIMO_DIA_MES",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_MES_FACTURACION_PRELIMINAR_CCEE",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_MES_FACTURACION_PRELIMINAR_VOZ_ALBATROS",
+    "columns": 95
+  },
+  {
+    "table": "T_TEMP_CASOS_BOTMAKER",
+    "columns": 9
+  },
+  {
+    "table": "T_TEMP_CASOS_BOTMAKER_DIARIO",
+    "columns": 9
+  },
+  {
+    "table": "T_TEMP_DATOS_BO",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMP_DETALLE_CALIDAD",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMP_FACTURACION_DIA",
+    "columns": 79
+  },
+  {
+    "table": "T_TEMP_FACTURACION_INTERVALO",
+    "columns": 73
+  },
+  {
+    "table": "T_TEMP_FACTURACION_INTERVALO_RETENCIONES",
+    "columns": 69
+  },
+  {
+    "table": "T_TEMP_FACTURACION_MES",
+    "columns": 120
+  },
+  {
+    "table": "T_TEMP_FACTURACION_MES2",
+    "columns": 106
+  },
+  {
+    "table": "T_TEMP_FACTURACION_NUEVO_COR",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMP_HORAS_BOTMAKER_DIARIO",
+    "columns": 6
+  },
+  {
+    "table": "T_TEMP_HORAS_BOTMAKER_RES",
+    "columns": 6
+  },
+  {
+    "table": "T_TEMP_INPUT_CALIDAD",
+    "columns": 12
+  },
+  {
+    "table": "T_TEMP_INPUT_COR",
+    "columns": 16
+  },
+  {
+    "table": "T_TEMP_INPUT_COR_PASO1",
+    "columns": 8
+  },
+  {
+    "table": "T_TEMP_INPUT_HORARIO",
+    "columns": 22
+  },
+  {
+    "table": "T_TEMP_INPUT_INTERVALOS_CONTIGENCIA",
+    "columns": 15
+  },
+  {
+    "table": "T_TEMP_INPUT_LINEA_FINAL_FACTURACION_CCEE_PASO1",
+    "columns": 5
+  },
+  {
+    "table": "T_TEMP_INPUT_LINEA_FINAL_FACTURACION_CCEE_PASO2",
+    "columns": 15
+  },
+  {
+    "table": "T_TEMP_INPUT_PARAMETROS",
+    "columns": 19
+  },
+  {
+    "table": "T_TEMP_INPUT_PARAMETROS_VALORES_CROSS",
+    "columns": 4
+  },
+  {
+    "table": "T_TEMP_INPUT_PARAMETROS_VOZ_CIRCULAR",
+    "columns": 5
+  },
+  {
+    "table": "T_TEMP_INPUT_PARAMETROS_VOZ_FDD",
+    "columns": 10
+  },
+  {
+    "table": "T_TEMP_INPUT_PARAMETROS_VOZ_FDD_2",
+    "columns": 10
+  },
+  {
+    "table": "T_TEMP_INPUT_SATISFACCION",
+    "columns": 14
+  },
+  {
+    "table": "T_TEMP_INPUT_SATISFACCION_PASO1",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMP_INPUT_SIMULACION",
+    "columns": 17
+  },
+  {
+    "table": "T_TEMP_INPUT_SIMULACION_PASO1",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMP_INPUT_USUARIOS_COR",
+    "columns": 15
+  },
+  {
+    "table": "T_TEMP_INPUT_USUARIOS_COR_PASO1",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMP_LISTA_FDS",
+    "columns": 23
+  },
+  {
+    "table": "T_TEMP_LISTA_VERSION",
+    "columns": 15
+  },
+  {
+    "table": "T_TEMP_PRELIMINAR_BO",
+    "columns": 18
+  },
+  {
+    "table": "T_TEMP_PRELIMINAR_BO_OTROS_KIPU",
+    "columns": 17
+  },
+  {
+    "table": "T_TEMP_PRELIMINAR_CCEE_KIPU",
+    "columns": 66
+  },
+  {
+    "table": "T_TEMP_PRELIMINAR_COMISIONES_CROSS",
+    "columns": 15
+  },
+  {
+    "table": "T_TEMP_PRELIMINAR_RETEN_FIDE",
+    "columns": 18
+  },
+  {
+    "table": "T_TEMP_RESUMEN_INTERVALOS_X_DIA",
+    "columns": 6
+  },
+  {
+    "table": "T_T_INPUT_PARAMETROS_VOZ_CIRCULAR",
+    "columns": 4
+  },
+  {
+    "table": "YOHA_BO_REAL_CIERRE_AGOSTO",
+    "columns": 7
+  },
+  {
+    "table": "YOHA_BO_REAL_CIERRE_NOVIEMBRE",
+    "columns": 7
+  },
+  {
+    "table": "YOHA_BO_REAL_CIERRE_OCTUBRE",
+    "columns": 7
+  },
+  {
+    "table": "YOHA_BO_REAL_CIERRE_SETIEMBRE",
+    "columns": 7
+  },
+  {
+    "table": "YOHA_OPERATIVO_V4_INCLUYE_TUVES",
+    "columns": 7
+  },
+  {
+    "table": "________T_CCEE_MODELO_OBJETIVOS_TEMPO",
+    "columns": 7
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "20241105____HISPAM_TEMP_ECUADOR_EVENTO",
+    "columns": 47
+  },
+  {
+    "table": "20241105____HISPAM_TEMP_ECUADOR_HORA",
+    "columns": 30
+  },
+  {
+    "table": "20241120_____MIX_ALBATROS_T_TEMPORAL",
+    "columns": 14
+  },
+  {
+    "table": "HISPAM_CONFIGURACION_CARGA_PAIS",
+    "columns": 8
+  },
+  {
+    "table": "HISPAM_CONFIGURACION_CARGA_PAIS_CAMPOS",
+    "columns": 5
+  },
+  {
+    "table": "MIXA_HISPAM_TC",
+    "columns": 3
+  },
+  {
+    "table": "MIXA_LISTADO_PAIS_MONEDA",
+    "columns": 5
+  },
+  {
+    "table": "MIX_ALBATROS_FINAL",
+    "columns": 38
+  },
+  {
+    "table": "MIX_ALBATROS_FINAL_20241031",
+    "columns": 38
+  },
+  {
+    "table": "MIX_ALBATROS_FINAL_20241105",
+    "columns": 38
+  },
+  {
+    "table": "MIX_ALBATROS_FINAL_20241115",
+    "columns": 38
+  },
+  {
+    "table": "MIX_ALBATROS_FINAL_20241204",
+    "columns": 38
+  },
+  {
+    "table": "MIX_CARGA_TEMPORAL_HISPAM",
+    "columns": 25
+  },
+  {
+    "table": "MIX_CARGA_TEMPORAL_HISPAM_20241120",
+    "columns": 25
+  },
+  {
+    "table": "MIX_CARGA_TEMPORAL_HISPAM_20241204",
+    "columns": 25
+  },
+  {
+    "table": "_____HISPAM_TEMP_ECUADOR",
+    "columns": 47
+  },
+  {
+    "table": "_____HISPAM_TEMP_ECUADOR_EVENTO",
+    "columns": 47
+  },
+  {
+    "table": "______HISPAM_CONFIGURACION_CARGA_PAIS_CAMPOS",
+    "columns": 4
+  },
+  {
+    "table": "_______DATOS_HISPAM",
+    "columns": 25
+  },
+  {
+    "table": "_______MIX_ALBATROS_FINAL_20241004",
+    "columns": 35
+  },
+  {
+    "table": "_______MIX_ALBATROS_FINAL_20241030",
+    "columns": 38
+  },
+  {
+    "table": "_______T_INPUT_PARAMETROS_20240717",
+    "columns": 44
+  },
+  {
+    "table": "________HISPAM_CONFIGURACION_CARGA_PAIS",
+    "columns": 8
+  },
+  {
+    "table": "18052025_tramitador_Reten_2",
+    "columns": 1
+  },
+  {
+    "table": "20052025_tramitador_Reten",
+    "columns": 1
+  },
+  {
+    "table": "20230105_TEMP_VALIDAR",
+    "columns": 12
+  },
+  {
+    "table": "20230109_POSTPAGO_OLA2",
+    "columns": 1
+  },
+  {
+    "table": "202301_TEMP_VALIDAR",
+    "columns": 12
+  },
+  {
+    "table": "20230211_campania_cobranza",
+    "columns": 20
+  },
+  {
+    "table": "20230228_Base_Retenseg_68k",
+    "columns": 1
+  },
+  {
+    "table": "202302_bd_upsell_capl",
+    "columns": 1
+  },
+  {
+    "table": "20230313_FIJA_POTENCIAL",
+    "columns": 8
+  },
+  {
+    "table": "20230315_Estrangulados_01mar_al_08mar",
+    "columns": 5
+  },
+  {
+    "table": "20230328_INTRIGA_FASE3_IVRIN",
+    "columns": 4
+  },
+  {
+    "table": "20230328_INTRIGA_FASE3_IVRIN_FTTH_2MESES",
+    "columns": 3
+  },
+  {
+    "table": "20230328_INTRIGA_FASE3_IVRIN_FTTH_6MESES",
+    "columns": 3
+  },
+  {
+    "table": "20230328_INTRIGA_FASE3_IVRIN_HFC_2MESES",
+    "columns": 3
+  },
+  {
+    "table": "20230328_INTRIGA_FASE3_IVRIN_HFC_6MESES",
+    "columns": 3
+  },
+  {
+    "table": "202303_potenciales_fija",
+    "columns": 5
+  },
+  {
+    "table": "20230410_enrutamiento_cross",
+    "columns": 6
+  },
+  {
+    "table": "20230508_casos_infundados",
+    "columns": 11
+  },
+  {
+    "table": "202305_TEMP_VALIDAR",
+    "columns": 12
+  },
+  {
+    "table": "20231109_BASES_REPO_PILOTO_OCT23",
+    "columns": 15
+  },
+  {
+    "table": "20231116_base_reseteo_decos_adicional",
+    "columns": 9
+  },
+  {
+    "table": "20231220_2DO_PILOTO_RENTESEG",
+    "columns": 1
+  },
+  {
+    "table": "202312_MT_RES_AURA_1",
+    "columns": 4
+  },
+  {
+    "table": "20240119_3er_PILOTO_RENTESEG",
+    "columns": 5
+  },
+  {
+    "table": "20240215_CROSS_MOVIL_CAPTA_FIJA_AV",
+    "columns": 1
+  },
+  {
+    "table": "20240422_BOOnline_BaseClientes",
+    "columns": 7
+  },
+  {
+    "table": "20240515_Neutros_potenciales_Pospago",
+    "columns": 36
+  },
+  {
+    "table": "26052025_tramitadores_Reten",
+    "columns": 1
+  },
+  {
+    "table": "4PILOTO_RENTESEG",
+    "columns": 7
+  },
+  {
+    "table": "4PILOTO_RENTESEG_DETALLE",
+    "columns": 6
+  },
+  {
+    "table": "4PILOTO_RENTESEG_cobertura_postpago",
+    "columns": 1
+  },
+  {
+    "table": "AM_POTENCIAL_MIGRACION_ADSL_CON_COBERTURA",
+    "columns": 11
+  },
+  {
+    "table": "AM_POTENCIAL_REPETIDOR",
+    "columns": 5
+  },
+  {
+    "table": "Afiliacion_izipay_202209",
+    "columns": 3
+  },
+  {
+    "table": "B2C_DAIZIPAY_WHATSAPP_OUT",
+    "columns": 3
+  },
+  {
+    "table": "BASE2_BD_Resto_65.90",
+    "columns": 1
+  },
+  {
+    "table": "BASE3_Masificacion1MB_572K",
+    "columns": 1
+  },
+  {
+    "table": "BASE_ACUMULADA_tivr_cobranzas",
+    "columns": 2
+  },
+  {
+    "table": "BASE_ACUMULADA_tivr_cobranzas_V2",
+    "columns": 2
+  },
+  {
+    "table": "BASE_ANTERIOR_MTP_TECNICO",
+    "columns": 10
+  },
+  {
+    "table": "BASE_AURA_PORT_OUT_HIST",
+    "columns": 3
+  },
+  {
+    "table": "BASE_AURA_PORT_OUT_ULT",
+    "columns": 2
+  },
+  {
+    "table": "BASE_BLOQUEOS_Recargas_30_dias",
+    "columns": 5
+  },
+  {
+    "table": "BASE_BLOQUEOS_Recencia_Recargas",
+    "columns": 5
+  },
+  {
+    "table": "BASE_CALL_FIJA_TEMP_CLAQUETA",
+    "columns": 9
+  },
+  {
+    "table": "BASE_CALL_FIJA_TEMP_SMS",
+    "columns": 9
+  },
+  {
+    "table": "BASE_CALL_MOVIL_TEMP",
+    "columns": 7
+  },
+  {
+    "table": "BASE_ENRUTAMIENTO_ADAPTATIVO_MIGRA_X_AVERIA",
+    "columns": 3
+  },
+  {
+    "table": "BASE_EXCEL_CR_ESTRANGULAMIENTO",
+    "columns": 7
+  },
+  {
+    "table": "BASE_EXCEL_CR_ESTRANGULAMIENTO_CCEE",
+    "columns": 7
+  },
+  {
+    "table": "BASE_FACTURAS_PRIMER_GRUPO_AMDOCS_CICLO_0107",
+    "columns": 5
+  },
+  {
+    "table": "BASE_FIJA_SEGMENTACION",
+    "columns": 6
+  },
+  {
+    "table": "BASE_IMPACTO_FACO",
+    "columns": 2
+  },
+  {
+    "table": "BASE_INCIDENCIA_COBRANZA_FIJA",
+    "columns": 1
+  },
+  {
+    "table": "BASE_INICIAL_TRAMITADORES",
+    "columns": 5
+  },
+  {
+    "table": "BASE_IVR_ADAPTATIVO",
+    "columns": 10
+  },
+  {
+    "table": "BASE_IVR_LISTA_BLANCA",
+    "columns": 2
+  },
+  {
+    "table": "BASE_MIGRA_FIBRA_20230309",
+    "columns": 5
+  },
+  {
+    "table": "BASE_MOVIL_SEGMENTACION",
+    "columns": 6
+  },
+  {
+    "table": "BASE_MT_PILOTO",
+    "columns": 2
+  },
+  {
+    "table": "BASE_OSIPTEL_20230112",
+    "columns": 3
+  },
+  {
+    "table": "BASE_PILOTO_CROSS_202110",
+    "columns": 1
+  },
+  {
+    "table": "BASE_PRIORIDAD_PLATAFORMA",
+    "columns": 1
+  },
+  {
+    "table": "BASE_UNIFICADA_EXCLUIDOS",
+    "columns": 29
+  },
+  {
+    "table": "BASE_USSD",
+    "columns": 1
+  },
+  {
+    "table": "BASE_VICIO_MOVIL",
+    "columns": 1
+  },
+  {
+    "table": "BASE_tivr_cobranzas",
+    "columns": 3
+  },
+  {
+    "table": "BBDD_ClientesPotenciales_20230324",
+    "columns": 15
+  },
+  {
+    "table": "BD_ALEATORIO_MT_POTENCIAL",
+    "columns": 2
+  },
+  {
+    "table": "BD_CAEQBUYBACK_202312",
+    "columns": 13
+  },
+  {
+    "table": "BD_CASUISTICAS_RO3",
+    "columns": 18
+  },
+  {
+    "table": "BD_CASUISTICAS_RO3_INICIAL",
+    "columns": 18
+  },
+  {
+    "table": "BD_WhatsApp_2020",
+    "columns": 54
+  },
+  {
+    "table": "BLOQUEOS_BASE_Recargas_30_dias",
+    "columns": 5
+  },
+  {
+    "table": "BORRAR_T_ADAP_BASE",
+    "columns": 27
+  },
+  {
+    "table": "BaseRO1_Incidencia_decosTV_datafinal04012022",
+    "columns": 28
+  },
+  {
+    "table": "BaseSimulacion_TransferenciaBlindaje_Movil_20220202",
+    "columns": 4
+  },
+  {
+    "table": "Base_0_3Mbps_Traf_Ago22",
+    "columns": 3
+  },
+  {
+    "table": "Base_Claquetas_naked_ro02",
+    "columns": 3
+  },
+  {
+    "table": "Base_MT_quebrados_Final_20230831",
+    "columns": 36
+  },
+  {
+    "table": "Base_Marcar_degradado_fibra_20230420",
+    "columns": 13
+  },
+  {
+    "table": "Base_PortalCautivo_vcto0909_2309",
+    "columns": 4
+  },
+  {
+    "table": "Base_PortalCautivo_vcto0909_3009",
+    "columns": 5
+  },
+  {
+    "table": "Base_Prepago_ULT_30_DIAS_MENOR_5_SOLES_CCEE",
+    "columns": 1
+  },
+  {
+    "table": "Base_a_Cargar_Prepago_Diciembre",
+    "columns": 1
+  },
+  {
+    "table": "Base_a_Cargar_Prepago_Noviembre",
+    "columns": 1
+  },
+  {
+    "table": "Base_a_Cargar_Prepago_Octubre",
+    "columns": 1
+  },
+  {
+    "table": "Base_piloto_Migra_acumulado",
+    "columns": 3
+  },
+  {
+    "table": "Base_retenidos_dscto_ajuste_argumentario",
+    "columns": 12
+  },
+  {
+    "table": "Base_validacion_diaria_renteseg_012024",
+    "columns": 4
+  },
+  {
+    "table": "Base_validacion_diaria_renteseg_022024",
+    "columns": 4
+  },
+  {
+    "table": "Base_validacion_diaria_renteseg_112023",
+    "columns": 4
+  },
+  {
+    "table": "CABINA_actualizada_030522_2",
+    "columns": 7
+  },
+  {
+    "table": "CAMP_LISTA_FIJA_202101",
+    "columns": 6
+  },
+  {
+    "table": "CAMP_LISTA_FIJA_202102",
+    "columns": 7
+  },
+  {
+    "table": "CAMP_LISTA_FIJA_202102_ALEATORIA_20_PC",
+    "columns": 1
+  },
+  {
+    "table": "CAMP_LISTA_FIJA_NEW",
+    "columns": 6
+  },
+  {
+    "table": "CAMP_LISTA_FIJA_ULT",
+    "columns": 3
+  },
+  {
+    "table": "CAMP_LISTA_MOVIL_202101",
+    "columns": 6
+  },
+  {
+    "table": "CAMP_LISTA_MOVIL_202102",
+    "columns": 7
+  },
+  {
+    "table": "CAMP_LISTA_MOVIL_202102_40",
+    "columns": 1
+  },
+  {
+    "table": "CAMP_LISTA_MOVIL_202102_ALEATORIA_ENTRE_2",
+    "columns": 1
+  },
+  {
+    "table": "CAMP_LISTA_MOVIL_NEW",
+    "columns": 6
+  },
+  {
+    "table": "CAMP_LISTA_MOVIL_ULT",
+    "columns": 3
+  },
+  {
+    "table": "CATV_CORTADOS_09_11",
+    "columns": 7
+  },
+  {
+    "table": "CATV_CORTADOS_24_11",
+    "columns": 7
+  },
+  {
+    "table": "CDR_20220630101610_0950_0955",
+    "columns": 66
+  },
+  {
+    "table": "CDR_20240917",
+    "columns": 69
+  },
+  {
+    "table": "CDR_CALL_ID_202006",
+    "columns": 1
+  },
+  {
+    "table": "CDR_VALIDAR_EN_LINEA",
+    "columns": 66
+  },
+  {
+    "table": "CMS_Gray_List_20220704",
+    "columns": 7
+  },
+  {
+    "table": "COLOCAR_TELEFONO_SEGMENTO",
+    "columns": 3
+  },
+  {
+    "table": "CORTES_ADSL_0311",
+    "columns": 4
+  },
+  {
+    "table": "CX_FIJA_AMDOCS_carga_bloqueo",
+    "columns": 3
+  },
+  {
+    "table": "Clientes_a_migrar_a_Fibra",
+    "columns": 5
+  },
+  {
+    "table": "Completa_BA_20230222",
+    "columns": 1
+  },
+  {
+    "table": "Comunicacion_TV_20240509",
+    "columns": 42
+  },
+  {
+    "table": "DEGRADADOS_FIBRA_20230428",
+    "columns": 1
+  },
+  {
+    "table": "DEGRADADOS_FIBRA_20230519",
+    "columns": 1
+  },
+  {
+    "table": "DEGRADADOS_FIBRA_20230626",
+    "columns": 1
+  },
+  {
+    "table": "DEGRADADOS_FIBRA_20230724",
+    "columns": 1
+  },
+  {
+    "table": "DEGRADADOS_FIBRA_20230817",
+    "columns": 1
+  },
+  {
+    "table": "DEVOLUCION_20200905",
+    "columns": 1
+  },
+  {
+    "table": "DEVOLUCION_UPFRONT_TELEFONO_DNI",
+    "columns": 2
+  },
+  {
+    "table": "DNIS_NUEVA_SEGMENTACION_202009",
+    "columns": 3
+  },
+  {
+    "table": "DWH_LISTA_MIGRACION_FIJA_20211228",
+    "columns": 22
+  },
+  {
+    "table": "Desbloqueo_cobranzas_20210204",
+    "columns": 1
+  },
+  {
+    "table": "ETQ_CONTRATO_CLASICO",
+    "columns": 1
+  },
+  {
+    "table": "ETQ_CONTRATO_PLATA",
+    "columns": 1
+  },
+  {
+    "table": "EXCLUIR_ADSL_con_FIBRA",
+    "columns": 1
+  },
+  {
+    "table": "Estructura_LN",
+    "columns": 5
+  },
+  {
+    "table": "FA_COMUNICACION_DEGRADACION_FIJA",
+    "columns": 1
+  },
+  {
+    "table": "FA_COMUNICACION_DEGRADACION_MOVIL",
+    "columns": 1
+  },
+  {
+    "table": "FA_NO_BORRAR_ADAPTATIVO_Base_FFTH_NO_MT",
+    "columns": 10
+  },
+  {
+    "table": "FIJA_18012020_MAIL_DANA",
+    "columns": 39
+  },
+  {
+    "table": "FIJA_202212",
+    "columns": 6
+  },
+  {
+    "table": "FIJA_202305",
+    "columns": 4
+  },
+  {
+    "table": "FIJA_202305_",
+    "columns": 6
+  },
+  {
+    "table": "FIJA_COMPLETA_TV_20230622",
+    "columns": 1
+  },
+  {
+    "table": "FIJA_COMPLETA_TV_AV_20230622",
+    "columns": 1
+  },
+  {
+    "table": "FIJA_REITERADORES",
+    "columns": 1
+  },
+  {
+    "table": "GL_ATIS_RO3.1_27JUL",
+    "columns": 3
+  },
+  {
+    "table": "GL_CMS_RO3.1_25JUL",
+    "columns": 5
+  },
+  {
+    "table": "GL_MONO_03_06_22",
+    "columns": 9
+  },
+  {
+    "table": "GUARDAR_BASE_TRAMITADORES",
+    "columns": 5
+  },
+  {
+    "table": "HEAVY_USERS_20200923",
+    "columns": 1
+  },
+  {
+    "table": "ID_CASO_ENCUESTAS",
+    "columns": 1
+  },
+  {
+    "table": "INC_PORT_20220317",
+    "columns": 1
+  },
+  {
+    "table": "INTRIGA_IVRIN_FTTH_2MESES_20230321",
+    "columns": 3
+  },
+  {
+    "table": "INTRIGA_IVRIN_FTTH_6MESES_20230321",
+    "columns": 3
+  },
+  {
+    "table": "INTRIGA_IVRIN_HFC_2MESES_20230321",
+    "columns": 3
+  },
+  {
+    "table": "INTRIGA_IVRIN_HFC_6MESES_20230321",
+    "columns": 3
+  },
+  {
+    "table": "Iquitos_Fija",
+    "columns": 1
+  },
+  {
+    "table": "Iquitos_Movil",
+    "columns": 1
+  },
+  {
+    "table": "JC_iNCREMENTO_PRECIO_20220901",
+    "columns": 9
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO",
+    "columns": 1
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO_20240529",
+    "columns": 1
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO_20240902",
+    "columns": 1
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO_20240903",
+    "columns": 1
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO_20240904",
+    "columns": 1
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO_20240905",
+    "columns": 1
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO_20240906",
+    "columns": 1
+  },
+  {
+    "table": "JOURNEY_REITERADAS_CRITICO_2024_05_29",
+    "columns": 1
+  },
+  {
+    "table": "LINEAS_SEM_40",
+    "columns": 2
+  },
+  {
+    "table": "LINEAS_SEM_42",
+    "columns": 2
+  },
+  {
+    "table": "LINEAS_SEM_43",
+    "columns": 2
+  },
+  {
+    "table": "LINEAS_SEM_45",
+    "columns": 2
+  },
+  {
+    "table": "LINEAS_SEM_46",
+    "columns": 2
+  },
+  {
+    "table": "LINEAS_SEM_47",
+    "columns": 2
+  },
+  {
+    "table": "Linea_HU_4K_20230928",
+    "columns": 1
+  },
+  {
+    "table": "ListaVip_Tenencia_20220310",
+    "columns": 22
+  },
+  {
+    "table": "ListaVip_al_20220321",
+    "columns": 12
+  },
+  {
+    "table": "Lista_VIP_20220318",
+    "columns": 12
+  },
+  {
+    "table": "Llamadas_agencias_20220318",
+    "columns": 13
+  },
+  {
+    "table": "Llamadas_agencias_20220318_v1",
+    "columns": 12
+  },
+  {
+    "table": "Llamadas_agencias_20220318_v2",
+    "columns": 14
+  },
+  {
+    "table": "Llamadas_agencias_20220318_v3",
+    "columns": 14
+  },
+  {
+    "table": "MIGRA_NOKIA_20221029",
+    "columns": 10
+  },
+  {
+    "table": "MOVIL_202008",
+    "columns": 4
+  },
+  {
+    "table": "MOVIL_REITERADORES",
+    "columns": 1
+  },
+  {
+    "table": "MTA_Bitacora_20220718",
+    "columns": 27
+  },
+  {
+    "table": "MTA_Bitacora_20220823",
+    "columns": 32
+  },
+  {
+    "table": "MT_CORTADOS_1711",
+    "columns": 1
+  },
+  {
+    "table": "MT_bloqueo_20220307",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20221025",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20230222",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20230308",
+    "columns": 9
+  },
+  {
+    "table": "Migra_Consolidado_20230331",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20230705",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20230718",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20230726",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20230809",
+    "columns": 2
+  },
+  {
+    "table": "Migra_Consolidado_20240813",
+    "columns": 2
+  },
+  {
+    "table": "Migra_TV_TV_20220104",
+    "columns": 27
+  },
+  {
+    "table": "Migraci\u00f3n_tecnologia_ADSL_20230308",
+    "columns": 8
+  },
+  {
+    "table": "Migraci\u00f3n_tecnologia_Fibra_20230307",
+    "columns": 20
+  },
+  {
+    "table": "Migraci\u00f3n_tecnologia_Fibra_20230307_ok",
+    "columns": 20
+  },
+  {
+    "table": "MigraxAveria_20240325",
+    "columns": 2
+  },
+  {
+    "table": "MigraxAveria_Enrutamiento_20240320",
+    "columns": 3
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Base_MigraxAveria",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Heavy_Users",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Planta_MT_Diaria",
+    "columns": 8
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Planta_activa_MT",
+    "columns": 4
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Planta_con_pedidos_MT",
+    "columns": 5
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Prioridad_Fija",
+    "columns": 6
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Prioridad_Movil",
+    "columns": 6
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Recargas_30_dias",
+    "columns": 3
+  },
+  {
+    "table": "NO_BORRAR_ADAPTATIVO_Recencia_Recargas",
+    "columns": 4
+  },
+  {
+    "table": "NO_BORRAR_BASE_FILTRAR_TRAMITADORES_ADHOC",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_INFO_LOGUEO",
+    "columns": 11
+  },
+  {
+    "table": "NO_BORRAR_TRAMITADORES",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_TRAMITADORES_BASE_RETENCIONES_167",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_TRAMITADORES_BASE_RETENCIONES_167_BACKUP",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_TRAMITADORES_VISOR_BI_RETENCIONES",
+    "columns": 4
+  },
+  {
+    "table": "NO_BORRAR_archivo_loginout",
+    "columns": 6
+  },
+  {
+    "table": "NO_BORRAR_lineas_tramitadores_a_retirar",
+    "columns": 5
+  },
+  {
+    "table": "NO_BORRAR_piloto_capta_fija_mt",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_piloto_capta_movil_mt",
+    "columns": 1
+  },
+  {
+    "table": "NO_BORRAR_tramitadores_a_retirar",
+    "columns": 1
+  },
+  {
+    "table": "NUEVA_SEGMENTACION_202307",
+    "columns": 5
+  },
+  {
+    "table": "NUEVA_SEGMENTACION_202308",
+    "columns": 5
+  },
+  {
+    "table": "PAGOS_FICTICIOS_CAMP_20_SOLES",
+    "columns": 17
+  },
+  {
+    "table": "PERFIL_TRANSFERENCIA_20250507",
+    "columns": 5
+  },
+  {
+    "table": "PILOTO_RENTESEG_20K_20231130",
+    "columns": 2
+  },
+  {
+    "table": "PILOTO_RENTESEG_50K_20231206",
+    "columns": 1
+  },
+  {
+    "table": "PLANTA_FIJA_B2B",
+    "columns": 8
+  },
+  {
+    "table": "PLANTA_MT_1",
+    "columns": 1
+  },
+  {
+    "table": "PLANTA_MT_20230816",
+    "columns": 7
+  },
+  {
+    "table": "PLANTA_PRIORIDAD_202405",
+    "columns": 6
+  },
+  {
+    "table": "PLANTA_RICHI_FACT",
+    "columns": 6
+  },
+  {
+    "table": "PORTADOS_CLARO_20210813",
+    "columns": 1
+  },
+  {
+    "table": "Pedido_Graylist_Comunicacion_20220610",
+    "columns": 45
+  },
+  {
+    "table": "Planta_CMS",
+    "columns": 6
+  },
+  {
+    "table": "Planta_HFC_202202",
+    "columns": 17
+  },
+  {
+    "table": "Planta_MT_Ago24",
+    "columns": 5
+  },
+  {
+    "table": "Planta_MT_MargenAlto_FTTH_120824",
+    "columns": 12
+  },
+  {
+    "table": "Planta_MT_MargenAlto_FTTH_120824_V2",
+    "columns": 13
+  },
+  {
+    "table": "Potencial_DIVICAUS_MxA_20231005",
+    "columns": 7
+  },
+  {
+    "table": "Q_canales_MT_movil_10k",
+    "columns": 17
+  },
+  {
+    "table": "RA_DET_PLANTA_POSTPAGO_FACT",
+    "columns": 12
+  },
+  {
+    "table": "RA_DET_PLANTA_POSTPAGO_FACT_SEG",
+    "columns": 13
+  },
+  {
+    "table": "RA_DET_PLANTA_POSTPAGO_FACT_SEG_2",
+    "columns": 15
+  },
+  {
+    "table": "RA_LLAM_ENT_CC_ULTIMO_MES",
+    "columns": 9
+  },
+  {
+    "table": "RA_NO_RECARGADORES_30_120_DIAS",
+    "columns": 7
+  },
+  {
+    "table": "RA_NO_RECARGADORES_30_120_DIAS_ANTERIOR",
+    "columns": 4
+  },
+  {
+    "table": "RA_PLANTA_PREPAGO_RECARGADORA_PROM3M",
+    "columns": 10
+  },
+  {
+    "table": "RA_PLANTA_PREPAGO_RECARGADORA_PROM3M_SEG",
+    "columns": 10
+  },
+  {
+    "table": "RA_PLANTA_PREPAGO_RECARGADORA_ULT3M",
+    "columns": 5
+  },
+  {
+    "table": "RA_REITERADAS_FIJA_MAS_DE_2_ULT24HORAS",
+    "columns": 2
+  },
+  {
+    "table": "RA_REITERADAS_MAS_DE_2_ULT24HORAS",
+    "columns": 2
+  },
+  {
+    "table": "RA_TELEF_UNICOS_LOGIN_APP_MIMOV",
+    "columns": 3
+  },
+  {
+    "table": "RA_TEL_POSTPAGO_CLUSTERS",
+    "columns": 4
+  },
+  {
+    "table": "RA_TEL_PREPAGO_CLUSTERS",
+    "columns": 4
+  },
+  {
+    "table": "RA_TEL_PREPAGO_CLUSTERS_20_25",
+    "columns": 1
+  },
+  {
+    "table": "RA_TEL_PREPAGO_CLUSTERS_25_30",
+    "columns": 1
+  },
+  {
+    "table": "RA_TMP_REITERADAS_FIJA_MAS_DE_2_ULT24HORAS",
+    "columns": 2
+  },
+  {
+    "table": "RA_TMP_REITERADAS_MAS_DE_2_ULT24HORAS",
+    "columns": 2
+  },
+  {
+    "table": "RENTESEG_20231213",
+    "columns": 1
+  },
+  {
+    "table": "RG_BASE_PREPAGO_RECARGADOR_00_15",
+    "columns": 1
+  },
+  {
+    "table": "RG_BASE_REITERADAS_FIJA_MAYOR3",
+    "columns": 1
+  },
+  {
+    "table": "RG_MOVIL_AUMENTA_VELOCIDAD",
+    "columns": 1
+  },
+  {
+    "table": "RG_REITERADAS_2_ULT24HORAS",
+    "columns": 2
+  },
+  {
+    "table": "RG_REITERADOS_CRONICOS",
+    "columns": 1
+  },
+  {
+    "table": "RG_TABLA_ENRUTAMIENTO_ALTAS_MIGRADOS",
+    "columns": 1
+  },
+  {
+    "table": "RG_TABLA_ENRUTAMIENTO_TECNICA",
+    "columns": 1
+  },
+  {
+    "table": "ROLL_OUT_0_20210825_NO_CONSIDERAR",
+    "columns": 8
+  },
+  {
+    "table": "RO_0_20210630",
+    "columns": 2
+  },
+  {
+    "table": "RO_0_20210713",
+    "columns": 2
+  },
+  {
+    "table": "RO_0_20210727",
+    "columns": 3
+  },
+  {
+    "table": "RTD_Planta_Pangea_20240425",
+    "columns": 9
+  },
+  {
+    "table": "RTD_Planta_Pangea_20240801",
+    "columns": 9
+  },
+  {
+    "table": "Reclamos_080523vf",
+    "columns": 11
+  },
+  {
+    "table": "Repetidor_20210713",
+    "columns": 2
+  },
+  {
+    "table": "Reporte_Direccion_Instalacion_GL_PRE",
+    "columns": 8
+  },
+  {
+    "table": "Reporte_Direccion_Instalacion_GL_PRE_EXCEL",
+    "columns": 9
+  },
+  {
+    "table": "Reporte_Direccion_Instalacion_WL_20220731",
+    "columns": 8
+  },
+  {
+    "table": "Reporte_Direccion_Instalacion_WL_RO2_20220227",
+    "columns": 8
+  },
+  {
+    "table": "Reporte_Direccion_Instalacion_WL_V2",
+    "columns": 11
+  },
+  {
+    "table": "SUSPENSION_ADSL_0110",
+    "columns": 1
+  },
+  {
+    "table": "T3",
+    "columns": 1
+  },
+  {
+    "table": "T4",
+    "columns": 1
+  },
+  {
+    "table": "TECNICA_CROSS_potencial_202202",
+    "columns": 5
+  },
+  {
+    "table": "TEMP_BASE_ACTUAL",
+    "columns": 1
+  },
+  {
+    "table": "TEMP_CESAR_1",
+    "columns": 6
+  },
+  {
+    "table": "TEMP_EXPORT_DEGRA_OM",
+    "columns": 2
+  },
+  {
+    "table": "TEMP_SMS_PORTA",
+    "columns": 2
+  },
+  {
+    "table": "TEMP_VALIDAR",
+    "columns": 13
+  },
+  {
+    "table": "TMP_ATENDIDAS_CESAR",
+    "columns": 12
+  },
+  {
+    "table": "TMP_CLUSTERS_IVR_ADAPTATIVO",
+    "columns": 5
+  },
+  {
+    "table": "TRAMITADORES",
+    "columns": 1
+  },
+  {
+    "table": "TRAMITADORES_20221003",
+    "columns": 1
+  },
+  {
+    "table": "TRAMITADORES_anterior",
+    "columns": 1
+  },
+  {
+    "table": "TRAMITADOR_JULIO2019_1",
+    "columns": 1
+  },
+  {
+    "table": "TROBAS_SATURADAS_202007",
+    "columns": 2
+  },
+  {
+    "table": "TROBAS_SATURADAS_202007_",
+    "columns": 6
+  },
+  {
+    "table": "TROBAS_SATURADAS_202007_ANT_V2",
+    "columns": 6
+  },
+  {
+    "table": "TROBAS_SATURADAS_202007_SEM34",
+    "columns": 6
+  },
+  {
+    "table": "TROBAS_SATU_PORC",
+    "columns": 2
+  },
+  {
+    "table": "TROBAS_SATU_PORC_",
+    "columns": 2
+  },
+  {
+    "table": "TROBAS_SATU_PORC_ANT_V2",
+    "columns": 2
+  },
+  {
+    "table": "TROBAS_SATU_PORC_SEM34",
+    "columns": 2
+  },
+  {
+    "table": "TROBA_SATU_202008",
+    "columns": 6
+  },
+  {
+    "table": "TROBA_SEM_40",
+    "columns": 3
+  },
+  {
+    "table": "TROBA_SEM_42",
+    "columns": 3
+  },
+  {
+    "table": "TROBA_SEM_43",
+    "columns": 3
+  },
+  {
+    "table": "TROBA_SEM_45",
+    "columns": 3
+  },
+  {
+    "table": "TROBA_SEM_46",
+    "columns": 3
+  },
+  {
+    "table": "TROBA_SEM_47",
+    "columns": 3
+  },
+  {
+    "table": "T_ADAP_BASE",
+    "columns": 14
+  },
+  {
+    "table": "T_ADAP_BASE_V2",
+    "columns": 26
+  },
+  {
+    "table": "T_ADAP_BASE_V3",
+    "columns": 17
+  },
+  {
+    "table": "T_ADAP_BASE_V4",
+    "columns": 16
+  },
+  {
+    "table": "T_ADAP_CDU_FCR",
+    "columns": 3
+  },
+  {
+    "table": "T_ADAP_STATUS",
+    "columns": 9
+  },
+  {
+    "table": "T_ADAP_TIPO",
+    "columns": 9
+  },
+  {
+    "table": "T_BASE",
+    "columns": 1
+  },
+  {
+    "table": "T_BASEBONO_MTSA_",
+    "columns": 15
+  },
+  {
+    "table": "T_BASES_COMUNICACION_DEGRADACION",
+    "columns": 3
+  },
+  {
+    "table": "T_BASE_2",
+    "columns": 2
+  },
+  {
+    "table": "T_BASE_50_MT_AURA",
+    "columns": 1
+  },
+  {
+    "table": "T_BASE_ANALGESICO",
+    "columns": 2
+  },
+  {
+    "table": "T_BASE_AUTOMATISMOS_AURA",
+    "columns": 8
+  },
+  {
+    "table": "T_BASE_CLIENTES_ALTAS_NUEVAS_MIGRADOS_1ERMES_PREP_AURA",
+    "columns": 6
+  },
+  {
+    "table": "T_BASE_CLIENTES_ALTAS_NUEVAS_MIGRADOS_AURA",
+    "columns": 6
+  },
+  {
+    "table": "T_BASE_CLIENTES_PRESUNTOS_TRAMITADORES",
+    "columns": 13
+  },
+  {
+    "table": "T_BASE_CLIENTES_REIT_TEC_FIJA",
+    "columns": 4
+  },
+  {
+    "table": "T_BASE_CLIENTES_REIT_TEC_MOVIL",
+    "columns": 4
+  },
+  {
+    "table": "T_BASE_COMUNICACION_COBRANZAS",
+    "columns": 3
+  },
+  {
+    "table": "T_BASE_PILOTO_ALTAS_TACNA",
+    "columns": 3
+  },
+  {
+    "table": "T_BASE_RECENCIA_CCEE_MARIEL",
+    "columns": 1
+  },
+  {
+    "table": "T_BASE_REITERADORES_TRATAMIENTO",
+    "columns": 7
+  },
+  {
+    "table": "T_BASE_SMS_ENVIO_IP_2021_MOVIL",
+    "columns": 9
+  },
+  {
+    "table": "T_BASE_SMS_ENVIO_IP_2021_MT",
+    "columns": 12
+  },
+  {
+    "table": "T_CARPETA_TEMP",
+    "columns": 2
+  },
+  {
+    "table": "T_CATV_CORTADOS_09_11",
+    "columns": 6
+  },
+  {
+    "table": "T_DETALLE_ONEMARKETER_TEMP_DAILY",
+    "columns": 28
+  },
+  {
+    "table": "T_DIM_BASE_CONVERGENTE",
+    "columns": 8
+  },
+  {
+    "table": "T_DIM_BASE_MTP_x_CLIENTE",
+    "columns": 10
+  },
+  {
+    "table": "T_DIM_BASE_MTP_x_CLIENTE2",
+    "columns": 10
+  },
+  {
+    "table": "T_DIM_BASE_MTP_x_CLIENTE3",
+    "columns": 10
+  },
+  {
+    "table": "T_DIM_BASE_MTP_x_CLIENTE_ADAPTATIVO",
+    "columns": 11
+  },
+  {
+    "table": "T_DIM_LOG_IVR_ADAPTATIVO",
+    "columns": 3
+  },
+  {
+    "table": "T_ENCUESTAS_LOCALIDAD_CLUSTER",
+    "columns": 3
+  },
+  {
+    "table": "T_ENVIO_SMS_202103",
+    "columns": 3
+  },
+  {
+    "table": "T_EXCEL_IP_MOVIL_2021",
+    "columns": 14
+  },
+  {
+    "table": "T_EXCEL_IP_MOVIL_2021_CCEE",
+    "columns": 13
+  },
+  {
+    "table": "T_EXPORTADO_CLIENTES_LN",
+    "columns": 2
+  },
+  {
+    "table": "T_EXPORTAR_ADAPTATIVO_CCEE",
+    "columns": 2
+  },
+  {
+    "table": "T_EXPORTAR_ADAPTATIVO_FIJA",
+    "columns": 2
+  },
+  {
+    "table": "T_EXPORTAR_ADAPTATIVO_MOVIL",
+    "columns": 2
+  },
+  {
+    "table": "T_EXPORTAR_ADAPTATIVO_MT",
+    "columns": 2
+  },
+  {
+    "table": "T_EXPORTAR_MIGRACION_FIBRA_FIJA",
+    "columns": 2
+  },
+  {
+    "table": "T_GRAYLIST_RESD_ATIS_20221102_BASE_RO2",
+    "columns": 8
+  },
+  {
+    "table": "T_Grupos_CDU_1",
+    "columns": 2
+  },
+  {
+    "table": "T_Grupos_CDU_2",
+    "columns": 2
+  },
+  {
+    "table": "T_IMEI_20200227",
+    "columns": 1
+  },
+  {
+    "table": "T_INFO_PREVISION_MES_PRONOSTICO",
+    "columns": 3
+  },
+  {
+    "table": "T_INFO_PREVISION_MES_PRONOSTICO_JAVI",
+    "columns": 4
+  },
+  {
+    "table": "T_INFO_PREVISION_X_DIA_X_GRUPO_PLATAFORMA",
+    "columns": 14
+  },
+  {
+    "table": "T_INFO_PREVISION_X_DIA_X_PLATAFORMA_PPP",
+    "columns": 14
+  },
+  {
+    "table": "T_INFO_PREVISION_X_DIA_X_PLATAFORMA_PPP_DETALLE",
+    "columns": 20
+  },
+  {
+    "table": "T_INFO_PREVISION_X_DIA_X_PLATAFORMA_PPP_JAVI",
+    "columns": 14
+  },
+  {
+    "table": "T_INFO_PREVISION_X_INTERVALOS",
+    "columns": 12
+  },
+  {
+    "table": "T_INFO_PREVISION_X_INTERVALO_X_PLATAFORMA_PPP",
+    "columns": 11
+  },
+  {
+    "table": "T_INFO_PREVISION_X_INTERVALO_X_PLATAFORMA_PPP_DETALLE",
+    "columns": 21
+  },
+  {
+    "table": "T_INFO_PREVISION_X_INTERVALO_X_PLATAFORMA_PPP_DETALLE_2",
+    "columns": 17
+  },
+  {
+    "table": "T_INFO_PREVISION_X_INTERVALO_X_PLATAFORMA_PPP_JAVI",
+    "columns": 15
+  },
+  {
+    "table": "T_INTERVALO_HORARIO",
+    "columns": 2
+  },
+  {
+    "table": "T_IP_INSERT",
+    "columns": 7
+  },
+  {
+    "table": "T_IP_INSERT_CHAMO",
+    "columns": 8
+  },
+  {
+    "table": "T_LOG",
+    "columns": 4
+  },
+  {
+    "table": "T_LOG_BASE_DEGRA",
+    "columns": 4
+  },
+  {
+    "table": "T_LOG_BASE_NPS_AVISO_CORTE_2",
+    "columns": 4
+  },
+  {
+    "table": "T_LOG_LINEAS_DEGRA",
+    "columns": 2
+  },
+  {
+    "table": "T_LOG_MENSAJERIA_COBRANZA_ACCESADAS",
+    "columns": 12
+  },
+  {
+    "table": "T_LOG_MENSAJERIA_COBRANZA_BASE",
+    "columns": 2
+  },
+  {
+    "table": "T_LOG_MENSAJERIA_COBRANZA_ENTRANTES",
+    "columns": 14
+  },
+  {
+    "table": "T_LOG_MENSAJERIA_COBRANZA_ID",
+    "columns": 9
+  },
+  {
+    "table": "T_LOG_PROCESO_CARGA_IVR_ADAPTATIVO",
+    "columns": 6
+  },
+  {
+    "table": "T_Masificacion1MB_572K",
+    "columns": 1
+  },
+  {
+    "table": "T_Mensaje_1_20210916",
+    "columns": 1
+  },
+  {
+    "table": "T_PAGOS_FICTICIOS_20220222",
+    "columns": 2
+  },
+  {
+    "table": "T_PLANTA_FIJA_TOTAL_IncPrecio_202201",
+    "columns": 7
+  },
+  {
+    "table": "T_PLANTA_RENTA_202201",
+    "columns": 7
+  },
+  {
+    "table": "T_PLANTA_RENTA_202201_COMERCIAL",
+    "columns": 9
+  },
+  {
+    "table": "T_PRUEBA_PLANTA_POSTPAGO_EDAD",
+    "columns": 1
+  },
+  {
+    "table": "T_RESTO_ENTRANTES_ADAPTATIVO_ULT",
+    "columns": 1
+  },
+  {
+    "table": "T_RESTO_ENTRANTES_ADAPTATIVO_ULT_TODAY",
+    "columns": 1
+  },
+  {
+    "table": "T_RESUMEN_FUNNEL_CCEE_DIA",
+    "columns": 9
+  },
+  {
+    "table": "T_SMS_20211026",
+    "columns": 3
+  },
+  {
+    "table": "T_SMS_SMS",
+    "columns": 1
+  },
+  {
+    "table": "T_TELEFONO",
+    "columns": 1
+  },
+  {
+    "table": "T_TELEFONOS_NO_BLOQUEO",
+    "columns": 1
+  },
+  {
+    "table": "T_TEMP_BASES_DEGRA",
+    "columns": 4
+  },
+  {
+    "table": "T_TEMP_EXP_MAX",
+    "columns": 2
+  },
+  {
+    "table": "T_TEMP_RESUMEN_ADAP",
+    "columns": 3
+  },
+  {
+    "table": "T_UMBRALES",
+    "columns": 7
+  },
+  {
+    "table": "T_UMBRALES_PLATAFORMA_PPP",
+    "columns": 7
+  },
+  {
+    "table": "T_VAL",
+    "columns": 1
+  },
+  {
+    "table": "T_VALIDAR",
+    "columns": 2
+  },
+  {
+    "table": "T_validar_cdu_202106",
+    "columns": 3
+  },
+  {
+    "table": "Tethering_20230927",
+    "columns": 1
+  },
+  {
+    "table": "Trobas_Saturadas_noviembre",
+    "columns": 1
+  },
+  {
+    "table": "UP_SEM_34",
+    "columns": 2
+  },
+  {
+    "table": "VALIDAR_RP_ADAP_20221019",
+    "columns": 1
+  },
+  {
+    "table": "Z_TEMP_NO_RECARGADORES_30_120_DIAS",
+    "columns": 4
+  },
+  {
+    "table": "agentes_cross_202305",
+    "columns": 2
+  },
+  {
+    "table": "agentes_cross_ranking_202305",
+    "columns": 11
+  },
+  {
+    "table": "apagado_3g_base_total",
+    "columns": 2
+  },
+  {
+    "table": "asistencia_11102023_BI",
+    "columns": 3
+  },
+  {
+    "table": "averia_20220314",
+    "columns": 7
+  },
+  {
+    "table": "baja_shaper_20230417",
+    "columns": 3
+  },
+  {
+    "table": "base",
+    "columns": 1
+  },
+  {
+    "table": "base_10k_piloto_comunicacion",
+    "columns": 6
+  },
+  {
+    "table": "base_MT_quebrado_20230828",
+    "columns": 36
+  },
+  {
+    "table": "base_Migracion_FTTH_No_Navega_V2",
+    "columns": 1
+  },
+  {
+    "table": "base_Reclamos_movil_6k_20230508",
+    "columns": 2
+  },
+  {
+    "table": "base_Reclamos_movil_8k_20230508",
+    "columns": 1
+  },
+  {
+    "table": "base_migra_20230719",
+    "columns": 7
+  },
+  {
+    "table": "base_migracion_ftth_no_navega",
+    "columns": 1
+  },
+  {
+    "table": "base_piloto_MxA_20231011",
+    "columns": 16
+  },
+  {
+    "table": "base_porta_fija_400K",
+    "columns": 1
+  },
+  {
+    "table": "base_tramitadores_enviador_202205",
+    "columns": 2
+  },
+  {
+    "table": "base_trobas_piloto_solucion_20210902",
+    "columns": 1
+  },
+  {
+    "table": "base_ventas_portabilidad_20220302",
+    "columns": 35
+  },
+  {
+    "table": "bd_upsell_capl_202301",
+    "columns": 1
+  },
+  {
+    "table": "bloqueo_envio_sms_2021",
+    "columns": 2
+  },
+  {
+    "table": "clientesEnPuertoSaturado",
+    "columns": 10
+  },
+  {
+    "table": "clientes_ftth_olts_saturadas",
+    "columns": 10
+  },
+  {
+    "table": "cmts_santarosa_20220209",
+    "columns": 3
+  },
+  {
+    "table": "contactabilidad_20220222",
+    "columns": 5
+  },
+  {
+    "table": "cortados_movil_20220630",
+    "columns": 5
+  },
+  {
+    "table": "cortes_atis_20220131",
+    "columns": 1
+  },
+  {
+    "table": "cortes_fija_ro2_no_naked_20220311",
+    "columns": 117
+  },
+  {
+    "table": "cr_lite_con_consumo_20220210",
+    "columns": 3
+  },
+  {
+    "table": "cr_lite_sin_consumo_20220208",
+    "columns": 3
+  },
+  {
+    "table": "cruce_base_seg",
+    "columns": 4
+  },
+  {
+    "table": "cruzar_intent",
+    "columns": 1
+  },
+  {
+    "table": "cuartil_cross_202309",
+    "columns": 4
+  },
+  {
+    "table": "cuartil_fija_202309",
+    "columns": 5
+  },
+  {
+    "table": "cuartil_movil_202309",
+    "columns": 5
+  },
+  {
+    "table": "cuartiles_agentes_20230421",
+    "columns": 6
+  },
+  {
+    "table": "cuartiles_agentes_20230424",
+    "columns": 6
+  },
+  {
+    "table": "cuartiles_retenciones_movil_202307",
+    "columns": 3
+  },
+  {
+    "table": "enc_apoyo",
+    "columns": 2
+  },
+  {
+    "table": "error_massimple_20220126",
+    "columns": 2
+  },
+  {
+    "table": "error_massimple_20220127",
+    "columns": 3
+  },
+  {
+    "table": "lista_vip_20220301",
+    "columns": 15
+  },
+  {
+    "table": "lista_vip_telefonos_202202",
+    "columns": 17
+  },
+  {
+    "table": "lite_sin_servicio_20220221",
+    "columns": 3
+  },
+  {
+    "table": "mplay_apagado_20230321",
+    "columns": 24
+  },
+  {
+    "table": "mplay_apagado_20230321_v2",
+    "columns": 20
+  },
+  {
+    "table": "nodo_planta_fija",
+    "columns": 4
+  },
+  {
+    "table": "nueva_base_cross_202201",
+    "columns": 4
+  },
+  {
+    "table": "paginasmarillas2_20220413",
+    "columns": 1
+  },
+  {
+    "table": "phoenix_3006",
+    "columns": 1
+  },
+  {
+    "table": "piloto_2_20220221",
+    "columns": 3
+  },
+  {
+    "table": "piloto_2_dimensionamiento_mplay",
+    "columns": 4
+  },
+  {
+    "table": "piloto_PortalCautivo_vcto0909_2809",
+    "columns": 1
+  },
+  {
+    "table": "piloto_PortalCautivo_vcto0909_3009",
+    "columns": 1
+  },
+  {
+    "table": "piloto_adsl_retenciones_202107",
+    "columns": 3
+  },
+  {
+    "table": "piloto_pago_automatico_20231026",
+    "columns": 3
+  },
+  {
+    "table": "planta_hfc_voip_23062022_PROC",
+    "columns": 16
+  },
+  {
+    "table": "planta_migrado_20230623",
+    "columns": 14
+  },
+  {
+    "table": "reclamos_averias_ult_6_meses",
+    "columns": 9
+  },
+  {
+    "table": "relacion_incidencias_motivos_202208",
+    "columns": 6
+  },
+  {
+    "table": "remocion_agentes_20230913",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20230914",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20230918",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20230920",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20230921",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20231005",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20231006",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20231009",
+    "columns": 10
+  },
+  {
+    "table": "remocion_agentes_20231025",
+    "columns": 10
+  },
+  {
+    "table": "renta_fija_202012",
+    "columns": 4
+  },
+  {
+    "table": "reversiones_20K_appMM_111022",
+    "columns": 9
+  },
+  {
+    "table": "reversiones_20K_appMM_111022_2",
+    "columns": 10
+  },
+  {
+    "table": "revisar_downsell_20230926",
+    "columns": 9
+  },
+  {
+    "table": "segmentacion_ingresos_b2c_202507",
+    "columns": 9
+  },
+  {
+    "table": "sin_servicio_20230324",
+    "columns": 21
+  },
+  {
+    "table": "soloNum104",
+    "columns": 1
+  },
+  {
+    "table": "solo_fija_mt",
+    "columns": 5
+  },
+  {
+    "table": "solo_movil_mt",
+    "columns": 3
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "t1",
+    "columns": 10
+  },
+  {
+    "table": "t_archivo_2_caso_fraude",
+    "columns": 1
+  },
+  {
+    "table": "t_base_incidencia_20211012",
+    "columns": 1
+  },
+  {
+    "table": "t_cuadrantes_fija_202112",
+    "columns": 6
+  },
+  {
+    "table": "t_cuadrantes_movil_202112",
+    "columns": 6
+  },
+  {
+    "table": "t_descripcion_adaptativo",
+    "columns": 9
+  },
+  {
+    "table": "t_excel_erika_accesos_RO2_389k_V2",
+    "columns": 16
+  },
+  {
+    "table": "t_excel_erika_ccee_RO1_fija_388k",
+    "columns": 14
+  },
+  {
+    "table": "t_excel_erika_ccee_ip_2022",
+    "columns": 17
+  },
+  {
+    "table": "t_excel_erika_ccee_ip_fija_2022",
+    "columns": 15
+  },
+  {
+    "table": "t_excel_erika_voz_RO1_388k",
+    "columns": 15
+  },
+  {
+    "table": "t_excel_erika_voz_RO1_388k_V2",
+    "columns": 15
+  },
+  {
+    "table": "t_excel_erika_voz_accesos_RO1_388k",
+    "columns": 14
+  },
+  {
+    "table": "t_excel_erika_voz_entrantes_RO2_389k_V2",
+    "columns": 17
+  },
+  {
+    "table": "t_excel_erika_voz_ip_2022",
+    "columns": 18
+  },
+  {
+    "table": "t_excel_erika_voz_ip_fija_2022",
+    "columns": 16
+  },
+  {
+    "table": "t_revisar_accesos_flag",
+    "columns": 199
+  },
+  {
+    "table": "t_temp_cruce_20220222",
+    "columns": 1
+  },
+  {
+    "table": "tivr_cobranzas",
+    "columns": 4
+  },
+  {
+    "table": "tivr_cobranzas_20191126",
+    "columns": 3
+  },
+  {
+    "table": "validar_CR_imei_2023",
+    "columns": 2
+  },
+  {
+    "table": "validar_campos_IH",
+    "columns": 24
+  },
+  {
+    "table": "validar_heavy_users",
+    "columns": 3
+  },
+  {
+    "table": "validar_trami",
+    "columns": 4
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "DIM.PLATAFORMA_AGRUPADA",
+    "columns": 9
+  },
+  {
+    "table": "DIM.PROVEEDOR",
+    "columns": 2
+  },
+  {
+    "table": "DIM.TIEMPO",
+    "columns": 43
+  },
+  {
+    "table": "FACT_CCEE_METRICAS",
+    "columns": 38
+  },
+  {
+    "table": "T_DIM_CANAL",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_CATEGORIA",
+    "columns": 10
+  },
+  {
+    "table": "T_DIM_CATEGORIA_COPIA_KCS",
+    "columns": 10
+  },
+  {
+    "table": "T_DIM_CATEGORIA_PLATAFORMA",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_CATEGORIA_PLATAFORMA_20230711",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_FUENTE",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_JERARQUIA_EMPRESA",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_PLATAFORMA",
+    "columns": 6
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_BKP",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_UMBRAL",
+    "columns": 6
+  },
+  {
+    "table": "T_DIM_PROVEEDOR",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_RESULTADO",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_SERVICIO",
+    "columns": 6
+  },
+  {
+    "table": "T_DIM_SERVICIO_BKP",
+    "columns": 7
+  },
+  {
+    "table": "T_DIM_SUBCANAL",
+    "columns": 7
+  },
+  {
+    "table": "T_DIM_TIEMPO_INTERVALO",
+    "columns": 13
+  },
+  {
+    "table": "T_DIM_TIPO_ATENCION",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_TIPO_CATEGORIA",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_TIPO_SUBCANAL",
+    "columns": 2
+  },
+  {
+    "table": "T_FACT_METRICAS_CCEE_INTERVALOS",
+    "columns": 40
+  },
+  {
+    "table": "T_FACT_METRICAS_CCEE_INTERVALOS_TIEM_ID_1",
+    "columns": 38
+  },
+  {
+    "table": "T_FACT_METRICAS_CCEE_INTERVALOS_TMP",
+    "columns": 38
+  },
+  {
+    "table": "T_FACT_METRICAS_CCEE_INTERVALOS_TMP_V2",
+    "columns": 38
+  },
+  {
+    "table": "T_FACT_METRICAS_CCEE_INTERVALOS_duplicado",
+    "columns": 38
+  },
+  {
+    "table": "T_RESUMEN_CCEE_DIA_W",
+    "columns": 39
+  },
+  {
+    "table": "T_RESUMEN_CCEE_HORA_W",
+    "columns": 40
+  },
+  {
+    "table": "T_RESUMEN_CCEE_INTERVALO_W",
+    "columns": 41
+  },
+  {
+    "table": "T_RESUMEN_CCEE_MES_W",
+    "columns": 38
+  },
+  {
+    "table": "T_RESUMEN_CCEE_METRICAS_DIA_W",
+    "columns": 11
+  },
+  {
+    "table": "T_RESUMEN_CCEE_METRICAS_MES_W",
+    "columns": 10
+  },
+  {
+    "table": "T_RESUMEN_CCEE_SEMANA_W",
+    "columns": 39
+  },
+  {
+    "table": "T_RES_ONEMARKETER_30MIN_TEMP_V3",
+    "columns": 26
+  },
+  {
+    "table": "T_STAGE_PRONOSTICO",
+    "columns": 8
+  },
+  {
+    "table": "T_STAGE_TRAFICO_WHATSAPP_30MIN",
+    "columns": 33
+  },
+  {
+    "table": "T_STAGE_TRAFICO_WHATSAPP_30MIN_V3",
+    "columns": 52
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "AM_Reporte_Seguimiento_cross_ccee_resumen_ULT3MESES",
+    "columns": 33
+  },
+  {
+    "table": "BASE_AGENTE",
+    "columns": 2
+  },
+  {
+    "table": "CCEE_AGENT_30MIN_PLATAFORMA_ULT3MESES",
+    "columns": 22
+  },
+  {
+    "table": "CCEE_T_DIM_CATEGORIA_PLATAFORMA",
+    "columns": 4
+  },
+  {
+    "table": "CCEE_T_DIM_PLATAFORMA",
+    "columns": 6
+  },
+  {
+    "table": "CCEE_T_DIM_PROVEEDOR",
+    "columns": 3
+  },
+  {
+    "table": "CCEE_T_DIM_TIEMPO_INTERVALO",
+    "columns": 13
+  },
+  {
+    "table": "CCEE_T_FACT_METRICAS_CCEE_INTERVALOS",
+    "columns": 40
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_CCEE_DIARIO_ULT3MESES",
+    "columns": 100
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_CCEE_ULT3MESES",
+    "columns": 112
+  },
+  {
+    "table": "ENCUESTAS_MEDALLIA_CHECA_TU_CASO",
+    "columns": 25
+  },
+  {
+    "table": "ENCUESTAS_MEDALLIA_ESPECIALIZADOS",
+    "columns": 24
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_INTERVALO_ULT3MESES",
+    "columns": 37
+  },
+  {
+    "table": "RESUMEN_METRICAS_WFM_MENSUAL_ULT3MESES",
+    "columns": 22
+  },
+  {
+    "table": "RESUMEN_PRODUCTIVIDAD_PROVEEDOR_CCEE_ULT3MESES",
+    "columns": 14
+  },
+  {
+    "table": "RESUMEN_TRANSFERENCIAS_VOZ_ULT3MESES",
+    "columns": 20
+  },
+  {
+    "table": "RETENCIONES_FIJA",
+    "columns": 88
+  },
+  {
+    "table": "RETENCIONES_MOVIL",
+    "columns": 68
+  },
+  {
+    "table": "RETENCIONES_MT",
+    "columns": 149
+  },
+  {
+    "table": "TEMP_FACT_HORAS_SIN_DATOS",
+    "columns": 9
+  },
+  {
+    "table": "T_DIM_ARBOL_IVR",
+    "columns": 26
+  },
+  {
+    "table": "T_DIM_ARBOL_IVR_Automatismos",
+    "columns": 8
+  },
+  {
+    "table": "T_DIM_ARBOL_IVR_Service_Type",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_ARBOL_IVR_X_NIVELES",
+    "columns": 6
+  },
+  {
+    "table": "T_DIM_ARBOL_IVR_nuevo",
+    "columns": 24
+  },
+  {
+    "table": "T_DIM_ARBOL_IVR_temp",
+    "columns": 18
+  },
+  {
+    "table": "T_DIM_BASE_MTP_TEMPORAL",
+    "columns": 10
+  },
+  {
+    "table": "T_DIM_BASE_MTP_TEMPORAL_LLAM",
+    "columns": 9
+  },
+  {
+    "table": "T_DIM_COLA",
+    "columns": 19
+  },
+  {
+    "table": "T_DIM_COLA_BACKUP_202206",
+    "columns": 19
+  },
+  {
+    "table": "T_DIM_COLA_ERROR_20230714",
+    "columns": 19
+  },
+  {
+    "table": "T_DIM_COLA_ORIGEN",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_COLA_X_TECNOLOGIA",
+    "columns": 14
+  },
+  {
+    "table": "T_DIM_FUENTE",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_JERARQUIA_EMPRESA",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_KPIS_REGLAS",
+    "columns": 9
+  },
+  {
+    "table": "T_DIM_MODELO_PAGO",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_NEGOCIO",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_ORDEN_DIA",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_PLATAFORMA",
+    "columns": 9
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_UMBRAL",
+    "columns": 16
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_UMBRAL_20240112",
+    "columns": 16
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_UMBRAL_BACKUP_20250810",
+    "columns": 16
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_UMBRAL_BACKUP_20260217",
+    "columns": 16
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_UMBRAL_temp_nuevos_cambios",
+    "columns": 16
+  },
+  {
+    "table": "T_DIM_PROGRAMA",
+    "columns": 11
+  },
+  {
+    "table": "T_DIM_PROVEEDOR",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_PROVEEDOR_LOCAL",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_SEGMENTO",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_SISTEMA_COMERCIAL",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_SITE_GENESYS",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_TARIFA_HP",
+    "columns": 7
+  },
+  {
+    "table": "T_DIM_TIEMPO_DIA",
+    "columns": 9
+  },
+  {
+    "table": "T_DIM_TIEMPO_DIA_PRUEBA",
+    "columns": 9
+  },
+  {
+    "table": "T_DIM_TIEMPO_INTERVALO",
+    "columns": 13
+  },
+  {
+    "table": "T_DIM_TIEMPO_INTERVALO_prueba",
+    "columns": 13
+  },
+  {
+    "table": "T_DIM_TIPO_DISTRIBUCION_CALL",
+    "columns": 4
+  },
+  {
+    "table": "T_DIM_TIPO_GESTION",
+    "columns": 2
+  },
+  {
+    "table": "T_DIM_TIPO_INTERACCION",
+    "columns": 3
+  },
+  {
+    "table": "T_DIM_TIPO_INTERVALO",
+    "columns": 2
+  },
+  {
+    "table": "T_FACT_ATENDIDAS_INTERVALO",
+    "columns": 47
+  },
+  {
+    "table": "T_FACT_BASE_INCIDENCIAS_RESUMEN",
+    "columns": 3
+  },
+  {
+    "table": "T_FACT_BASE_INCIDENCIAS_RESUMEN_V2",
+    "columns": 3
+  },
+  {
+    "table": "T_FACT_CARGA_AVAYA_ATENTO",
+    "columns": 42
+  },
+  {
+    "table": "T_FACT_DISTRIBUCION_COLA",
+    "columns": 5
+  },
+  {
+    "table": "T_FACT_METRICAS_CC_DIA",
+    "columns": 69
+  },
+  {
+    "table": "T_FACT_METRICAS_CC_INTERVALO",
+    "columns": 84
+  },
+  {
+    "table": "T_FACT_RRSS_ESCENARIOS_WSPP",
+    "columns": 4
+  },
+  {
+    "table": "T_FACT_TRAFICO_INTERVALO",
+    "columns": 57
+  },
+  {
+    "table": "T_IMPACTOS_EXTERNOS_CC_PRONOSTICOS_2",
+    "columns": 5
+  },
+  {
+    "table": "T_INPUT_TOPE_NPS_1_2_ULT3MESES",
+    "columns": 8
+  },
+  {
+    "table": "T_KIPU_LISTADO_ETIQUETAS_1",
+    "columns": 1
+  },
+  {
+    "table": "T_KIPU_LISTADO_ETIQUETAS_2",
+    "columns": 1
+  },
+  {
+    "table": "T_KIPU_LISTADO_ETIQUETAS_3",
+    "columns": 1
+  },
+  {
+    "table": "T_KIPU_LISTADO_ETIQUETAS_4",
+    "columns": 1
+  },
+  {
+    "table": "T_KIPU_LISTADO_ID_PROVEEDORES",
+    "columns": 1
+  },
+  {
+    "table": "T_KIPU_LISTADO_NOMBRE_PROVEEDORES",
+    "columns": 1
+  },
+  {
+    "table": "T_KPIS_REGLAS",
+    "columns": 5
+  },
+  {
+    "table": "T_KPIS_REGLAS_GRUPO_PLATAFORMA",
+    "columns": 9
+  },
+  {
+    "table": "T_LISTA_EQUIVALENCIAS_AVAYA_ATENTO",
+    "columns": 2
+  },
+  {
+    "table": "T_LISTA_INTERVALOS",
+    "columns": 3
+  },
+  {
+    "table": "T_RESUMEN_CTI_72HR_FACTURACION",
+    "columns": 36
+  },
+  {
+    "table": "T_RESUMEN_CTI_MENSUAL_ULT3MESES",
+    "columns": 42
+  },
+  {
+    "table": "T_RESUMEN_PLACES",
+    "columns": 9
+  },
+  {
+    "table": "T_TEMP_BASE_ALEATORIA",
+    "columns": 11
+  },
+  {
+    "table": "T_TEMP_CARGA_AVAYA_ATENTO_PASO1",
+    "columns": 28
+  },
+  {
+    "table": "T_TEMP_CARGA_AVAYA_ATENTO_PASO2",
+    "columns": 28
+  },
+  {
+    "table": "T_TEMP_CARGA_AVAYA_ATENTO_PASO3",
+    "columns": 35
+  },
+  {
+    "table": "T_TMP_CATALOGO_TRAFICO_MES_CALIDAD",
+    "columns": 2
+  },
+  {
+    "table": "T_TMP_FACT_RESUMEN_CALIDAD",
+    "columns": 11
+  },
+  {
+    "table": "T_TMP_FACT_RESUMEN_CALIDAD_V2",
+    "columns": 8
+  },
+  {
+    "table": "T_TMP_FACT_TRAFICO_DIA",
+    "columns": 23
+  },
+  {
+    "table": "T_TMP_FACT_TRAFICO_DIA_I",
+    "columns": 23
+  },
+  {
+    "table": "T_TMP_FACT_TRAFICO_INTERVALO",
+    "columns": 51
+  },
+  {
+    "table": "T_TMP_FACT_TRAFICO_MES",
+    "columns": 22
+  },
+  {
+    "table": "T_TMP_FACT_TRAFICO_MES_I",
+    "columns": 22
+  },
+  {
+    "table": "T_VOLCADO_CC_DIA",
+    "columns": 7
+  },
+  {
+    "table": "T_VOLCADO_CC_DIA_2",
+    "columns": 7
+  },
+  {
+    "table": "T_VOLCADO_CC_DIA_3",
+    "columns": 7
+  },
+  {
+    "table": "USUARIOS_MULTICANAL_ULT_ACT",
+    "columns": 36
+  },
+  {
+    "table": "USUARIOS_RECLAMOS_ult_act_ULT3MESES",
+    "columns": 36
+  },
+  {
+    "table": "VW_BITACORA_EVENTOS_FORMATO_ANTERIOR_ULT3MESES",
+    "columns": 21
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "ACCESOS_TODAY_CRUCE",
+    "columns": 7
+  },
+  {
+    "table": "BASE_RESUMEN_ENVIOS",
+    "columns": 9
+  },
+  {
+    "table": "CCPULSE_AGENTES_HORA_CERRADA_CALCULADO",
+    "columns": 3
+  },
+  {
+    "table": "CCPULSE_HORA_CERRADA_CALCULADO",
+    "columns": 10
+  },
+  {
+    "table": "CCPULSE_NDS_DIA_TOTAL_CALCULADO",
+    "columns": 10
+  },
+  {
+    "table": "CCPULSE_NDS_HORA_TOTAL_CALCULADO",
+    "columns": 10
+  },
+  {
+    "table": "CONECTADOS_GLOBAL",
+    "columns": 11
+  },
+  {
+    "table": "CargaArchivos",
+    "columns": 2
+  },
+  {
+    "table": "Consolidado_Control_Envios",
+    "columns": 18
+  },
+  {
+    "table": "Crono_ingresos_COLOMBIA",
+    "columns": 33
+  },
+  {
+    "table": "ENTRANTES_TODAY_CRUCE",
+    "columns": 8
+  },
+  {
+    "table": "JCO_AVH2_PLATAFORMA",
+    "columns": 9
+  },
+  {
+    "table": "JCO_INSERT_MESSAGE",
+    "columns": 1
+  },
+  {
+    "table": "JSS_AGENTES_REQUERIDOS_X_MES",
+    "columns": 15
+  },
+  {
+    "table": "JSS_AGENTES_REQUERIDOS_X_SEMANA",
+    "columns": 13
+  },
+  {
+    "table": "JSS_AGRUPACION_PLATAFORMAS",
+    "columns": 2
+  },
+  {
+    "table": "JSS_AGRUPACION_VISTA_DIFERENCIA_APERTURA",
+    "columns": 9
+  },
+  {
+    "table": "JSS_APERTURA_HORARIOS_PLATAFORMA",
+    "columns": 8
+  },
+  {
+    "table": "JSS_BACKUP_PESO_X_INTERVALO_PLATAFORMA",
+    "columns": 7
+  },
+  {
+    "table": "JSS_BACKUP_TMO_HISTORICO",
+    "columns": 11
+  },
+  {
+    "table": "JSS_BASE_APERTURA_PLATAFORMAS_HISPAM",
+    "columns": 6
+  },
+  {
+    "table": "JSS_BASE_APERTURA_SOCIOS_HISPAM",
+    "columns": 7
+  },
+  {
+    "table": "JSS_BASE_FACTORES_PROYECCION_HISPAM",
+    "columns": 9
+  },
+  {
+    "table": "JSS_CALCULO_TMO_FINAL_PRONOSTICO",
+    "columns": 12
+  },
+  {
+    "table": "JSS_CALCULO_TMO_FINAL_PRONOSTICO_MEXICO",
+    "columns": 11
+  },
+  {
+    "table": "JSS_CATALOGO_FECHAS_CRONOGRAMA_PLANIFICACION",
+    "columns": 4
+  },
+  {
+    "table": "JSS_CATALOGO_NEGOCIO_PLATAFORMA",
+    "columns": 2
+  },
+  {
+    "table": "JSS_CONSOLIDADO_CONTACTOS_ENTRANTES",
+    "columns": 9
+  },
+  {
+    "table": "JSS_CONSOLIDADO_STATUS_SEMANAL",
+    "columns": 23
+  },
+  {
+    "table": "JSS_CORTE_HISPAM_DIFERENCIA_AGENTES",
+    "columns": 12
+  },
+  {
+    "table": "JSS_CORTE_HISPAM_DIFERENCIA_AGENTES_MEXICO",
+    "columns": 8
+  },
+  {
+    "table": "JSS_CORTE_HISPAM_GTR",
+    "columns": 27
+  },
+  {
+    "table": "JSS_CORTE_HISPAM_GTR_MEXICO",
+    "columns": 51
+  },
+  {
+    "table": "JSS_CRONOGRAMA_INGRESOS_X_SEMANA",
+    "columns": 19
+  },
+  {
+    "table": "JSS_CRONOGRAMA_INGRESOS_X_SEMANA_backup",
+    "columns": 19
+  },
+  {
+    "table": "JSS_CRONOGRAMA_INGRESO_CAMBIO_FECHA_OJT_PLANIFICADO",
+    "columns": 9
+  },
+  {
+    "table": "JSS_DIAS_FALTANTES_TRAFICO",
+    "columns": 5
+  },
+  {
+    "table": "JSS_ENTRANTES_30_MIN_X_PLATAFORMA_MEXICO",
+    "columns": 12
+  },
+  {
+    "table": "JSS_ENTRANTES_PROYECTADO_DIARIO",
+    "columns": 8
+  },
+  {
+    "table": "JSS_ENTRANTES_X_GRUPO_PLATAFORMA",
+    "columns": 9
+  },
+  {
+    "table": "JSS_ENTRANTES_X_PLATAFORMA_MEXICO",
+    "columns": 7
+  },
+  {
+    "table": "JSS_FACTORES_PLATAFORMA_PERIODO",
+    "columns": 6
+  },
+  {
+    "table": "JSS_FACTORES_REDUCTORES",
+    "columns": 20
+  },
+  {
+    "table": "JSS_HORAS_ESTIMADAS_ERLANG_DIARIO",
+    "columns": 17
+  },
+  {
+    "table": "JSS_HORAS_ESTIMADAS_ERLANG_INTERVALO",
+    "columns": 16
+  },
+  {
+    "table": "JSS_INTERVALOS_BASE_X_PLATAFORMA",
+    "columns": 5
+  },
+  {
+    "table": "JSS_LIMITES_CUARTILES_TRAFICO_X_DIA_HISPAM",
+    "columns": 7
+  },
+  {
+    "table": "JSS_LIMITES_CUARTILES_TRAFICO_X_INTERVALO",
+    "columns": 9
+  },
+  {
+    "table": "JSS_LISTA_FERIADOS",
+    "columns": 2
+  },
+  {
+    "table": "JSS_LISTA_FERIADOS_V2",
+    "columns": 4
+  },
+  {
+    "table": "JSS_LOG_REEMPLAZO_FERIADOS",
+    "columns": 10
+  },
+  {
+    "table": "JSS_NDS_Y_ASA",
+    "columns": 5
+  },
+  {
+    "table": "JSS_NUEVA_AGRUPACION_PLATAFORMAS_PLANIFICACION",
+    "columns": 4
+  },
+  {
+    "table": "JSS_PESO_X_INTERVALO_PLATAFORMA",
+    "columns": 8
+  },
+  {
+    "table": "JSS_PESO_X_INTERVALO_PLATAFORMA_MEXICO",
+    "columns": 8
+  },
+  {
+    "table": "JSS_PESO_X_INTERVALO_PLATAFORMA_SUAVIZADO",
+    "columns": 10
+  },
+  {
+    "table": "JSS_PESO_X_INTERVALO_PLATAFORMA_SUAVIZADO_MEXICO",
+    "columns": 10
+  },
+  {
+    "table": "JSS_PLATAFORMAS_PLAYAS_PESO_X_INTERVALO_PLATAFORMA_SUAVIZADO",
+    "columns": 10
+  },
+  {
+    "table": "JSS_PRONOSTICO_PLAYAS_2024_2025",
+    "columns": 5
+  },
+  {
+    "table": "JSS_PRONOSTICO_PLAYAS_2024_2025_BACKUP_20250303",
+    "columns": 5
+  },
+  {
+    "table": "JSS_PROYECCION_CON_FACTORES_APERTURA",
+    "columns": 11
+  },
+  {
+    "table": "JSS_ROTACION_AUS_CRONOGRAMA",
+    "columns": 18
+  },
+  {
+    "table": "JSS_RUTAS_MODELOS_PROYECCION_ENTRANTES",
+    "columns": 6
+  },
+  {
+    "table": "JSS_RUTAS_MODELOS_PROYECCION_X_PLATAFORMA",
+    "columns": 7
+  },
+  {
+    "table": "JSS_RUTAS_MODELOS_PROYECCION_X_PLATAFORMA_BACKUP",
+    "columns": 7
+  },
+  {
+    "table": "JSS_STATUS_SEMANAL_VISTA_DIARIA",
+    "columns": 19
+  },
+  {
+    "table": "JSS_STATUS_SEMANAL_VISTA_MENSUAL",
+    "columns": 20
+  },
+  {
+    "table": "JSS_STATUS_SEMANAL_VISTA_SEMANAL",
+    "columns": 28
+  },
+  {
+    "table": "JSS_TABLA_BASE_PONDERADO_TMO",
+    "columns": 7
+  },
+  {
+    "table": "JSS_TABLA_BASE_PONDERADO_TMO_MEXICO",
+    "columns": 6
+  },
+  {
+    "table": "JSS_TABLA_EXPORADO_MALLA",
+    "columns": 10
+  },
+  {
+    "table": "JSS_TABLA_VALIDACION_MALLAS",
+    "columns": 9
+  },
+  {
+    "table": "JSS_TEMP_AGOSTO_PESO_X_INTERVALO_PLATAFORMA_SUAVIZADO",
+    "columns": 10
+  },
+  {
+    "table": "JSS_TEMP_COMPLETAR_TMO_202412",
+    "columns": 10
+  },
+  {
+    "table": "JSS_TEMP_CRONOGRAMA",
+    "columns": 38
+  },
+  {
+    "table": "JSS_TEMP_CRONOGRAMA_2",
+    "columns": 36
+  },
+  {
+    "table": "JSS_TEMP_DescargaMallas202411",
+    "columns": 8
+  },
+  {
+    "table": "JSS_TEMP_MALLA_202410_V3",
+    "columns": 10
+  },
+  {
+    "table": "JSS_TEMP_MALLA_202410_V3_CON_IP",
+    "columns": 10
+  },
+  {
+    "table": "JSS_TEMP_factor_dia",
+    "columns": 3
+  },
+  {
+    "table": "JSS_TRAFICO_PARA_APERTURA_X_INTERVALO",
+    "columns": 13
+  },
+  {
+    "table": "JSS_TRAFICO_PARA_APERTURA_X_INTERVALO_MEXICO",
+    "columns": 13
+  },
+  {
+    "table": "JSS_UPDATE_CURVA_NORMALIZADA",
+    "columns": 4
+  },
+  {
+    "table": "KAJ_AGENTES_BLENDING",
+    "columns": 7
+  },
+  {
+    "table": "KAJ_MALLAS_TDP_2025_VERSIONES",
+    "columns": 26
+  },
+  {
+    "table": "LISTA_CORREOS_AUTOMATICO",
+    "columns": 2
+  },
+  {
+    "table": "LogArchivosConvertidos",
+    "columns": 4
+  },
+  {
+    "table": "MALLA_202510_V2_1",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_202510_V2_3",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202506",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202506_V2",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202506_V3",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202507_V1",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202507_V2",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202507_V3",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202507_V4",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202507_V5",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202507_V6",
+    "columns": 10
+  },
+  {
+    "table": "MALLA_VALIDAR_202507_V8",
+    "columns": 10
+  },
+  {
+    "table": "NDS_DIA_TOTAL",
+    "columns": 26
+  },
+  {
+    "table": "NDS_HORA_TOTAL",
+    "columns": 27
+  },
+  {
+    "table": "NO_BORRAR_AMELIA_CDRS_LV_today",
+    "columns": 73
+  },
+  {
+    "table": "NO_BORRAR_AMELIA_CDRS_MI_today",
+    "columns": 73
+  },
+  {
+    "table": "ProcesamientoLog",
+    "columns": 7
+  },
+  {
+    "table": "RESUMEN_EXCEL_VISTA_HORA",
+    "columns": 24
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_INTERVALO",
+    "columns": 49
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_INTERVALO",
+    "columns": 37
+  },
+  {
+    "table": "TEMP_VALIDAR",
+    "columns": 10
+  },
+  {
+    "table": "T_CRUCE_SKILL",
+    "columns": 2
+  },
+  {
+    "table": "T_CRUCE_SKILL_AGENTES",
+    "columns": 4
+  },
+  {
+    "table": "T_TABLA_CORREO_CRONO_INGRESOS",
+    "columns": 13
+  },
+  {
+    "table": "T_TABLA_CORREO_CRONO_INGRESOS_CAMBIO_ESTADO",
+    "columns": 10
+  },
+  {
+    "table": "VALIDAR_ACUMULADO__PLATAFORMA",
+    "columns": 7
+  },
+  {
+    "table": "VALIDAR_MALLA_202508_TEC",
+    "columns": 10
+  },
+  {
+    "table": "VALIDAR_MALLA_202508_TEC_V1",
+    "columns": 10
+  },
+  {
+    "table": "VALIDAR_PLATAFORMAS_ADHOC",
+    "columns": 10
+  },
+  {
+    "table": "VALIDAR_RETEN_FIJA_MOVIL",
+    "columns": 10
+  },
+  {
+    "table": "VALIDAR_RETEN_FIJA_MOVIL_V1",
+    "columns": 10
+  },
+  {
+    "table": "VALIDAR_RETEN_FIJA_MOVIL_V2",
+    "columns": 10
+  },
+  {
+    "table": "AMP_CONSOLIDADO_USUARIOS",
+    "columns": 8
+  },
+  {
+    "table": "AMP_LOGS_MENU_KIPU_AHDOC",
+    "columns": 15
+  },
+  {
+    "table": "AMP_RECLAMOS_SIN_DNI_AGENTE_REGISTRO",
+    "columns": 3
+  },
+  {
+    "table": "AMP_RECLAMOS_SIN_LLAMADA_ATENDIDA",
+    "columns": 4
+  },
+  {
+    "table": "AMP_SAR_SIN_DNI_AGENTE_REGISTRO",
+    "columns": 3
+  },
+  {
+    "table": "AMP_SAR_SIN_LLAMADA_ATENDIDA",
+    "columns": 4
+  },
+  {
+    "table": "AMP_TABLA_PARA_CLIENTES_UNICOS_DIA",
+    "columns": 7
+  },
+  {
+    "table": "AMP_TABLA_PARA_CLIENTES_UNICOS_HORA",
+    "columns": 8
+  },
+  {
+    "table": "AMP_TABLA_PARA_CLIENTES_UNICOS_MES",
+    "columns": 8
+  },
+  {
+    "table": "AMP_TABLA_PARA_CLIENTES_UNICOS_SEMANA",
+    "columns": 8
+  },
+  {
+    "table": "AMP_TC_SIN_DNI_AGENTE_REGISTRO",
+    "columns": 3
+  },
+  {
+    "table": "AMP_TC_SIN_LLAMADA_ATENDIDA",
+    "columns": 4
+  },
+  {
+    "table": "AMP_obejtivo_pesos_indicador_agente_CCEE",
+    "columns": 5
+  },
+  {
+    "table": "AM_CALENDARIO_SEMANA",
+    "columns": 3
+  },
+  {
+    "table": "AM_CCEE_BASE_GENERAL_POTENCIALES_FALTANTES",
+    "columns": 8
+  },
+  {
+    "table": "AM_CONSOLIDADO_METRICAS_AGENTE_CCEE_CROSS",
+    "columns": 35
+  },
+  {
+    "table": "AM_CargaCrossCEE",
+    "columns": 18
+  },
+  {
+    "table": "AM_INDICADORES_CROSS_CCEE_POR_ASESOR_MENSUAL_ABORDAJE_PREVENTA",
+    "columns": 8
+  },
+  {
+    "table": "AM_INDICADORES_CROSS_CCEE_POR_ASESOR_MENSUAL_ABORDAJE_PREVENTA_DIARIO",
+    "columns": 8
+  },
+  {
+    "table": "AM_REPORTE_EFECTIVIDAD_Y_ABORDAJE_POR_CUARTIL_CCEE",
+    "columns": 14
+  },
+  {
+    "table": "AM_REPORTE_EFECTIVIDAD_Y_ABORDAJE_POR_CUARTIL_CCEE_DIARIO",
+    "columns": 16
+  },
+  {
+    "table": "AM_REPORTE_PREVENTAS_CCEE_FORMULARIO",
+    "columns": 17
+  },
+  {
+    "table": "AM_temp_base_mayo_form_ccee_2905",
+    "columns": 25
+  },
+  {
+    "table": "AM_temp_base_mayo_form_ccee_2905_errores",
+    "columns": 25
+  },
+  {
+    "table": "ANIS_VS_RELLAMADAS",
+    "columns": 7
+  },
+  {
+    "table": "ANTIGUEDAD_AGENTES",
+    "columns": 10
+  },
+  {
+    "table": "AVERIAS_POR_ASESOR",
+    "columns": 32
+  },
+  {
+    "table": "AVERIAS_POR_ASESOR_HISTORICO",
+    "columns": 32
+  },
+  {
+    "table": "Agente_202402",
+    "columns": 3
+  },
+  {
+    "table": "Agentes_ccee",
+    "columns": 26
+  },
+  {
+    "table": "Am_TEMP_base_abril",
+    "columns": 30
+  },
+  {
+    "table": "BASE_AJUSTE_FACTURAS_CALCULADO",
+    "columns": 189
+  },
+  {
+    "table": "BASE_AMDOCS_RECLAMOS_CALCULADO",
+    "columns": 291
+  },
+  {
+    "table": "BASE_AMDOCS_RECLAMOS_CALCULADO_COUNT_LIQ_AYER",
+    "columns": 8
+  },
+  {
+    "table": "BASE_CMS_RECLAMOS_CALCULADO",
+    "columns": 107
+  },
+  {
+    "table": "BASE_CMS_RECLAMOS_CALCULADO_2",
+    "columns": 104
+  },
+  {
+    "table": "BASE_FENIX_RECLAMOS_CALCULADO",
+    "columns": 185
+  },
+  {
+    "table": "BASE_FENIX_RECLAMOS_CALCULADO_COUNT_LIQ_AYER",
+    "columns": 8
+  },
+  {
+    "table": "BASE_MAS_SIMPLE_RECLAMOS_CALCULADO",
+    "columns": 182
+  },
+  {
+    "table": "BITACORA_ACTUALIZACIONES",
+    "columns": 7
+  },
+  {
+    "table": "BITACORA_ACTUALIZACIONES_SEL",
+    "columns": 10
+  },
+  {
+    "table": "BITACORA_EVENTOS",
+    "columns": 25
+  },
+  {
+    "table": "BITACORA_EVENTOS_BKP_27032024",
+    "columns": 20
+  },
+  {
+    "table": "BITACORA_EVENTOS_PROVEEDORES",
+    "columns": 2
+  },
+  {
+    "table": "BKP_RESUMEN_INDIC_GENERALES_VOZ_DIA_2024",
+    "columns": 35
+  },
+  {
+    "table": "BKP_RESUMEN_INDIC_GENERALES_VOZ_HORA_2024",
+    "columns": 36
+  },
+  {
+    "table": "BKP_RESUMEN_INDIC_GENERALES_VOZ_INTERVALO_2024",
+    "columns": 37
+  },
+  {
+    "table": "BKP_RESUMEN_INDIC_GENERALES_VOZ_MES_2024",
+    "columns": 36
+  },
+  {
+    "table": "BKP_RESUMEN_INDIC_GENERALES_VOZ_SEMANA_2024",
+    "columns": 36
+  },
+  {
+    "table": "CAPACIDAD_DE_ATENCION_HISTORICO",
+    "columns": 21
+  },
+  {
+    "table": "CAPACIDAD_DE_ATENCION_ULT_ACT",
+    "columns": 21
+  },
+  {
+    "table": "CARGA_FRAUDES_OBS",
+    "columns": 1
+  },
+  {
+    "table": "CATALOGO_OPCIONES_EVOLUTIVO_OSIPTEL",
+    "columns": 1
+  },
+  {
+    "table": "CATALOGO_REPORTE_EVOLUTIVO_OSIPTEL",
+    "columns": 2
+  },
+  {
+    "table": "CATALOGO_SEGMENTOS_EVOLUTIVO_OSIPTEL",
+    "columns": 1
+  },
+  {
+    "table": "CCEE_BASE_CUMPLIMIENTO_FIBRA_RESUMEN",
+    "columns": 8
+  },
+  {
+    "table": "CCEE_BASE_GENERAL_AVANCE",
+    "columns": 13
+  },
+  {
+    "table": "CCEE_BASE_GENERAL_AVANCE_RESUMEN",
+    "columns": 4
+  },
+  {
+    "table": "CCEE_BASE_GENERAL_CUARTILES",
+    "columns": 19
+  },
+  {
+    "table": "CCEE_BASE_GENERAL_NO_CROSEADORES",
+    "columns": 16
+  },
+  {
+    "table": "CCEE_BASE_GENERAL_POTENCIALES",
+    "columns": 11
+  },
+  {
+    "table": "CCEE_BASE_GENERAL_POTENCIALES_temp_otras_ofertas",
+    "columns": 11
+  },
+  {
+    "table": "CCEE_BASE_GESTION_OPERATIVA_FIBRA_GRAF_RESUMEN",
+    "columns": 6
+  },
+  {
+    "table": "CCEE_BASE_MOTIVOS_ABORDAJE_RESUMEN",
+    "columns": 13
+  },
+  {
+    "table": "CCEE_BASE_MOTIVOS_ABORDAJE_RESUMEN_BACKUP",
+    "columns": 10
+  },
+  {
+    "table": "CCEE_BASE_MOTIVOS_ABORDAJE_RESUMEN_COPY",
+    "columns": 8
+  },
+  {
+    "table": "CCEE_BASE_PILOTO_PORTABILIDAD",
+    "columns": 5
+  },
+  {
+    "table": "CCEE_BASE_PILOTO_PORTABILIDAD_BCKP_KCS",
+    "columns": 5
+  },
+  {
+    "table": "CCEE_BASE_POTENCIAL_MAS_SIMPLE",
+    "columns": 5
+  },
+  {
+    "table": "CCEE_BASE_RECONTACTOS_CROSS_RESUMEN",
+    "columns": 8
+  },
+  {
+    "table": "CCEE_BASE_RECONTACTOS_RESUMEN",
+    "columns": 9
+  },
+  {
+    "table": "CCEE_DETALLE_ERROR_DITO",
+    "columns": 4
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_CCEE",
+    "columns": 112
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_CCEE_DIARIO",
+    "columns": 100
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_CCEE_MASTERS",
+    "columns": 86
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_CCEE_NPS",
+    "columns": 86
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_VOZ",
+    "columns": 136
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_VOZ_DIARIO",
+    "columns": 125
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_VOZ_PLATINUM",
+    "columns": 34
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_AGENTE_VOZ_SEMANAL",
+    "columns": 126
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_CALIDAD_CCEE",
+    "columns": 10
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_CALIDAD_CCEE_OUT",
+    "columns": 13
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_PROVEEDOR_VOZ",
+    "columns": 30
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_PROVEEDOR_VOZ_GRUPO",
+    "columns": 17
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_SUPERVISORES_VOZ_PLATINUM",
+    "columns": 26
+  },
+  {
+    "table": "CONSOLIDADO_METRICAS_SUPERVISOR_CCEE_MASTERS",
+    "columns": 61
+  },
+  {
+    "table": "CONSOLIDADO_TIPIFICACIONES_VISOR",
+    "columns": 21
+  },
+  {
+    "table": "CORTE_CROSS_20221206",
+    "columns": 27
+  },
+  {
+    "table": "CORTE_CROSS_20221206_atento",
+    "columns": 27
+  },
+  {
+    "table": "CORTE_CROSS_20221206_gss",
+    "columns": 27
+  },
+  {
+    "table": "CORTE_CROSS_20221206_gss_nov",
+    "columns": 27
+  },
+  {
+    "table": "CRONOGRAMA_INGRESOS_FINAL",
+    "columns": 31
+  },
+  {
+    "table": "CRONOGRAMA_INGRESOS_HISTORICO",
+    "columns": 38
+  },
+  {
+    "table": "CRONOGRAMA_INGRESOS_INTEGRATEL_HISTORICO",
+    "columns": 31
+  },
+  {
+    "table": "CRONOGRAMA_INGRESOS_SOCIOS_HISTORICO",
+    "columns": 31
+  },
+  {
+    "table": "CRONOGRAMA_INGRESOS_ULT_ACT",
+    "columns": 38
+  },
+  {
+    "table": "CRONOGRAMA_INGRESOS_ULT_ACT_AM_ERROR",
+    "columns": 38
+  },
+  {
+    "table": "CRONOGRAMA_INGRESOS_X_SEMANA",
+    "columns": 14
+  },
+  {
+    "table": "CROSS_CCEE_EVOLUTIVO_OFERTAS_DIARIA",
+    "columns": 7
+  },
+  {
+    "table": "CROSS_CCEE_RANKING_AGENTES",
+    "columns": 13
+  },
+  {
+    "table": "CR_BASE_LOG",
+    "columns": 12
+  },
+  {
+    "table": "CUOTAS_DETALLE_CROSS_CALL_CENTER",
+    "columns": 41
+  },
+  {
+    "table": "CUOTAS_DETALLE_CROSS_CALL_CENTER_HISTORICO",
+    "columns": 41
+  },
+  {
+    "table": "CUOTA_FIBRA_CROSS",
+    "columns": 4
+  },
+  {
+    "table": "Cliente_TDI_Piloto_1_Base_73k",
+    "columns": 15
+  },
+  {
+    "table": "Cliente_TDI_Piloto_2_Base_46k",
+    "columns": 15
+  },
+  {
+    "table": "DETALLE_ACCESADAS_TODAY",
+    "columns": 7
+  },
+  {
+    "table": "DETALLE_AVERIAS_POR_AGENTE_3MESES",
+    "columns": 20
+  },
+  {
+    "table": "DETALLE_CRUCE_FIBRA_LLAMADAS",
+    "columns": 8
+  },
+  {
+    "table": "DETALLE_DE_USUARIOS_KIPU",
+    "columns": 13
+  },
+  {
+    "table": "DETALLE_DE_USUARIOS_KIPU_BKP_120226",
+    "columns": 13
+  },
+  {
+    "table": "DETALLE_ENTRANTES_CCEE",
+    "columns": 10
+  },
+  {
+    "table": "DETALLE_OPCIONES_MENU_KIPU",
+    "columns": 8
+  },
+  {
+    "table": "DETALLE_OPCIONES_MENU_KIPU_temp",
+    "columns": 9
+  },
+  {
+    "table": "DETALLE_REITERADAS_Y_TRANSFERENCIAS",
+    "columns": 53
+  },
+  {
+    "table": "DIM_USUARIOS_ESTADO",
+    "columns": 2
+  },
+  {
+    "table": "DIM_USUARIOS_PERFIL",
+    "columns": 2
+  },
+  {
+    "table": "DIM_USUARIOS_PROVEEDOR",
+    "columns": 2
+  },
+  {
+    "table": "Data_gestion_avail_CARGA",
+    "columns": 8
+  },
+  {
+    "table": "Data_gestion_avail_CARGA_2",
+    "columns": 9
+  },
+  {
+    "table": "ENCUESTAS_MEDALLIA_CHECA_TU_CASO",
+    "columns": 25
+  },
+  {
+    "table": "ENCUESTAS_MEDALLIA_ESPECIALIZADOS",
+    "columns": 24
+  },
+  {
+    "table": "EVIDENCIA_VALIDACION_REASIGNACION",
+    "columns": 11
+  },
+  {
+    "table": "EXAMEN_AGENTES_PLATINUM_VOZ",
+    "columns": 6
+  },
+  {
+    "table": "FACTURACION_PARAMETROS",
+    "columns": 4
+  },
+  {
+    "table": "FIBRA_VISOR",
+    "columns": 32
+  },
+  {
+    "table": "FILTROS_INDICADORES_GENERALES_CCEE",
+    "columns": 5
+  },
+  {
+    "table": "FILTROS_INDICADORES_GENERALES_VOZ",
+    "columns": 5
+  },
+  {
+    "table": "FILTROS_INDICADORES_GENERALES_VOZ_MATRIX",
+    "columns": 5
+  },
+  {
+    "table": "FILTROS_MALLAS",
+    "columns": 2
+  },
+  {
+    "table": "FILTROS_PLATAFORMAS_CCEE",
+    "columns": 4
+  },
+  {
+    "table": "FILTROS_PLATAFORMAS_VOZ",
+    "columns": 4
+  },
+  {
+    "table": "FILTROS_PLATAFORMAS_VOZ_MATRIX",
+    "columns": 4
+  },
+  {
+    "table": "FILTROS_RESUMEN_IVR_ADAPTATIVO",
+    "columns": 4
+  },
+  {
+    "table": "FILTROS_TIPIFICACIONES_VISOR",
+    "columns": 4
+  },
+  {
+    "table": "FILTROS_TIPIFICACIONES_VISOR_PLAT",
+    "columns": 4
+  },
+  {
+    "table": "FILTRO_AUTOGESTIONES",
+    "columns": 7
+  },
+  {
+    "table": "FOMULARIO_DRIVE_RECLAMOS_2DA_CALL_CENTER",
+    "columns": 43
+  },
+  {
+    "table": "FORMULARIO_CROSS_CCEE_VOZ",
+    "columns": 59
+  },
+  {
+    "table": "FORMULARIO_CROSS_VOZ_ADSL",
+    "columns": 24
+  },
+  {
+    "table": "GENERACION_MALLAS_DISTRIBUCION_HORARIA",
+    "columns": 14
+  },
+  {
+    "table": "GENERACION_MALLAS_PARTICIPACION_PROVEEDOR",
+    "columns": 11
+  },
+  {
+    "table": "HISTORICO_CARGA_USUARIOS_RECLAMOS",
+    "columns": 19
+  },
+  {
+    "table": "HISTORICO_ORIGEN_VENTA_CHECA_TU_CASO",
+    "columns": 23
+  },
+  {
+    "table": "HISTORICO_REASIGNACION_RECLAMOS",
+    "columns": 7
+  },
+  {
+    "table": "HP_DATA_RECUPERO",
+    "columns": 6
+  },
+  {
+    "table": "HP_ENTRANTES_PROYECTADO",
+    "columns": 11
+  },
+  {
+    "table": "INCIDENCIAS_1991",
+    "columns": 18
+  },
+  {
+    "table": "INCIDENCIAS_1991_CATEGORIAS",
+    "columns": 2
+  },
+  {
+    "table": "INCIDENCIAS_1991_ESTADOS",
+    "columns": 2
+  },
+  {
+    "table": "INCIDENCIAS_1991_IDENTIFICADORES",
+    "columns": 3
+  },
+  {
+    "table": "INCIDENCIAS_1991_SEVERIDADES",
+    "columns": 2
+  },
+  {
+    "table": "IND_CALL_CENTER_RESUMEN_GRUPO_PLATAFORMA",
+    "columns": 9
+  },
+  {
+    "table": "IVR",
+    "columns": 6
+  },
+  {
+    "table": "JCO_MOTIVOS_CONTACTOS",
+    "columns": 13
+  },
+  {
+    "table": "JG_BACKUP_20221124_CRONOGRAMA_INGRESOS_ULT_ACT_ERRORES",
+    "columns": 34
+  },
+  {
+    "table": "JSS_AGRUPACION_VISTA_DIFERENCIA",
+    "columns": 7
+  },
+  {
+    "table": "JSS_AGRUPACION_VISTA_DIFERENCIA_APERTURA",
+    "columns": 9
+  },
+  {
+    "table": "JSS_AVERIAS_X_APERTURA",
+    "columns": 11
+  },
+  {
+    "table": "JSS_BASE_APERTURA_PLATAFORMAS_HISPAM",
+    "columns": 6
+  },
+  {
+    "table": "JSS_BASE_APERTURA_SOCIOS_HISPAM",
+    "columns": 7
+  },
+  {
+    "table": "JSS_BASE_FACTORES_PROYECCION_HISPAM",
+    "columns": 9
+  },
+  {
+    "table": "JSS_CALCULO_TMP_MALLA",
+    "columns": 11
+  },
+  {
+    "table": "JSS_CATALOGO_SEMANA_FECHAS_PLANIFICACION",
+    "columns": 4
+  },
+  {
+    "table": "JSS_CLIENTES_BAJO_TDI",
+    "columns": 1
+  },
+  {
+    "table": "JSS_CLIENTES_BAJO_TDI_2DO_GRUPO",
+    "columns": 1
+  },
+  {
+    "table": "JSS_CLIENTES_BAJO_TDI_3ER_GRUPO",
+    "columns": 15
+  },
+  {
+    "table": "JSS_LOG_SP",
+    "columns": 3
+  },
+  {
+    "table": "JSS_PROYECCION_CON_FACTORES",
+    "columns": 7
+  },
+  {
+    "table": "JSS_PROYECCION_CON_FACTORES_APERTURA",
+    "columns": 10
+  },
+  {
+    "table": "JSS_TABLA_BASE_PONDERADO_TMO",
+    "columns": 6
+  },
+  {
+    "table": "JSS_TEMP_PRONOSTICO_CORTE_30D_DIFERENCIA",
+    "columns": 9
+  },
+  {
+    "table": "JSS_TEMP_PRONOSTICO_CORTE_PEGADO",
+    "columns": 9
+  },
+  {
+    "table": "JSS_catalogo_fechas_cronograma_planificacion",
+    "columns": 3
+  },
+  {
+    "table": "KCRM_VENTAS_2DA_LINEA_CROSS_CCEE",
+    "columns": 50
+  },
+  {
+    "table": "KCS_ENTRANTES_PILOTO",
+    "columns": 25
+  },
+  {
+    "table": "KCS_MOT_NO_ACEPT_CROSS_CCEE",
+    "columns": 3
+  },
+  {
+    "table": "LD_METRICAS_ANTIGUEDAD_AGENTES_REQ_BEATRIZ",
+    "columns": 49
+  },
+  {
+    "table": "LD_METRICAS_ANTIGUEDAD_AGENTES_REQ_BEATRIZ_v2",
+    "columns": 49
+  },
+  {
+    "table": "LD_RESUMEN_MOTIVOS_CAIDAS_POR_CAMPA\u00d1AS_CROSS_CCEE",
+    "columns": 17
+  },
+  {
+    "table": "LISTA_AGENTES_GENESYS_HIST",
+    "columns": 9
+  },
+  {
+    "table": "LISTA_AGENTES_GENESYS_ULT_ACT",
+    "columns": 7
+  },
+  {
+    "table": "LISTA_RELLAMADORES",
+    "columns": 5
+  },
+  {
+    "table": "LOG_ACTIVIDAD_USUARIOS",
+    "columns": 3
+  },
+  {
+    "table": "LOG_ACTUALIZACIONES_DATA",
+    "columns": 8
+  },
+  {
+    "table": "LOG_CONSULTAS_MENU",
+    "columns": 5
+  },
+  {
+    "table": "LOG_GENERACION_MALLAS",
+    "columns": 7
+  },
+  {
+    "table": "LOG_PASS_USUARIOS",
+    "columns": 3
+  },
+  {
+    "table": "LOG_REPROCESOS_KIPU",
+    "columns": 7
+  },
+  {
+    "table": "MALLAS_AGENTES_HISTORICO",
+    "columns": 16
+  },
+  {
+    "table": "MALLAS_AGENTES_ULT_ACT",
+    "columns": 14
+  },
+  {
+    "table": "MALLAS_PARAMETROS",
+    "columns": 4
+  },
+  {
+    "table": "MALLAS_PROVEEDOR_HISTORICO",
+    "columns": 9
+  },
+  {
+    "table": "MALLAS_PROVEEDOR_ULT_ACT",
+    "columns": 7
+  },
+  {
+    "table": "MALLAS_TDP_HISTORICO",
+    "columns": 10
+  },
+  {
+    "table": "MALLAS_TDP_HISTORICO_SIM_202110",
+    "columns": 10
+  },
+  {
+    "table": "MALLAS_TDP_ULT_ACT",
+    "columns": 8
+  },
+  {
+    "table": "METAS_RANKING_AGENTES_CCEE_V2",
+    "columns": 5
+  },
+  {
+    "table": "METRICAS_OPERATIVAS_TODAY_ACCESADAS",
+    "columns": 8
+  },
+  {
+    "table": "METRICAS_OPERATIVAS_TODAY_CCEE",
+    "columns": 15
+  },
+  {
+    "table": "METRICAS_OPERATIVAS_TODAY_VOZ",
+    "columns": 15
+  },
+  {
+    "table": "OBJETIVOS_AGENTES_VOZ_PLATINUM",
+    "columns": 7
+  },
+  {
+    "table": "OBJETIVOS_CEE_W",
+    "columns": 8
+  },
+  {
+    "table": "OBJETIVOS_CEE_W_bk_am",
+    "columns": 7
+  },
+  {
+    "table": "OBJETIVOS_RANKING_PROV",
+    "columns": 9
+  },
+  {
+    "table": "OBJETIVOS_RANKING_VOZ",
+    "columns": 11
+  },
+  {
+    "table": "ORIGEN_VENTA_CHECA_TU_CASO_ULT_ACT",
+    "columns": 21
+  },
+  {
+    "table": "OSIPTEL_EVOLUTIVO_INFORME_REGULADOS",
+    "columns": 22
+  },
+  {
+    "table": "OSIPTEL_EVOLUTIVO_INFORME_REGULADOS_old",
+    "columns": 22
+  },
+  {
+    "table": "PARAMETROS",
+    "columns": 4
+  },
+  {
+    "table": "PBI_PERIODOS_DESCARGAS",
+    "columns": 2
+  },
+  {
+    "table": "PECUF_PECNEG_HISTORICO",
+    "columns": 38
+  },
+  {
+    "table": "PECUF_PECNEG_ULT_ACT",
+    "columns": 36
+  },
+  {
+    "table": "PERFILES_MENU",
+    "columns": 3
+  },
+  {
+    "table": "PLANILLAS_PPP_DIAS_HISTORICO",
+    "columns": 13
+  },
+  {
+    "table": "PLANILLAS_PPP_DIAS_ULT_ACT",
+    "columns": 11
+  },
+  {
+    "table": "PLANILLAS_PPP_MESES_HISTORICO",
+    "columns": 20
+  },
+  {
+    "table": "PLANILLAS_PPP_MESES_ULT_ACT",
+    "columns": 20
+  },
+  {
+    "table": "PLANILLAS_PPP_REDUCTORES_HISTORICO",
+    "columns": 19
+  },
+  {
+    "table": "PLANILLAS_PPP_REDUCTORES_ULT_ACT",
+    "columns": 17
+  },
+  {
+    "table": "PLANILLAS_PPP_SEMANAS_HISTORICO",
+    "columns": 30
+  },
+  {
+    "table": "PLANILLAS_PPP_SEMANAS_ULT_ACT",
+    "columns": 29
+  },
+  {
+    "table": "PLANILLAS_PPP_SEMANAS_ULT_ACT_BACKUP",
+    "columns": 29
+  },
+  {
+    "table": "PLATAFORMAS_PAISES",
+    "columns": 6
+  },
+  {
+    "table": "PLATAFORMAS_PAISES_bk",
+    "columns": 6
+  },
+  {
+    "table": "PLATAFORMAS_X_VALOR",
+    "columns": 5
+  },
+  {
+    "table": "POTENCIALES_FIBRA_202208",
+    "columns": 6
+  },
+  {
+    "table": "PREVENTAS_CAPL_VISOR",
+    "columns": 33
+  },
+  {
+    "table": "PREVENTAS_CROSS_TODAS_CAMP_DIARIO",
+    "columns": 31
+  },
+  {
+    "table": "PREVENTAS_CROSS_TODAS_CAMP_DIARIO_bk_0612",
+    "columns": 29
+  },
+  {
+    "table": "PREVENTAS_FEEDBACK",
+    "columns": 41
+  },
+  {
+    "table": "PREVENTAS_FEEDBACK_KONECTA_KIPU",
+    "columns": 46
+  },
+  {
+    "table": "PREVENTAS_POR_ASESOR",
+    "columns": 20
+  },
+  {
+    "table": "PREVENTAS_RECEPTIVOS_CCEE",
+    "columns": 121
+  },
+  {
+    "table": "PREVENTAS_VOZ_FEEDBACK",
+    "columns": 43
+  },
+  {
+    "table": "PREVISION_CALIDAD_PROGRAMACION",
+    "columns": 14
+  },
+  {
+    "table": "PROCESOS_NO_RESOLUTIVOS_TEMATICO_TIPIFICACIONES_CCEE",
+    "columns": 3
+  },
+  {
+    "table": "PROCESOS_NO_RESOLUTIVOS_VISTA_CALIDAD_PROCESOS",
+    "columns": 14
+  },
+  {
+    "table": "PROCESOS_NO_RESOLUTIVOS_VISTA_PROCEDIMIENTOS_QUEBRADOS",
+    "columns": 12
+  },
+  {
+    "table": "PROCESOS_NO_RESOLUTIVOS_VISTA_TRAFICO_CCEE",
+    "columns": 5
+  },
+  {
+    "table": "PRONOSTICO_INTERNO_CCEE",
+    "columns": 8
+  },
+  {
+    "table": "PR_Control_Q_AMDOCS",
+    "columns": 9
+  },
+  {
+    "table": "PR_Control_Q_CMS",
+    "columns": 8
+  },
+  {
+    "table": "PR_Control_Q_FENIX",
+    "columns": 9
+  },
+  {
+    "table": "PR_INCIDENCIAS_Carga_usuarios_reclamos",
+    "columns": 11
+  },
+  {
+    "table": "RECLAMOS_POR_ASESOR",
+    "columns": 14
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_2022_DIC",
+    "columns": 18
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_2022_NOV",
+    "columns": 18
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_2023_ENE",
+    "columns": 18
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_2023_ENE_31",
+    "columns": 42
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_ALL_NUEVO",
+    "columns": 33
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_BKP_202207_202210",
+    "columns": 17
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_COPY",
+    "columns": 17
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_TEMP_202210",
+    "columns": 17
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_all_bk_1707",
+    "columns": 29
+  },
+  {
+    "table": "RECONTACTO_CROSS_CCEE_bk_1707",
+    "columns": 29
+  },
+  {
+    "table": "RECONTACTO_CROSS_VOZ",
+    "columns": 31
+  },
+  {
+    "table": "REGISTROS_RFX",
+    "columns": 12
+  },
+  {
+    "table": "REGISTROS_RFX_PROVEEOR",
+    "columns": 2
+  },
+  {
+    "table": "REGISTROS_RFX_REQUERIMIENTO",
+    "columns": 2
+  },
+  {
+    "table": "REGISTROS_RFX_TIPO_SOLICITANTE",
+    "columns": 2
+  },
+  {
+    "table": "REPORTE_EVOLUTIVO_FIBRA",
+    "columns": 13
+  },
+  {
+    "table": "REPORTE_EVOLUTIVO_FIBRA_PREVENTA",
+    "columns": 3
+  },
+  {
+    "table": "REPORTE_FIBRA_CROSS_GLOBAL",
+    "columns": 4
+  },
+  {
+    "table": "REPORTE_FIBRA_CROSS_MOTIVOS_NO_ACEPTA",
+    "columns": 37
+  },
+  {
+    "table": "REPORTE_FIBRA_CROSS_SEMANAL_GLOBAL",
+    "columns": 4
+  },
+  {
+    "table": "REPORTE_FORMACION_CORRELATIVO_CANALES",
+    "columns": 4
+  },
+  {
+    "table": "REPORTE_FORMACION_HISTORICO",
+    "columns": 21
+  },
+  {
+    "table": "REPORTE_FORMACION_OJT_CCEE",
+    "columns": 24
+  },
+  {
+    "table": "REPORTE_FORMACION_OJT_CCEE_HISTORICO",
+    "columns": 10
+  },
+  {
+    "table": "REPOSITORIO_INCIDENCIAS_B2C",
+    "columns": 10
+  },
+  {
+    "table": "REPO_INTELIGENCIA_PLATAFORMA",
+    "columns": 9
+  },
+  {
+    "table": "REQUERIMIENTOS_DIM_ESTADOS",
+    "columns": 3
+  },
+  {
+    "table": "REQUERIMIENTOS_DIM_TRABAJADORES",
+    "columns": 4
+  },
+  {
+    "table": "REQUERIMIENTOS_DIM_TRABAJADORES_bkp",
+    "columns": 3
+  },
+  {
+    "table": "REQUERIMIENTOS_KIPU",
+    "columns": 19
+  },
+  {
+    "table": "REQUERIMIENTOS_KIPU_BKP",
+    "columns": 16
+  },
+  {
+    "table": "REQUERIMIENTOS_KIPU_ULTIMA_ACT",
+    "columns": 19
+  },
+  {
+    "table": "RESUMEN_ACCESADAS_VOZ_HORA",
+    "columns": 4
+  },
+  {
+    "table": "RESUMEN_ANALISIS_DEMANDA",
+    "columns": 8
+  },
+  {
+    "table": "RESUMEN_ANALISIS_DEMANDA_CLI_UNICOS",
+    "columns": 6
+  },
+  {
+    "table": "RESUMEN_ANALISIS_DEMANDA_DISTRIBUCION",
+    "columns": 7
+  },
+  {
+    "table": "RESUMEN_ANIS_VS_RELLAMADAS",
+    "columns": 9
+  },
+  {
+    "table": "RESUMEN_ANIS_VS_RELLAMADAS_MOTIVOS",
+    "columns": 14
+  },
+  {
+    "table": "RESUMEN_CARATULA_CCEE",
+    "columns": 26
+  },
+  {
+    "table": "RESUMEN_CARATULA_VOZ",
+    "columns": 27
+  },
+  {
+    "table": "RESUMEN_CATEGORIAS_CCEE",
+    "columns": 17
+  },
+  {
+    "table": "RESUMEN_CUBO_METRICAS_CCEE_DIA",
+    "columns": 10
+  },
+  {
+    "table": "RESUMEN_CUBO_METRICAS_CCEE_MES",
+    "columns": 11
+  },
+  {
+    "table": "RESUMEN_EVOLUTIVO_METRICAS_AGENTES_NUEVOS",
+    "columns": 26
+  },
+  {
+    "table": "RESUMEN_FIBRA",
+    "columns": 18
+  },
+  {
+    "table": "RESUMEN_FIBRA_POTENCIALES",
+    "columns": 15
+  },
+  {
+    "table": "RESUMEN_FIBRA_VISOR",
+    "columns": 35
+  },
+  {
+    "table": "RESUMEN_INCREMENTO_PRECIO",
+    "columns": 7
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_DIA",
+    "columns": 49
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_HORA",
+    "columns": 50
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_INTERVALO",
+    "columns": 51
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_INTERVALO_BACKUP",
+    "columns": 49
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_INTERVALO_BK_AM",
+    "columns": 49
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_INTERVALO_bk_28_08",
+    "columns": 49
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_MES",
+    "columns": 47
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_CCEE_SEMANAS",
+    "columns": 48
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_DIA",
+    "columns": 35
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_DIA_MATRIX",
+    "columns": 16
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_HORA",
+    "columns": 36
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_HORA_MATRIX",
+    "columns": 17
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_INTERVALO",
+    "columns": 37
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_INTERVALO_MATRIX",
+    "columns": 18
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_MES",
+    "columns": 36
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_MES_MATRIX",
+    "columns": 17
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_SEMANA",
+    "columns": 36
+  },
+  {
+    "table": "RESUMEN_INDIC_GENERALES_VOZ_SEMANA_MATRIX",
+    "columns": 17
+  },
+  {
+    "table": "RESUMEN_INTERVALOS_CALL",
+    "columns": 1
+  },
+  {
+    "table": "RESUMEN_IVR_ADAPTATIVO",
+    "columns": 6
+  },
+  {
+    "table": "RESUMEN_METRICAS_WFM",
+    "columns": 17
+  },
+  {
+    "table": "RESUMEN_METRICAS_WFM_DIARIO",
+    "columns": 22
+  },
+  {
+    "table": "RESUMEN_METRICAS_WFM_HORA",
+    "columns": 23
+  },
+  {
+    "table": "RESUMEN_METRICAS_WFM_INTERVALO",
+    "columns": 24
+  },
+  {
+    "table": "RESUMEN_METRICAS_WFM_MENSUAL",
+    "columns": 22
+  },
+  {
+    "table": "RESUMEN_METRICAS_WFM_SEMANAL",
+    "columns": 23
+  },
+  {
+    "table": "RESUMEN_PRODUCTIVIDAD_PROVEEDOR_CCEE",
+    "columns": 14
+  },
+  {
+    "table": "RESUMEN_REIETRADAS_VOZ",
+    "columns": 11
+  },
+  {
+    "table": "RESUMEN_REITERADAS_CCEE",
+    "columns": 9
+  },
+  {
+    "table": "RESUMEN_REITERADORES_CRONICOS",
+    "columns": 11
+  },
+  {
+    "table": "RESUMEN_REIT_TRANS_VOZ_FILTROS",
+    "columns": 1
+  },
+  {
+    "table": "RESUMEN_RETORNOS_CCEE",
+    "columns": 10
+  },
+  {
+    "table": "RESUMEN_SALIENTES",
+    "columns": 12
+  },
+  {
+    "table": "RESUMEN_TECNOLOGIA_AGENTES",
+    "columns": 28
+  },
+  {
+    "table": "RESUMEN_TECNOLOGIA_ASESORES",
+    "columns": 40
+  },
+  {
+    "table": "RESUMEN_TECNOLOGIA_TIPIFIACIONES_VS_CALIDAD",
+    "columns": 15
+  },
+  {
+    "table": "RESUMEN_TECNOLOGIA_TIPIFICACIONES",
+    "columns": 11
+  },
+  {
+    "table": "RESUMEN_TECNOLOGIA_TRAFICO",
+    "columns": 25
+  },
+  {
+    "table": "RESUMEN_TIPIFICACIONES_BASE_ENTRANTES",
+    "columns": 11
+  },
+  {
+    "table": "RESUMEN_TIPIFICACIONES_CCEE",
+    "columns": 6
+  },
+  {
+    "table": "RESUMEN_TRANSFERENCIAS_VOZ",
+    "columns": 20
+  },
+  {
+    "table": "RESUMEN_TRANSFERENICAS_CCEE",
+    "columns": 11
+  },
+  {
+    "table": "RETENCIONES_CAMPANIAS_OUT",
+    "columns": 24
+  },
+  {
+    "table": "RETENCIONES_CAMPANIAS_OUT_ULT_ACT",
+    "columns": 22
+  },
+  {
+    "table": "RETENCIONES_CUARTILES_AGENTES",
+    "columns": 8
+  },
+  {
+    "table": "RETENCIONES_FEEDBACK",
+    "columns": 29
+  },
+  {
+    "table": "SEGURIDAD_PARAMETROS",
+    "columns": 4
+  },
+  {
+    "table": "TABLERO_IMPRODUCTIVAS_CASOS_CERRADOS_CCEE",
+    "columns": 6
+  },
+  {
+    "table": "TABLERO_IMPRODUCTIVAS_CCEE",
+    "columns": 22
+  },
+  {
+    "table": "TIPIFICACIONES_VISOR",
+    "columns": 16
+  },
+  {
+    "table": "TMP_ABORDAJE_VOZ",
+    "columns": 21
+  },
+  {
+    "table": "TMP_AGENTES_PILOTO_CROSS_SELL",
+    "columns": 6
+  },
+  {
+    "table": "TMP_ANTIGUEDAD_AGENTES",
+    "columns": 65
+  },
+  {
+    "table": "TMP_ANTIGUEDAD_AGENTES_CCEE",
+    "columns": 42
+  },
+  {
+    "table": "TMP_ANTIGUEDAD_VOZ_DIAS",
+    "columns": 23
+  },
+  {
+    "table": "TMP_AVERIAS_CON_METRICAS",
+    "columns": 18
+  },
+  {
+    "table": "TMP_BASE_JAVIER",
+    "columns": 20
+  },
+  {
+    "table": "TMP_BORRAR_CCEE",
+    "columns": 16
+  },
+  {
+    "table": "TMP_CAPACIDAD_DE_ATENCION",
+    "columns": 19
+  },
+  {
+    "table": "TMP_CARGA_AGENTES_VENTAS_CROSS_RECEPTIVOS",
+    "columns": 10
+  },
+  {
+    "table": "TMP_CARGA_FRAUDE_CERTIFICADO_FIJA",
+    "columns": 4
+  },
+  {
+    "table": "TMP_CARGA_FRAUDE_CERTIFICADO_FIJA_RECLAMOS",
+    "columns": 4
+  },
+  {
+    "table": "TMP_CARGA_FRAUDE_CERTIFICADO_MOVIL",
+    "columns": 5
+  },
+  {
+    "table": "TMP_CARGA_FRAUDE_POSIBLE_FRAUDE",
+    "columns": 6
+  },
+  {
+    "table": "TMP_CARGA_FRAUDE_REVERTIDO_FIJA",
+    "columns": 6
+  },
+  {
+    "table": "TMP_CARGA_FRAUDE_REVERTIDO_FIJA_RECLAMOS",
+    "columns": 6
+  },
+  {
+    "table": "TMP_CARGA_FRAUDE_REVERTIDO_MOVIL",
+    "columns": 6
+  },
+  {
+    "table": "TMP_CCEE_CULPABLES_REITERACIONES",
+    "columns": 7
+  },
+  {
+    "table": "TMP_CCEE_CULPABLES_REITERACIONES_DIARIO",
+    "columns": 7
+  },
+  {
+    "table": "TMP_CONTACT_RATE",
+    "columns": 7
+  },
+  {
+    "table": "TMP_CRONOGRAMA_INGRESOS",
+    "columns": 36
+  },
+  {
+    "table": "TMP_CRONOGRAMA_INGRESOS_INTEGRATEL",
+    "columns": 8
+  },
+  {
+    "table": "TMP_CRONOGRAMA_INGRESOS_SOCIOS",
+    "columns": 29
+  },
+  {
+    "table": "TMP_CROSS_CCEE",
+    "columns": 28
+  },
+  {
+    "table": "TMP_CROSS_CCEE2",
+    "columns": 32
+  },
+  {
+    "table": "TMP_CROSS_CCEE3",
+    "columns": 58
+  },
+  {
+    "table": "TMP_CROSS_TODAS_CAMP",
+    "columns": 42
+  },
+  {
+    "table": "TMP_CROSS_VOZ",
+    "columns": 27
+  },
+  {
+    "table": "TMP_CROSS_VOZ_0",
+    "columns": 38
+  },
+  {
+    "table": "TMP_CROSS_VOZ_ADSL",
+    "columns": 22
+  },
+  {
+    "table": "TMP_CROSS_VOZ_nuevo",
+    "columns": 40
+  },
+  {
+    "table": "TMP_CRUCE_POTENCIALES_CCEE",
+    "columns": 7
+  },
+  {
+    "table": "TMP_CRUCE_POTENCIALES_LLAMADAS",
+    "columns": 7
+  },
+  {
+    "table": "TMP_CUOTAS_DETALLE_CROSS_CALL_CENTER",
+    "columns": 39
+  },
+  {
+    "table": "TMP_ENCUESTAS_MEDALLIA_CHECA_TU_CASO",
+    "columns": 23
+  },
+  {
+    "table": "TMP_ENCUESTAS_MEDALLIA_ESPECIALIZADOS",
+    "columns": 22
+  },
+  {
+    "table": "TMP_EVOLUTIVO_MOTIVOS_PT",
+    "columns": 12
+  },
+  {
+    "table": "TMP_FACTURACION_CONTINGENCIA_BO_OTROS",
+    "columns": 10
+  },
+  {
+    "table": "TMP_FACTURACION_CONTINGENCIA_CCEE",
+    "columns": 55
+  },
+  {
+    "table": "TMP_FACTURACION_CONTINGENCIA_VOZ",
+    "columns": 92
+  },
+  {
+    "table": "TMP_FACTURACION_COR",
+    "columns": 8
+  },
+  {
+    "table": "TMP_FACTURACION_FACTOR_DESEMPENIO",
+    "columns": 4
+  },
+  {
+    "table": "TMP_FACTURACION_PECUF_PECNEG",
+    "columns": 6
+  },
+  {
+    "table": "TMP_FACTURACION_SATISFACCION",
+    "columns": 7
+  },
+  {
+    "table": "TMP_FACTURACION_TOPE_NPS_1_2",
+    "columns": 4
+  },
+  {
+    "table": "TMP_FACTURACION_USO_GENIO",
+    "columns": 4
+  },
+  {
+    "table": "TMP_FIBRA_CROSS_CALL",
+    "columns": 27
+  },
+  {
+    "table": "TMP_FORMULARIO_RECLAMOS",
+    "columns": 41
+  },
+  {
+    "table": "TMP_GENERACION_MALLAS_DH",
+    "columns": 12
+  },
+  {
+    "table": "TMP_GENERACION_MALLAS_PP",
+    "columns": 9
+  },
+  {
+    "table": "TMP_HP_DESPLIEGUE",
+    "columns": 2
+  },
+  {
+    "table": "TMP_HP_DETALLE_INTERACCIONES_EXPORTADO",
+    "columns": 99
+  },
+  {
+    "table": "TMP_ID_OPERADORES_RRSS",
+    "columns": 4
+  },
+  {
+    "table": "TMP_INTERACCIONES_POTENCIALES_TODAS_LAS_CAMPANIAS",
+    "columns": 21
+  },
+  {
+    "table": "TMP_LISTA_AGENTES_GENESYS",
+    "columns": 7
+  },
+  {
+    "table": "TMP_LISTA_RELLAMADORES",
+    "columns": 3
+  },
+  {
+    "table": "TMP_LLAMADAS_POTENCIALES_TODAS_LAS_CAMPANIAS",
+    "columns": 48
+  },
+  {
+    "table": "TMP_MALLAS_AGENTES",
+    "columns": 13
+  },
+  {
+    "table": "TMP_MALLAS_PROVEEDOR",
+    "columns": 7
+  },
+  {
+    "table": "TMP_MALLLAS_TDP",
+    "columns": 8
+  },
+  {
+    "table": "TMP_OBSERVACIONES_CARGAS",
+    "columns": 2
+  },
+  {
+    "table": "TMP_OBSERVACIONES_CARGAS_CRONOGRAMA",
+    "columns": 2
+  },
+  {
+    "table": "TMP_OBSERVACIONES_REPROCESO_KIPU",
+    "columns": 2
+  },
+  {
+    "table": "TMP_ORIGEN_VENTA_CHECA_TU_CASO",
+    "columns": 21
+  },
+  {
+    "table": "TMP_PECUF_PECNEG",
+    "columns": 36
+  },
+  {
+    "table": "TMP_PLANILLAS_PPP_DIAS",
+    "columns": 11
+  },
+  {
+    "table": "TMP_PLANILLAS_PPP_MESES",
+    "columns": 18
+  },
+  {
+    "table": "TMP_PLANILLAS_PPP_SEMANAS",
+    "columns": 28
+  },
+  {
+    "table": "TMP_POTENCIALES_FIBRA_BEA",
+    "columns": 6
+  },
+  {
+    "table": "TMP_PREVENTAS_CAPL",
+    "columns": 31
+  },
+  {
+    "table": "TMP_PREVENTAS_RECEPTIVOS_CCEE",
+    "columns": 119
+  },
+  {
+    "table": "TMP_PREVENTAS_VOZ",
+    "columns": 41
+  },
+  {
+    "table": "TMP_PROCESOS_NO_RESOLUTIVOS_VISTA_PROCEDIMIENTOS_QUEBRADOS",
+    "columns": 9
+  },
+  {
+    "table": "TMP_RANKING_MASTER",
+    "columns": 74
+  },
+  {
+    "table": "TMP_RANKING_PROVEDORES",
+    "columns": 8
+  },
+  {
+    "table": "TMP_RC_CROSS_POTENCIAL_FIBRA_RES",
+    "columns": 7
+  },
+  {
+    "table": "TMP_REASIGNACION_RECLAMOS",
+    "columns": 5
+  },
+  {
+    "table": "TMP_REDUCTORES",
+    "columns": 17
+  },
+  {
+    "table": "TMP_RELLAMADORES_SEMANAL_PT",
+    "columns": 16
+  },
+  {
+    "table": "TMP_REPORTE_FIBRA_CROSS_GLOBAL",
+    "columns": 4
+  },
+  {
+    "table": "TMP_REPORTE_FIBRA_CROSS_SEMANAL_GLOBAL",
+    "columns": 5
+  },
+  {
+    "table": "TMP_REPORTE_FORMACION",
+    "columns": 17
+  },
+  {
+    "table": "TMP_REPORTE_FORMACION_LIDER",
+    "columns": 19
+  },
+  {
+    "table": "TMP_REPORTE_FORMACION_OJT_CCEE",
+    "columns": 8
+  },
+  {
+    "table": "TMP_RESUMEN_INDIC_GENERALES_CCEE_TODAY",
+    "columns": 144
+  },
+  {
+    "table": "TMP_RESUMEN_INDIC_GENERALES_VOZ_TODAY",
+    "columns": 164
+  },
+  {
+    "table": "TMP_RETENCIONES_CAMPANIAS_OUT",
+    "columns": 22
+  },
+  {
+    "table": "TMP_RETENCIONES_CUARTIL_AGENTES",
+    "columns": 6
+  },
+  {
+    "table": "TMP_RETENCIONES_FEEDBACK",
+    "columns": 27
+  },
+  {
+    "table": "TMP_SEMANAL_VISTA_MOTIVO_2",
+    "columns": 53
+  },
+  {
+    "table": "TMP_TMO_PAGO",
+    "columns": 5
+  },
+  {
+    "table": "TMP_USUARIOS_CAPL",
+    "columns": 7
+  },
+  {
+    "table": "TMP_USUARIOS_GENIO",
+    "columns": 13
+  },
+  {
+    "table": "TMP_USUARIOS_RECLAMOS",
+    "columns": 34
+  },
+  {
+    "table": "TMP_USUARIO_JOHANA",
+    "columns": 9
+  },
+  {
+    "table": "TMP_VENTAS_2DA_LINEA_CROSS_CCEE",
+    "columns": 48
+  },
+  {
+    "table": "TMP_V_CCEE_CULPABLES_REITERACIONES",
+    "columns": 9
+  },
+  {
+    "table": "T_DIM_PLATAFORMA_CANAL_OUT",
+    "columns": 6
+  },
+  {
+    "table": "T_EXAMEN_RANKING_AGENTES_CCEE",
+    "columns": 14
+  },
+  {
+    "table": "T_METAS_RANKING_AGENTES_CCEE",
+    "columns": 4
+  },
+  {
+    "table": "T_MTA_RANKING_AGENTES_CCEE",
+    "columns": 3
+  },
+  {
+    "table": "Temp_jss_AVERIAS_POR_ASESOR_backup",
+    "columns": 24
+  },
+  {
+    "table": "USUARIOS_CAPL_VISOR",
+    "columns": 9
+  },
+  {
+    "table": "USUARIOS_RECLAMOS_AREAS",
+    "columns": 5
+  },
+  {
+    "table": "USUARIOS_RECLAMOS_HISTORICO",
+    "columns": 36
+  },
+  {
+    "table": "USUARIOS_RECLAMOS_LISTA_INVALIDOS",
+    "columns": 1
+  },
+  {
+    "table": "USUARIOS_RECLAMOS_ULT_ACT",
+    "columns": 36
+  },
+  {
+    "table": "aa_MallasProveedor",
+    "columns": 7
+  },
+  {
+    "table": "aa_MallasTDP",
+    "columns": 8
+  },
+  {
+    "table": "agentes",
+    "columns": 12
+  },
+  {
+    "table": "agentes_capacitados_blending",
+    "columns": 5
+  },
+  {
+    "table": "am_temp_fibra_voz",
+    "columns": 26
+  },
+  {
+    "table": "ccee_cross",
+    "columns": 13
+  },
+  {
+    "table": "niveles",
+    "columns": 26
+  },
+  {
+    "table": "nueva_tmp",
+    "columns": 28
+  },
+  {
+    "table": "plataforma_felipe",
+    "columns": 6
+  },
+  {
+    "table": "plataformas_cro",
+    "columns": 6
+  },
+  {
+    "table": "prevision",
+    "columns": 17
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "tbilllog_idicadores",
+    "columns": 75
+  },
+  {
+    "table": "temp",
+    "columns": 4
+  },
+  {
+    "table": "temp_incidencias_corregidas",
+    "columns": 18
+  },
+  {
+    "table": "temporal_cross",
+    "columns": 19
+  },
+  {
+    "table": "tmo",
+    "columns": 15
+  },
+  {
+    "table": "tmp_carga_fibra",
+    "columns": 23
+  },
+  {
+    "table": "ventas_fibra_cross_octubre",
+    "columns": 28
+  },
+  {
+    "table": "Averias_Pendientes_Registradas",
+    "columns": 246
+  },
+  {
+    "table": "DRH_REGISTRADAS_2023",
+    "columns": 263
+  },
+  {
+    "table": "DRH_REGISTRADAS_2024",
+    "columns": 376
+  },
+  {
+    "table": "DRH_amdocs_crm",
+    "columns": 69
+  },
+  {
+    "table": "DRH_area_crm_grp",
+    "columns": 2
+  },
+  {
+    "table": "DRH_codigos_liquidacion",
+    "columns": 5
+  },
+  {
+    "table": "DRH_rpa",
+    "columns": 60
+  },
+  {
+    "table": "DRH_troubleticket_nw_",
+    "columns": 214
+  },
+  {
+    "table": "JSS_ENTRANTES_PLATAFORMA_RECLAMOS",
+    "columns": 41
+  },
+  {
+    "table": "JSS_ENTRANTES_X_GRUPO_PLATAFORMA",
+    "columns": 9
+  },
+  {
+    "table": "LD_TEMP_DNIS_LOGUEADOS",
+    "columns": 6
+  },
+  {
+    "table": "TEMPORAL_DRH_REGISTRADAS",
+    "columns": 268
+  },
+  {
+    "table": "TEMPORAL_DRH_REGISTRADAS_2024",
+    "columns": 268
+  },
+  {
+    "table": "TEMPORAL_DRH_REGISTRADAS_VALIDA",
+    "columns": 268
+  },
+  {
+    "table": "TEMPORAL_FCR",
+    "columns": 16
+  },
+  {
+    "table": "T_LISTADO_DNIS_GENESYS",
+    "columns": 5
+  },
+  {
+    "table": "T_LISTA_DNI_CORRECCION_TEMPORAL",
+    "columns": 2
+  },
+  {
+    "table": "T_NATIVO_ABANDON_DELAY",
+    "columns": 44
+  },
+  {
+    "table": "T_NATIVO_ABANDON_DELAY_30MIN",
+    "columns": 47
+  },
+  {
+    "table": "T_NATIVO_QUEUE_OUTLINE",
+    "columns": 47
+  },
+  {
+    "table": "T_NATIVO_QUEUE_OUTLINE_30MIN",
+    "columns": 47
+  },
+  {
+    "table": "T_NATIVO_QUEUE_SUMMARY",
+    "columns": 27
+  },
+  {
+    "table": "T_NATIVO_QUEUE_SUMMARY_30MIN",
+    "columns": 27
+  },
+  {
+    "table": "T_NATIVO_SPEED_OF_ACCEPT",
+    "columns": 44
+  },
+  {
+    "table": "T_NATIVO_SPEED_OF_ACCEPT_30MIN",
+    "columns": 46
+  },
+  {
+    "table": "T_STAGE_TRAFICO_DATOS",
+    "columns": 48
+  },
+  {
+    "table": "T_STAGE_TRAFICO_DATOS_30MIN",
+    "columns": 66
+  },
+  {
+    "table": "T_TEMPORAL_ABANDON_DELAY_30MIN",
+    "columns": 47
+  },
+  {
+    "table": "T_TEMPORAL_DNIS_GENESYS",
+    "columns": 4
+  },
+  {
+    "table": "T_TEMPORAL_NATIVO_ABANDON_DELAY",
+    "columns": 44
+  },
+  {
+    "table": "T_TEMPORAL_NATIVO_DETALLE_LLAMADAS_V7",
+    "columns": 34
+  },
+  {
+    "table": "T_TEMPORAL_NATIVO_QUEUE_OUTLINE",
+    "columns": 47
+  },
+  {
+    "table": "T_TEMPORAL_NATIVO_QUEUE_SUMMARY",
+    "columns": 27
+  },
+  {
+    "table": "T_TEMPORAL_NATIVO_SPEED_OF_ACCEPT",
+    "columns": 44
+  },
+  {
+    "table": "T_TEMPORAL_QUEUE_OUTLINE_30MIN",
+    "columns": 47
+  },
+  {
+    "table": "T_TEMPORAL_QUEUE_SUMMARY_30MIN",
+    "columns": 27
+  },
+  {
+    "table": "T_TEMPORAL_SPEED_OF_ACCEPT_30MIN",
+    "columns": 46
+  },
+  {
+    "table": "JG_DITO",
+    "columns": 2
+  },
+  {
+    "table": "LD_VISTA_RESUMEN_INPUT_PARA_COMITE_FUNCIONAMIENTO_TEC",
+    "columns": 5
+  },
+  {
+    "table": "TEMP_REPORTE_SOLUCION",
+    "columns": 5
+  },
+  {
+    "table": "TTR_AGENTES_OD",
+    "columns": 7
+  },
+  {
+    "table": "TTR_AGENTES_ORI_DEST_VF",
+    "columns": 11
+  },
+  {
+    "table": "TTR_ATENDIDAS_RESUMEN",
+    "columns": 4
+  },
+  {
+    "table": "TTR_GRUPO_REITERACION",
+    "columns": 6
+  },
+  {
+    "table": "TTR_INDICADOR_REITERADAS_RESUMEN",
+    "columns": 5
+  },
+  {
+    "table": "TTR_INDICADOR_TRANSFERENCIA_RESUMEN",
+    "columns": 5
+  },
+  {
+    "table": "TTR_TRANSFERENCIAS_RESUMEN",
+    "columns": 9
+  },
+  {
+    "table": "T_AGEN_ORI_DEST_MISMO_RP",
+    "columns": 13
+  },
+  {
+    "table": "T_BASE_LLAM_IMPACTO_IVR",
+    "columns": 5
+  },
+  {
+    "table": "T_BASE_LLAM_IMPACTO_IVR_V2",
+    "columns": 5
+  },
+  {
+    "table": "T_CATALOGO_DET_EXPERIENCIA_RADAR",
+    "columns": 6
+  },
+  {
+    "table": "T_CLIENTES_NOTA_15DIAS",
+    "columns": 2
+  },
+  {
+    "table": "T_DETALLE_AGENT_SUMMARY",
+    "columns": 9
+  },
+  {
+    "table": "T_DETALLE_INFOMART_ULT7DIAS",
+    "columns": 7
+  },
+  {
+    "table": "T_DETALLE_ONEMARKETER",
+    "columns": 20
+  },
+  {
+    "table": "T_INDICADORES_REGULADOS",
+    "columns": 11
+  },
+  {
+    "table": "T_LD_EVOLUTIVO_TRAFICO_POR_SERVICE_SUBTYPE",
+    "columns": 5
+  },
+  {
+    "table": "T_LD_FLUJO_CLIENTES_DEGRADADOS",
+    "columns": 3
+  },
+  {
+    "table": "T_LD_FLUJO_CLIENTES_DEGRADADOS_ATENDIDAS",
+    "columns": 4
+  },
+  {
+    "table": "T_LD_FLUJO_CLIENTES_DEGRADADOS_ENTRANTES",
+    "columns": 4
+  },
+  {
+    "table": "T_LD_FLUJO_CLIENTES_DEGRADADOS_ENTRANTES_ATENDIDAS",
+    "columns": 5
+  },
+  {
+    "table": "T_LD_FLUJO_CLIENTES_DEGRADADOS_TOTAL",
+    "columns": 6
+  },
+  {
+    "table": "T_LD_REPORTE_METRICAS_RECURRENTES_TEC_FIJO",
+    "columns": 5
+  },
+  {
+    "table": "T_LD_RESUMEN_ENTR_Y_CLI_UNICOS_X_PLATAFORMA",
+    "columns": 7
+  },
+  {
+    "table": "T_LD_RESUMEN_VISTA_POR_CASOS_DE_USO_AURA",
+    "columns": 7
+  },
+  {
+    "table": "T_LISTA_CTI_COPC_V1",
+    "columns": 12
+  },
+  {
+    "table": "T_LISTA_CTI_COPC_V1_72HR",
+    "columns": 27
+  },
+  {
+    "table": "T_LISTA_CTI_COPC_V1_72HR_DIARIO",
+    "columns": 17
+  },
+  {
+    "table": "T_LISTA_TELEFONOS_UNICOS_COPC_V1",
+    "columns": 5
+  },
+  {
+    "table": "T_METRICAS_RECURRENTES_FUNCIONAMIENTO_CALL_CENTER",
+    "columns": 17
+  },
+  {
+    "table": "T_REITERADORES_CRONICOS",
+    "columns": 5
+  },
+  {
+    "table": "T_REPORTE_SEMANAS",
+    "columns": 3
+  },
+  {
+    "table": "T_REPORTE_SOLUCION",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_ABANDONO_REAL",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_CLIENTES_SUSPENDIDOS_MOVIL",
+    "columns": 10
+  },
+  {
+    "table": "T_RESUMEN_CLIENTES_SUSPENDIDOS_MOVIL_2",
+    "columns": 8
+  },
+  {
+    "table": "T_RESUMEN_CLIENTES_SUSPENDIDOS_MOVIL_ACCESOS",
+    "columns": 10
+  },
+  {
+    "table": "T_RESUMEN_COPC_FILTROS_v4",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_COPC_FILTROS_v4_72HR",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_COPC_ORIGEN_DESTINO_V1",
+    "columns": 12
+  },
+  {
+    "table": "T_RESUMEN_COPC_ORIGEN_DESTINO_V1_72HR",
+    "columns": 14
+  },
+  {
+    "table": "T_RESUMEN_COPC_V1",
+    "columns": 12
+  },
+  {
+    "table": "T_RESUMEN_COPC_V1_72HR",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_KPIS_GERENCIALES",
+    "columns": 7
+  },
+  {
+    "table": "T_RESUMEN_KPIS_PET",
+    "columns": 7
+  },
+  {
+    "table": "T_RESUMEN_KPIS_PET_SEMANALES",
+    "columns": 8
+  },
+  {
+    "table": "T_RESUMEN_KPIS_PET_SITE",
+    "columns": 8
+  },
+  {
+    "table": "T_RESUMEN_PLAN_DE_FUNCIONAMIENTO_CC_BLACK",
+    "columns": 7
+  },
+  {
+    "table": "T_RESUMEN_PLAN_DE_FUNCIONAMIENTO_CC_Y_CCEE",
+    "columns": 7
+  },
+  {
+    "table": "T_RESUMEN_PLAN_DE_FUNCIONAMIENTO_CC_Y_CCEE_CLIENTES_UNICOS",
+    "columns": 6
+  },
+  {
+    "table": "T_RESUMEN_SEGMENTACION_IVR_V2",
+    "columns": 6
+  },
+  {
+    "table": "T_RESUMEN_TRAFICO_VENTAS_IN_MOVIL_FIJA",
+    "columns": 14
+  },
+  {
+    "table": "T_RESUMEN_TRAFICO_VENTAS_IN_MOVIL_FIJA_BACKUP_NOBORRAR",
+    "columns": 13
+  },
+  {
+    "table": "T_RES_CLI_UNICOS_VOZ_Y_CCEE",
+    "columns": 7
+  },
+  {
+    "table": "T_RPT_SOL_LLAMADA",
+    "columns": 18
+  },
+  {
+    "table": "T_RPT_SOL_LLAMADA_RES",
+    "columns": 7
+  },
+  {
+    "table": "T_TABLA_ABANDONOS_CALL_CENTER",
+    "columns": 5
+  },
+  {
+    "table": "T_TABLA_PETS_ABANDONADAS",
+    "columns": 6
+  },
+  {
+    "table": "T_TABLA_PETS_ENTRANTES",
+    "columns": 5
+  },
+  {
+    "table": "T_TEMPORAL_DETALLE_AGENT_SUMMARY",
+    "columns": 13
+  },
+  {
+    "table": "T_TEMPORAL_DETALLE_AGENT_SUMMARY_v2",
+    "columns": 11
+  },
+  {
+    "table": "T_TMP_DETALLE_INDIDENCIAS",
+    "columns": 5
+  },
+  {
+    "table": "T_TMP_DETALLE_INDIDENCIAS_V2",
+    "columns": 5
+  },
+  {
+    "table": "T_TMP_INCIDENCIAS",
+    "columns": 7
+  },
+  {
+    "table": "T_TMP_INCIDENCIAS_V2",
+    "columns": 7
+  },
+  {
+    "table": "T_TMP_KPIS_GERENCIALES",
+    "columns": 8
+  },
+  {
+    "table": "T_TMP_REPORTE_SOLUCION",
+    "columns": 5
+  },
+  {
+    "table": "T_TMP_RPT_SOL_LLAMADA",
+    "columns": 13
+  },
+  {
+    "table": "T_TMP_SUBMOTIVOS_INCIDENCIAS",
+    "columns": 6
+  },
+  {
+    "table": "T_TMP_SUBMOTIVOS_INCIDENCIAS_PREV",
+    "columns": 6
+  },
+  {
+    "table": "T_TMP_SUBMOTIVOS_INCIDENCIAS_PREV_V2",
+    "columns": 6
+  },
+  {
+    "table": "T_VISTA_RESUMEN_TRAFICO_ROAMING",
+    "columns": 4
+  },
+  {
+    "table": "Agent_Summary_Activity_Report_30min_20251018",
+    "columns": 18
+  },
+  {
+    "table": "BASE_AGENTE",
+    "columns": 2
+  },
+  {
+    "table": "GPR_Agent_Summary_Activity_Report_30min_20251018",
+    "columns": 18
+  },
+  {
+    "table": "GPR_Agent_Summary_Activity_Report_30min_20251019",
+    "columns": 18
+  },
+  {
+    "table": "GPR_Agent_Summary_Activity_Report_30min_20260102",
+    "columns": 18
+  },
+  {
+    "table": "GPR_reporte_agentes_20250823",
+    "columns": 18
+  },
+  {
+    "table": "JG_KONECTA_202509",
+    "columns": 5
+  },
+  {
+    "table": "JG_KONECTA_202510",
+    "columns": 5
+  },
+  {
+    "table": "JG_KONECTA_202512",
+    "columns": 5
+  },
+  {
+    "table": "JG_KONECTA_202601",
+    "columns": 5
+  },
+  {
+    "table": "JG_KONECTA_202602",
+    "columns": 5
+  },
+  {
+    "table": "LD_DETALLE_AGENTES_PRIMERA_CONEXION",
+    "columns": 3
+  },
+  {
+    "table": "T1",
+    "columns": 2
+  },
+  {
+    "table": "T2",
+    "columns": 2
+  },
+  {
+    "table": "TEMP_RESUMEN_AGENTES_30_MIN",
+    "columns": 13
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202401",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202402",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202403",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202404",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202405",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202406",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202407",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202408",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202409",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202410",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202411",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202412",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202501",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202502",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202503",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202504",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202505",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202506",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202507",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202508",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202509",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202510",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202511",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202512",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202601",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202602",
+    "columns": 15
+  },
+  {
+    "table": "T_AGENT_SUMMARY_30MIN_202603",
+    "columns": 15
+  },
+  {
+    "table": "T_DETALLE_ENCUESTAS_OUTBOUND_CCEE_TEMP",
+    "columns": 31
+  },
+  {
+    "table": "T_DETALLE_ENCUESTAS_OUTBOUND_TEMPORAL",
+    "columns": 24
+  },
+  {
+    "table": "T_FACT_BASE_ALEATORIA_AGENTES_CUOTA_V2",
+    "columns": 11
+  },
+  {
+    "table": "T_LISTADO_DNIS_GENESYS",
+    "columns": 2
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202401",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202402",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202403",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202404",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202405",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202406",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202407",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202408",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202409",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202410",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202411",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202412",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202501",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202502",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202503",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202504",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202505",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202506",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202507",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202508",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202509",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202510",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202511",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202512",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202601",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202602",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_202603",
+    "columns": 54
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_TEMP",
+    "columns": 53
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_TEMP_ATENDIDAS",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_TEMP_ATENDIDAS_TMO",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_TEMP_PRINC",
+    "columns": 53
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_TEST_TEMP",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_TMO_TEMP",
+    "columns": 53
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_30MIN_TMO_TEMP_ATENDIDAS",
+    "columns": 13
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_TOTALES",
+    "columns": 16
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_TOTALES_BACKUP",
+    "columns": 16
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_VALIDACION_PROVEEDORES",
+    "columns": 11
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_VALIDACION_PROVEEDORES_HORAS",
+    "columns": 12
+  },
+  {
+    "table": "T_RESUMEN_AGENTES_VALIDACION_PROVEEDORES_HORAS_LOGUEO",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_ATENDIDAS_X_AGENTE",
+    "columns": 6
+  },
+  {
+    "table": "T_RESUMEN_ENCUESTAS",
+    "columns": 9
+  },
+  {
+    "table": "T_RESUMEN_TIEMPOS_BOTMAKER_202510",
+    "columns": 10
+  },
+  {
+    "table": "T_RESUMEN_TRX_AGENTE",
+    "columns": 5
+  },
+  {
+    "table": "T_RESUMEN_TRX_GENERA_AGENTE",
+    "columns": 5
+  },
+  {
+    "table": "T_TEMPORAL_AGENTES_HIST_PLATAFORMAS",
+    "columns": 4
+  },
+  {
+    "table": "T_TEMPORAL_AGENT_SUMMARY_30MIN",
+    "columns": 23
+  },
+  {
+    "table": "T_TEMPORAL_AGENT_SUMMARY_30MIN_tmp",
+    "columns": 23
+  },
+  {
+    "table": "T_TEMPORAL_ATENDIDAS_X_AGENTE",
+    "columns": 10
+  },
+  {
+    "table": "T_TEMPORAL_ATENDIDAS_X_AGENTE_30_MIN",
+    "columns": 19
+  },
+  {
+    "table": "T_TEMPORAL_ATENDIDAS_X_AGENTE_30_MIN_2",
+    "columns": 19
+  },
+  {
+    "table": "T_TEMPORAL_PROCESO_MULTISKILL",
+    "columns": 4
+  },
+  {
+    "table": "T_TEMPORAL_PROCESO_MULTISKILL_30MIN",
+    "columns": 6
+  },
+  {
+    "table": "T_TEMPORAL_PROCESO_MULTISKILL_30MIN_TEST",
+    "columns": 6
+  },
+  {
+    "table": "T_TEMPORAL_PROCESO_MULTISKILL_30MIN_TEST_V2",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMPORAL_PROCESO_MULTISKILL_30MIN_V2",
+    "columns": 7
+  },
+  {
+    "table": "T_TEMPORAL_PROCESO_MULTISKILL_V2",
+    "columns": 4
+  },
+  {
+    "table": "T_TEMP_BASE_CUOTAS",
+    "columns": 3
+  },
+  {
+    "table": "T_TEMP_CARGA_MAESTRA_USUARIOS_SEGURIDAD_PASO_1",
+    "columns": 13
+  },
+  {
+    "table": "T_TEMP_CARGA_MAESTRA_USUARIOS_SEGURIDAD_PASO_2",
+    "columns": 21
+  },
+  {
+    "table": "T_TEMP_CARGA_MAESTRA_USUARIOS_SEGURIDAD_PASO_X",
+    "columns": 13
+  },
+  {
+    "table": "sysdiagrams",
+    "columns": 5
+  },
+  {
+    "table": "T1_1",
+    "columns": 1
+  },
+  {
+    "table": "T1_111",
+    "columns": 1
+  },
+  {
+    "table": "T_LISTADO_IVR",
+    "columns": 2
+  },
+  {
+    "table": "T_LISTADO_IVR_VAL",
+    "columns": 2
+  },
+  {
+    "table": "T_LISTADO_IVR_VAL_2",
+    "columns": 2
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202202_V2",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202307",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202308",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202309",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202310",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202311",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202312",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202401",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202402",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202403",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202404",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202405",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202406",
+    "columns": 8
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202407",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202408",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202409",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202410",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202411",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202412",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202501",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202502",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202503",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202504",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202505",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202506",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202507",
+    "columns": 9
+  },
+  {
+    "table": "T_REGULATORIO_LENGUAJE_NATURAL_202508",
+    "columns": 9
+  },
+  {
+    "table": "T_RESUMEN_REGULADOS_PW",
+    "columns": 12
+  },
+  {
+    "table": "T_RESUMEN_REGULADOS_PW_AURA",
+    "columns": 4
+  },
+  {
+    "table": "T_RESUMEN_REGULADOS_PW_V2",
+    "columns": 12
+  },
+  {
+    "table": "T_TEMPORAL_REGULADOS_PW",
+    "columns": 15
+  },
+  {
+    "table": "T_TEMP_DETALLE_STAR_GLOBAL",
+    "columns": 19
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202301",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202302",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202303",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202304",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202305",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202306",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202307",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202308",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202309",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202310",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202311",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202312",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202410",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202411",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202412",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202501",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202502",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202503",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202504",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_TEMPORAL_REGULADOS_PW",
+    "columns": 20
+  },
+  {
+    "table": "T_V5_TODAY",
+    "columns": 4
+  },
+  {
+    "table": "VALIDAR_ACUMULADO_RESUMEN",
+    "columns": 9
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202308",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202309",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202310",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202311",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202312",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202401",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202402",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202403",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202404",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202405",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202406",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202407",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202408",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202409",
+    "columns": 22
+  },
+  {
+    "table": "T_V2_REGULADOS_PW_202410",
+    "columns": 22
+  },
+  {
+    "table": "adm_mant_idx",
+    "columns": 5
+  },
+  {
+    "table": "m_BaseDatos",
+    "columns": 7
+  },
+  {
+    "table": "m_Servidores",
+    "columns": 6
+  },
+  {
+    "table": "m_connections_stats",
+    "columns": 3
+  },
+  {
+    "table": "m_sesiones_db",
+    "columns": 6
+  },
+  {
+    "table": "m_size_db",
+    "columns": 6
+  },
+  {
+    "table": "m_size_hd",
+    "columns": 6
+  },
+  {
+    "table": "m_size_logt",
+    "columns": 7
+  },
+  {
+    "table": "m_sizedb",
+    "columns": 10
+  },
+  {
+    "table": "m_sizetables",
+    "columns": 10
+  },
+  {
+    "table": "ActiveSubscriptions",
+    "columns": 5
+  },
+  {
+    "table": "Batch",
+    "columns": 9
+  },
+  {
+    "table": "CachePolicy",
+    "columns": 4
+  },
+  {
+    "table": "Catalog",
+    "columns": 25
+  },
+  {
+    "table": "ChunkData",
+    "columns": 8
+  },
+  {
+    "table": "ChunkSegmentMapping",
+    "columns": 5
+  },
+  {
+    "table": "ConfigurationInfo",
+    "columns": 3
+  },
+  {
+    "table": "DBUpgradeHistory",
+    "columns": 4
+  },
+  {
+    "table": "DataSets",
+    "columns": 4
+  },
+  {
+    "table": "DataSource",
+    "columns": 15
+  },
+  {
+    "table": "Event",
+    "columns": 7
+  },
+  {
+    "table": "ExecutionLogStorage",
+    "columns": 19
+  },
+  {
+    "table": "History",
+    "columns": 4
+  },
+  {
+    "table": "Keys",
+    "columns": 6
+  },
+  {
+    "table": "ModelDrill",
+    "columns": 5
+  },
+  {
+    "table": "ModelItemPolicy",
+    "columns": 4
+  },
+  {
+    "table": "ModelPerspective",
+    "columns": 5
+  },
+  {
+    "table": "Notifications",
+    "columns": 20
+  },
+  {
+    "table": "Policies",
+    "columns": 2
+  },
+  {
+    "table": "PolicyUserRole",
+    "columns": 4
+  },
+  {
+    "table": "ReportSchedule",
+    "columns": 4
+  },
+  {
+    "table": "Roles",
+    "columns": 5
+  },
+  {
+    "table": "RunningJobs",
+    "columns": 11
+  },
+  {
+    "table": "Schedule",
+    "columns": 24
+  },
+  {
+    "table": "SecData",
+    "columns": 6
+  },
+  {
+    "table": "Segment",
+    "columns": 2
+  },
+  {
+    "table": "SegmentedChunk",
+    "columns": 8
+  },
+  {
+    "table": "ServerParametersInstance",
+    "columns": 8
+  },
+  {
+    "table": "ServerUpgradeHistory",
+    "columns": 4
+  },
+  {
+    "table": "SnapshotData",
+    "columns": 14
+  },
+  {
+    "table": "Subscriptions",
+    "columns": 18
+  },
+  {
+    "table": "SubscriptionsBeingDeleted",
+    "columns": 2
+  },
+  {
+    "table": "UpgradeInfo",
+    "columns": 2
+  },
+  {
+    "table": "Users",
+    "columns": 5
+  },
+  {
+    "table": "ChunkData",
+    "columns": 8
+  },
+  {
+    "table": "ChunkSegmentMapping",
+    "columns": 5
+  },
+  {
+    "table": "DBUpgradeHistory",
+    "columns": 4
+  },
+  {
+    "table": "ExecutionCache",
+    "columns": 8
+  },
+  {
+    "table": "PersistedStream",
+    "columns": 10
+  },
+  {
+    "table": "Segment",
+    "columns": 2
+  },
+  {
+    "table": "SegmentedChunk",
+    "columns": 9
+  },
+  {
+    "table": "SessionData",
+    "columns": 28
+  },
+  {
+    "table": "SessionLock",
+    "columns": 2
+  },
+  {
+    "table": "SnapshotData",
+    "columns": 16
+  },
+  {
+    "table": "TempCatalog",
+    "columns": 14
+  },
+  {
+    "table": "TempDataSets",
+    "columns": 4
+  },
+  {
+    "table": "TempDataSources",
+    "columns": 14
+  }
+]

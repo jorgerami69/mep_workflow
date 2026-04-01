@@ -1,0 +1,399 @@
+erDiagram
+  adm_mant_idx {
+    TableName VARCHAR
+    Index_Name VARCHAR
+    INDEX_OPTION VARCHAR
+    Fragmentation_Size VARCHAR
+    Filas VARCHAR
+  }
+  m_BaseDatos {
+    cod_BaseDatos VARCHAR
+    nombre VARCHAR
+    cod_Servidor INT
+    nombre_Instancia VARCHAR
+    version_sql VARCHAR
+    version_sp VARCHAR
+  }
+  m_Servidores {
+    cod_servidor INT
+    nombre VARCHAR
+    fecha_registro VARCHAR
+    version_so VARCHAR
+    version_sp VARCHAR
+    ip VARCHAR
+  }
+  m_connections_stats {
+    DataBaseName VARCHAR
+    ConnectionsAmount DECIMAL(18,2)
+    DateAndTime DATETIME
+  }
+  m_sesiones_db {
+    Numerador VARCHAR
+    Servidor INT
+    DBName VARCHAR
+    Sesiones_min VARCHAR
+    Sesiones_max VARCHAR
+    Fecha_proceso VARCHAR
+  }
+  m_size_db {
+    ServerName VARCHAR
+    DBName VARCHAR
+    Asignado_Total VARCHAR
+    Espacio_Libre VARCHAR
+    Espacio_Ocupado VARCHAR
+    Fecha_proceso VARCHAR
+  }
+  m_size_hd {
+    Servidor INT
+    Unidad INT
+    EspacioTotal VARCHAR
+    EspacioLibre VARCHAR
+    PLibre VARCHAR
+    Fecha_proceso VARCHAR
+  }
+  m_size_logt {
+    Numerador VARCHAR
+    Sevidor INT
+    DBName VARCHAR
+    EspacioTotal VARCHAR
+    PercentUsado VARCHAR
+    EspacioUsado VARCHAR
+  }
+  m_sizedb {
+    Servidor INT
+    DBName VARCHAR
+    Fileid INT
+    FileGroup VARCHAR
+    Total VARCHAR
+    Libre VARCHAR
+  }
+  m_sizetables {
+    numerador VARCHAR
+    nombre VARCHAR
+    filas VARCHAR
+    reservado VARCHAR
+    data VARCHAR
+    index_size VARCHAR
+  }
+  ActiveSubscriptions {
+    ActiveID INT
+    SubscriptionID INT
+    TotalNotifications VARCHAR
+    TotalSuccesses VARCHAR
+    TotalFailures VARCHAR
+  }
+  Batch {
+    BatchID INT
+    AddedOn VARCHAR
+    Action VARCHAR
+    Item VARCHAR
+    Parent VARCHAR
+    Param VARCHAR
+  }
+  CachePolicy {
+    CachePolicyID INT
+    ReportID INT
+    ExpirationFlags VARCHAR
+    CacheExpiration VARCHAR
+  }
+  Catalog {
+    ItemID INT
+    Path VARCHAR
+    Name VARCHAR
+    ParentID INT
+    Type VARCHAR
+    Content VARCHAR
+  }
+  ChunkData {
+    ChunkID INT
+    SnapshotDataID INT
+    ChunkFlags VARCHAR
+    ChunkName VARCHAR
+    ChunkType VARCHAR
+    Version VARCHAR
+  }
+  ChunkSegmentMapping {
+    ChunkId INT
+    SegmentId INT
+    StartByte VARCHAR
+    LogicalByteCount VARCHAR
+    ActualByteCount VARCHAR
+  }
+  ConfigurationInfo {
+    ConfigInfoID INT
+    Name VARCHAR
+    Value DECIMAL(18,2)
+  }
+  DBUpgradeHistory {
+    UpgradeID INT
+    DbVersion VARCHAR
+    User VARCHAR
+    DateTime DATETIME
+  }
+  DataSets {
+    ID INT
+    ItemID INT
+    LinkID INT
+    Name VARCHAR
+  }
+  DataSource {
+    DSID INT
+    ItemID INT
+    SubscriptionID INT
+    Name VARCHAR
+    Extension VARCHAR
+    Link VARCHAR
+  }
+  Event {
+    EventID INT
+    EventType VARCHAR
+    EventData VARCHAR
+    TimeEntered VARCHAR
+    ProcessStart VARCHAR
+    ProcessHeartbeat VARCHAR
+  }
+  ExecutionLogStorage {
+    LogEntryId INT
+    InstanceName VARCHAR
+    ReportID INT
+    UserName VARCHAR
+    ExecutionId INT
+    RequestType VARCHAR
+  }
+  History {
+    HistoryID INT
+    ReportID INT
+    SnapshotDataID INT
+    SnapshotDate DATETIME
+  }
+  Keys {
+    MachineName VARCHAR
+    InstallationID INT
+    InstanceName VARCHAR
+    Client VARCHAR
+    PublicKey VARCHAR
+    SymmetricKey VARCHAR
+  }
+  ModelDrill {
+    ModelDrillID INT
+    ModelID INT
+    ReportID INT
+    ModelItemID INT
+    Type VARCHAR
+  }
+  ModelItemPolicy {
+    ID INT
+    CatalogItemID INT
+    ModelItemID INT
+    PolicyID INT
+  }
+  ModelPerspective {
+    ID INT
+    ModelID INT
+    PerspectiveID INT
+    PerspectiveName VARCHAR
+    PerspectiveDescription VARCHAR
+  }
+  Notifications {
+    NotificationID INT
+    SubscriptionID INT
+    ActivationID INT
+    ReportID INT
+    SnapShotDate DATETIME
+    ExtensionSettings VARCHAR
+  }
+  Policies {
+    PolicyID INT
+    PolicyFlag VARCHAR
+  }
+  PolicyUserRole {
+    ID INT
+    RoleID INT
+    UserID INT
+    PolicyID INT
+  }
+  ReportSchedule {
+    ScheduleID INT
+    ReportID INT
+    SubscriptionID INT
+    ReportAction VARCHAR
+  }
+  Roles {
+    RoleID INT
+    RoleName VARCHAR
+    Description VARCHAR
+    TaskMask VARCHAR
+    RoleFlags VARCHAR
+  }
+  RunningJobs {
+    JobID INT
+    StartDate DATETIME
+    ComputerName VARCHAR
+    RequestName VARCHAR
+    RequestPath VARCHAR
+    UserId INT
+  }
+  Schedule {
+    ScheduleID INT
+    Name VARCHAR
+    StartDate DATETIME
+    Flags VARCHAR
+    NextRunTime VARCHAR
+    LastRunTime VARCHAR
+  }
+  SecData {
+    SecDataID INT
+    PolicyID INT
+    AuthType VARCHAR
+    XmlDescription VARCHAR
+    NtSecDescPrimary VARCHAR
+    NtSecDescSecondary VARCHAR
+  }
+  Segment {
+    SegmentId INT
+    Content VARCHAR
+  }
+  SegmentedChunk {
+    ChunkId INT
+    SnapshotDataId INT
+    ChunkFlags VARCHAR
+    ChunkName VARCHAR
+    ChunkType VARCHAR
+    Version VARCHAR
+  }
+  ServerParametersInstance {
+    ServerParametersID INT
+    ParentID INT
+    Path VARCHAR
+    CreateDate DATETIME
+    ModifiedDate DATETIME
+    Timeout VARCHAR
+  }
+  ServerUpgradeHistory {
+    UpgradeID INT
+    ServerVersion VARCHAR
+    User VARCHAR
+    DateTime DATETIME
+  }
+  SnapshotData {
+    SnapshotDataID INT
+    CreatedDate DATETIME
+    ParamsHash VARCHAR
+    QueryParams VARCHAR
+    EffectiveParams VARCHAR
+    Description VARCHAR
+  }
+  Subscriptions {
+    SubscriptionID INT
+    OwnerID INT
+    Report_OID INT
+    Locale VARCHAR
+    InactiveFlags VARCHAR
+    ExtensionSettings VARCHAR
+  }
+  SubscriptionsBeingDeleted {
+    SubscriptionID INT
+    CreationDate DATETIME
+  }
+  UpgradeInfo {
+    Item VARCHAR
+    Status VARCHAR
+  }
+  Users {
+    UserID INT
+    Sid INT
+    UserType VARCHAR
+    AuthType VARCHAR
+    UserName VARCHAR
+  }
+  ChunkData {
+    ChunkID INT
+    SnapshotDataID INT
+    ChunkFlags VARCHAR
+    ChunkName VARCHAR
+    ChunkType VARCHAR
+    Version VARCHAR
+  }
+  ChunkSegmentMapping {
+    ChunkId INT
+    SegmentId INT
+    StartByte VARCHAR
+    LogicalByteCount VARCHAR
+    ActualByteCount VARCHAR
+  }
+  DBUpgradeHistory {
+    UpgradeID INT
+    DbVersion VARCHAR
+    User VARCHAR
+    DateTime DATETIME
+  }
+  ExecutionCache {
+    ExecutionCacheID INT
+    ReportID INT
+    ExpirationFlags VARCHAR
+    AbsoluteExpiration VARCHAR
+    RelativeExpiration VARCHAR
+    SnapshotDataID INT
+  }
+  PersistedStream {
+    SessionID INT
+    Index VARCHAR
+    Content VARCHAR
+    Name VARCHAR
+    MimeType VARCHAR
+    Extension VARCHAR
+  }
+  Segment {
+    SegmentId INT
+    Content VARCHAR
+  }
+  SegmentedChunk {
+    ChunkId INT
+    SnapshotDataId INT
+    ChunkFlags VARCHAR
+    ChunkName VARCHAR
+    ChunkType VARCHAR
+    Version VARCHAR
+  }
+  SessionData {
+    SessionID INT
+    CompiledDefinition VARCHAR
+    SnapshotDataID INT
+    IsPermanentSnapshot VARCHAR
+    ReportPath VARCHAR
+    Timeout VARCHAR
+  }
+  SessionLock {
+    SessionID INT
+    LockVersion VARCHAR
+  }
+  SnapshotData {
+    SnapshotDataID INT
+    CreatedDate DATETIME
+    ParamsHash VARCHAR
+    QueryParams VARCHAR
+    EffectiveParams VARCHAR
+    Description VARCHAR
+  }
+  TempCatalog {
+    EditSessionID INT
+    TempCatalogID INT
+    ContextPath VARCHAR
+    Name VARCHAR
+    Content VARCHAR
+    Description VARCHAR
+  }
+  TempDataSets {
+    ID INT
+    ItemID INT
+    LinkID INT
+    Name VARCHAR
+  }
+  TempDataSources {
+    DSID INT
+    ItemID INT
+    Name VARCHAR
+    Extension VARCHAR
+    Link VARCHAR
+    CredentialRetrieval VARCHAR
+  }
