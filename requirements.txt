@@ -1,0 +1,9 @@
+pandas
+openpyxl
+chardet
+markdown
+playwright
+openai
+fpdf
+python-dotenv
+requests
