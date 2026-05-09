@@ -24,7 +24,7 @@ print(f"\n🚀 VERSION: {VERSION}\n")
 # CONFIG
 # =========================================================
 
-PBIX_FOLDER = r"C:\data\workspace\Data_Artifacts\PbixLake"
+PBIX_FOLDER = r"C:\Users\jorge\OneDrive - Stefanini\01-PbixLake2"
 
 OUTPUT_FOLDER = r"C:\data\workspace\PbixMetadataOut"
 
@@ -461,54 +461,86 @@ def export_tom_metadata(port):
 
         "tables": [],
         "relationships": [],
-        "measures": []
+        "measures": [],
+        "datasources": []
     }
 
     try:
 
         import clr
 
+        print("\n📦 Cargando DLL TOM...")
+
         clr.AddReference(CORE_DLL)
         clr.AddReference(TABULAR_DLL)
 
         from Microsoft.AnalysisServices.Tabular import Server
 
-        conn = f"localhost:{port}"
+        conn = f"DataSource=localhost:{port}"
 
         print(f"\n🔌 TOM connect:")
         print(conn)
 
         server = Server()
 
+        # =================================================
+        # CONNECT
+        # =================================================
+
         server.Connect(conn)
 
-        # =================================================
-        # ESPERAR MODELO
-        # =================================================
+        print("\n⏳ Esperando catálogo TOM...\n")
 
         max_wait = 300
-
         start = time.time()
+
+        db = None
 
         while time.time() - start < max_wait:
 
-            if server.Databases.Count > 0:
+            try:
 
-                break
+                print(f"📦 Databases detectadas: {server.Databases.Count}")
 
-            print("⏳ Esperando modelo tabular...")
+                if server.Databases.Count > 0:
+
+                    db = server.Databases[0]
+
+                    print(f"\n✅ Modelo detectado:")
+                    print(db.Name)
+
+                    break
+
+            except Exception as e:
+
+                print(f"⚠️ Esperando modelo: {e}")
 
             time.sleep(10)
 
-        if server.Databases.Count == 0:
+        # =================================================
+        # VALIDAR
+        # =================================================
+
+        if db is None:
 
             result["warning"] = "No databases found"
 
+            try:
+
+                server.Disconnect()
+
+            except:
+                pass
+
             return result
 
-        db = server.Databases[0]
+        # =================================================
+        # MODEL
+        # =================================================
 
         model = db.Model
+
+        print("\n📦 Extrayendo tablas...\n")
 
         # =================================================
         # TABLES
@@ -523,6 +555,10 @@ def export_tom_metadata(port):
                 "partitions": []
             }
 
+            # =============================================
+            # COLUMNS
+            # =============================================
+
             for c in t.Columns:
 
                 tbl["columns"].append({
@@ -532,15 +568,20 @@ def export_tom_metadata(port):
                     "hidden": bool(c.IsHidden)
                 })
 
+            # =============================================
+            # PARTITIONS / DATASOURCE
+            # =============================================
+
             for p in t.Partitions:
+
+                src = None
 
                 try:
 
                     src = str(p.Source)
 
                 except:
-
-                    src = None
+                    pass
 
                 tbl["partitions"].append({
 
@@ -553,6 +594,8 @@ def export_tom_metadata(port):
         # =================================================
         # RELATIONSHIPS
         # =================================================
+
+        print("\n🔗 Extrayendo relaciones...\n")
 
         for r in model.Relationships:
 
@@ -568,6 +611,8 @@ def export_tom_metadata(port):
         # MEASURES
         # =================================================
 
+        print("\n🧮 Extrayendo medidas...\n")
+
         for t in model.Tables:
 
             for m in t.Measures:
@@ -579,7 +624,34 @@ def export_tom_metadata(port):
                     "expression": m.Expression
                 })
 
+        # =================================================
+        # DATASOURCES
+        # =================================================
+
+        print("\n🌐 Extrayendo datasources...\n")
+
+        try:
+
+            for ds in model.DataSources:
+
+                result["datasources"].append({
+
+                    "name": ds.Name,
+                    "type": str(ds.Type),
+                    "description": str(ds.Description)
+                })
+
+        except Exception as e:
+
+            result["datasource_warning"] = str(e)
+
+        # =================================================
+        # DISCONNECT
+        # =================================================
+
         server.Disconnect()
+
+        print("\n✅ TOM extraction OK\n")
 
     except Exception as e:
 
@@ -587,6 +659,81 @@ def export_tom_metadata(port):
 
     return result
 
+# =========================================================
+# FORENSICS STRINGS
+# =========================================================
+
+def extract_raw_strings(extract_dir):
+
+    findings = []
+
+    patterns = [
+
+        r'Sql\.Database\([^)]+\)',
+
+        r'\d+\.\d+\.\d+\.\d+',
+
+        r'VW_[A-Z0-9_]+',
+
+        r'dbo\.[A-Z0-9_]+',
+
+        r'FROM\s+[A-Z0-9_\.\[\]]+',
+
+        r'SELECT\s+.+?FROM',
+    ]
+
+    target_files = [
+
+        "Metadata",
+        "DataModel",
+        "Connections"
+    ]
+
+    for tf in target_files:
+
+        path = os.path.join(extract_dir, tf)
+
+        if not os.path.exists(path):
+
+            continue
+
+        try:
+
+            with open(path, "rb") as f:
+
+                raw = f.read()
+
+            text = raw.decode(
+                "latin-1",
+                errors="ignore"
+            )
+
+            for p in patterns:
+
+                matches = re.findall(
+                    p,
+                    text,
+                    re.IGNORECASE | re.DOTALL
+                )
+
+                for m in matches:
+
+                    findings.append({
+
+                        "file": tf,
+                        "pattern": p,
+                        "match": m
+                    })
+
+        except Exception as e:
+
+            findings.append({
+
+                "file": tf,
+                "error": str(e)
+            })
+
+    return findings
 
 # =========================================================
 # PROCESS PBIX
@@ -633,12 +780,13 @@ def process_pbix(pbix_path):
 
     result = {
 
-        "pbix": pbix_name,
-        "type": pbix_type,
-        "connections": {},
-        "datamashup": [],
-        "tom": {}
-    }
+    "pbix": pbix_name,
+    "type": pbix_type,
+    "connections": {},
+    "datamashup": [],
+    "forensics_strings": [],
+    "tom": {}
+}
 
     # =====================================================
     # CONNECTIONS
@@ -646,6 +794,15 @@ def process_pbix(pbix_path):
 
     result["connections"] = parse_connections(extract_dir)
 
+    # =====================================================
+    # FORENSICS STRINGS
+    # =====================================================
+
+    print("\n🕵️ Ejecutando string forensics...\n")
+
+    result["forensics_strings"] = extract_raw_strings(
+        extract_dir
+    )
     # =====================================================
     # DATAMASHUP
     # =====================================================
@@ -675,7 +832,7 @@ def process_pbix(pbix_path):
 
         print("\n⏳ Esperando Power BI...\n")
 
-        time.sleep(90)
+        time.sleep(220)
 
         port = wait_for_port(start_time)
 
